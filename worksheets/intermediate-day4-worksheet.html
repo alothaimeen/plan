@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المجموعة المتوسطة - اليوم 4</title>
+    <link href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Tahoma, sans-serif;
+            line-height: 1.6;
+            padding: 15px;
+            background: white;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .info-box {
+            background: #e8f5e9;
+            border-right: 4px solid #4caf50;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        .exercise {
+            margin: 15px 0;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #fafafa;
+        }
+
+        .exercise-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #4caf50;
+            margin-bottom: 8px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #4caf50;
+        }
+
+        .english-text {
+            font-family: 'Andika', sans-serif;
+            direction: ltr;
+            text-align: left;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .writing-box {
+            border: 2px solid #4caf50;
+            padding: 15px;
+            min-height: 180px;
+            margin: 10px 0;
+            background: white;
+            border-radius: 5px;
+            font-family: 'Andika', sans-serif;
+            direction: ltr;
+            text-align: left;
+        }
+
+        .note {
+            background: #fff3cd;
+            border-right: 4px solid #ffc107;
+            padding: 8px;
+            margin: 10px 0;
+            font-size: 13px;
+            border-radius: 5px;
+        }
+
+        .assistant-box {
+            margin-top: 30px;
+            padding: 15px;
+            border: 2px solid #333;
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+
+        .assistant-box h3 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .assistant-instructions {
+            margin: 15px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+        }
+
+        .assistant-instructions ol, .assistant-instructions ul {
+            margin-right: 20px;
+        }
+
+        .assistant-instructions li {
+            margin: 5px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+
+        table td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: center;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+            .no-print {
+                display: none;
+            }
+            @page {
+                size: A4;
+                margin: 1cm;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- اسم المجموعة -->
+<div style="text-align:center; font-size:38px; font-weight:bold; color:#4caf50; margin-bottom:8px; margin-top:10px; letter-spacing:2px;">
+    المجموعة المتوسطة
+</div>
+
+<!-- العنوان -->
+<div class="header">
+    <h1>ورقة عمل - اليوم 4 🌟</h1>
+    <div class="subtitle">إعداد أ. محمد العثيمين - أبي بكر بن العربي الثانوية</div>
+</div>
+
+<!-- معلومات الطالب -->
+<div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 10px; margin-bottom: 10px; padding: 8px; border: 2px solid #333; border-radius: 5px; background: #f9f9f9;">
+    <div style="display: flex; align-items: center;">
+        <strong>الاسم:</strong> 
+        <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span>
+    </div>
+    <div style="display: flex; align-items: center;">
+        <strong>الفصل:</strong> 
+        <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span>
+    </div>
+    <div style="display: flex; align-items: center;">
+        <strong>الرقم:</strong> 
+        <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span>
+    </div>
+    <div style="display: flex; align-items: center;">
+        <strong>المجموعة:</strong> 
+        <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span>
+    </div>
+</div>
+
+<!-- صندوق الهدف -->
+<div class="info-box">
+    <strong>🎯 هدف اليوم:</strong> كتابة موضوع عن النفس + استخدام أدوات الربط + مناقشة جماعية
+</div>
+
+<!-- التمرين 1 -->
+<div class="exercise">
+    <div class="exercise-title">التمرين 1: اكتب عن نفسك</div>
+    <p style="margin: 5px 0; font-size: 13px;"><strong>اكتب موضوعاً عن نفسك (60 كلمة على الأقل). استخدم النقاط التالية:</strong></p>
+    
+    <div style="margin: 10px 0; font-size: 14px;">
+        <ul style="margin-right: 20px;">
+            <li>What is your name and age?</li>
+            <li>Where do you study?</li>
+            <li>What are your hobbies?</li>
+            <li>What is your favorite subject? Why?</li>
+            <li>What do you want to be in the future?</li>
+            <li>What makes you happy?</li>
+        </ul>
+    </div>
+
+    <div style="margin-top: 10px; font-size: 14px; background: #e8f5e9; padding: 10px; border-radius: 5px;">
+        <strong>📝 مثال للبداية:</strong>
+        <p class="english-text" style="margin-top: 5px;">
+            My name is Ahmed and I am 16 years old. I study at Abi Bakr Al-Arabi High School...
+        </p>
+    </div>
+
+    <div class="writing-box" style="margin-top: 15px;">
+        <div style="font-size: 16px; color: #999; font-style: italic;">
+            Write your composition here... (60+ words)
+        </div>
+    </div>
+
+    <div style="margin-top: 5px; font-size: 13px; text-align: left; direction: ltr;">
+        <strong>Word Count:</strong> _____ / 60
+    </div>
+</div>
+
+<!-- التمرين 2 -->
+<div class="exercise">
+    <div class="exercise-title">التمرين 2: استخدام أدوات الربط</div>
+    <p style="margin: 5px 0; font-size: 13px;"><strong>اربط الجمل باستخدام الأدوات المناسبة: and, but, because, so</strong></p>
+    
+    <div class="english-text" style="margin-top: 10px;">
+        <p><strong>1.</strong> I like English. I study it every day.</p>
+        <p style="margin-left: 20px; color: #666;">→ I like English, <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> I study it every day.</p>
+
+        <p style="margin-top: 10px;"><strong>2.</strong> I want to play football. It is raining now.</p>
+        <p style="margin-left: 20px; color: #666;">→ I want to play football, <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> it is raining now.</p>
+
+        <p style="margin-top: 10px;"><strong>3.</strong> I study hard. I want to get good grades.</p>
+        <p style="margin-left: 20px; color: #666;">→ I study hard <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> I want to get good grades.</p>
+
+        <p style="margin-top: 10px;"><strong>4.</strong> I was tired. I went to bed early.</p>
+        <p style="margin-left: 20px; color: #666;">→ I was tired, <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> I went to bed early.</p>
+
+        <p style="margin-top: 10px;"><strong>5.</strong> I like reading. I like writing. I don't like math.</p>
+        <p style="margin-left: 20px; color: #666;">→ I like reading <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> writing, <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> I don't like math.</p>
+    </div>
+</div>
+
+<!-- التمرين 3 -->
+<div class="exercise">
+    <div class="exercise-title">التمرين 3: مناقشة جماعية 💬</div>
+    <p style="margin: 5px 0; font-size: 13px;"><strong>شكّل مجموعة من 4-5 طلاب وناقشوا الأسئلة التالية:</strong></p>
+    
+    <div class="english-text" style="margin-top: 10px;">
+        <div style="background: #e3f2fd; padding: 15px; border-radius: 5px; margin: 10px 0;">
+            <p style="margin: 8px 0; font-weight: bold;">Question 1: What are the biggest changes in Saudi Arabia?</p>
+            <p style="margin: 8px 0; color: #666; font-size: 15px;">Everyone shares their opinion (1 minute each)</p>
+        </div>
+
+        <div style="background: #e8f5e9; padding: 15px; border-radius: 5px; margin: 10px 0;">
+            <p style="margin: 8px 0; font-weight: bold;">Question 2: How can we improve our English?</p>
+            <p style="margin: 8px 0; color: #666; font-size: 15px;">Discuss different ways to learn English better</p>
+        </div>
+
+        <div style="background: #fff3cd; padding: 15px; border-radius: 5px; margin: 10px 0;">
+            <p style="margin: 8px 0; font-weight: bold;">Question 3: What do you want to achieve this year?</p>
+            <p style="margin: 8px 0; color: #666; font-size: 15px;">Share your goals and dreams</p>
+        </div>
+    </div>
+
+    <div style="margin-top: 15px; font-size: 14px; background: #fce4ec; padding: 10px; border-radius: 5px;">
+        <strong>📋 قواعد المناقشة:</strong>
+        <ul style="margin-right: 20px; margin-top: 5px;">
+            <li>استمع جيداً للآخرين</li>
+            <li>تحدث بوضوح وببطء</li>
+            <li>احترم آراء الجميع</li>
+            <li>استخدم جمل كاملة</li>
+            <li>شجع زملاءك على المشاركة</li>
+        </ul>
+    </div>
+</div>
+
+<!-- التمرين 4 -->
+<div class="exercise">
+    <div class="exercise-title">التمرين 4: تقييم ذاتي ✍️</div>
+    <p style="margin: 5px 0; font-size: 13px;"><strong>أكمل الجمل التالية بصدق:</strong></p>
+    
+    <div style="margin-top: 10px; font-size: 15px;">
+        <p style="margin: 10px 0;">
+            <strong>1. This week, I learned:</strong><br>
+            <span style="border-bottom: 1px solid #333; display: inline-block; width: 90%; min-height: 25px; margin-top: 5px;"></span>
+        </p>
+
+        <p style="margin: 10px 0;">
+            <strong>2. My English improved in:</strong><br>
+            <span style="border-bottom: 1px solid #333; display: inline-block; width: 90%; min-height: 25px; margin-top: 5px;"></span>
+        </p>
+
+        <p style="margin: 10px 0;">
+            <strong>3. I still need to work on:</strong><br>
+            <span style="border-bottom: 1px solid #333; display: inline-block; width: 90%; min-height: 25px; margin-top: 5px;"></span>
+        </p>
+
+        <p style="margin: 10px 0;">
+            <strong>4. Next week, I will:</strong><br>
+            <span style="border-bottom: 1px solid #333; display: inline-block; width: 90%; min-height: 25px; margin-top: 5px;"></span>
+        </p>
+    </div>
+</div>
+
+<!-- التذييل -->
+<div class="note" style="margin-top: 10px;">
+    <strong>⏱️ الزمن المقترح:</strong> 22-25 دقيقة | 
+    <strong>📌 ملاحظة:</strong> هذه آخر ورقة عمل - احتفل بالإنجازات! 🎉
+</div>
+
+<!-- عبارة الإعداد -->
+<div style="text-align: center; margin-top: 15px; font-size: 20px; font-weight: bold; color: #333;">
+    إعداد أ. محمد العثيمين - أبي بكر بن العربي الثانوية
+</div>
+
+<!-- صفحة تعليمات المعلم المساعد -->
+<div class="assistant-box" style="page-break-before: always;">
+    <h3>📖 تعليمات المعلم المساعد</h3>
+    
+    <div class="assistant-instructions">
+        <strong>📋 مهامك في هذا النشاط:</strong>
+        <ol>
+            <li><strong>قبل البدء (3 دقائق):</strong>
+                <ul>
+                    <li>ذكّر الطلاب بأن هذا آخر يوم في الخطة العلاجية</li>
+                    <li>اشرح أدوات الربط الأربعة: and (و)، but (لكن)، because (لأن)، so (لذلك)</li>
+                    <li>اقرأ مثال البداية في التمرين 1</li>
+                    <li>شجعهم على الكتابة بثقة وبدون خوف من الأخطاء</li>
+                </ul>
+            </li>
+            
+            <li><strong>أثناء العمل (15 دقيقة):</strong>
+                <ul>
+                    <li>التمرين 1: أعط 7-8 دقائق للكتابة، مرّ على كل طالب وساعده</li>
+                    <li>عدّ الكلمات لبعض الطلاب للتأكد من الوصول لـ 60 كلمة</li>
+                    <li>التمرين 2: راجع معهم استخدام أدوات الربط</li>
+                    <li>التمرين 3: شكّل مجموعات 4-5 طلاب، راقب النقاش وشجعهم</li>
+                    <li>التمرين 4: أعط 2-3 دقائق للتقييم الذاتي</li>
+                </ul>
+            </li>
+            
+            <li><strong>في النهاية (7 دقائق):</strong>
+                <ul>
+                    <li>اطلب من 2-3 طلاب قراءة موضوعاتهم (التمرين 1)</li>
+                    <li>اطلب من كل مجموعة مشاركة نقطة واحدة من نقاشهم</li>
+                    <li>امدح الجميع على جهودهم طوال الأسبوع</li>
+                    <li>احتفل بالتقدم الذي حققوه 🎉</li>
+                    <li>تسجيل النقاط النهائية</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <div class="note">
+        <strong>💡 نصائح مهمة:</strong>
+        <ul>
+            <li>هذا اليوم الأخير - اجعله إيجابياً ومحفزاً</li>
+            <li>في التمرين 1: لا تتوقع كتابة خالية من الأخطاء، المهم أن يكتبوا 60 كلمة</li>
+            <li>شجع الطلاب على استخدام أدوات الربط في كتابتهم</li>
+            <li>في المناقشة الجماعية: حاول إشراك الجميع، حتى الخجولين</li>
+            <li>التقييم الذاتي (التمرين 4) مهم - شجعهم على الصدق</li>
+            <li>اختم بكلمة تشجيعية عن أهمية الاستمرار في التعلم</li>
+        </ul>
+    </div>
+
+    <div class="assistant-instructions">
+        <strong>✅ معايير منح النقاط (كل طالب يمكن أن يحصل على 5 نقاط):</strong>
+        <ul>
+            <li>✔️ كتب موضوعاً في التمرين 1 (حتى لو أقل من 60 كلمة قليلاً) = نقطة واحدة</li>
+            <li>✔️ أكمل التمرين 2 (أدوات الربط) = نقطة واحدة</li>
+            <li>✔️ شارك في المناقشة الجماعية (التمرين 3) = نقطة واحدة</li>
+            <li>✔️ أكمل التقييم الذاتي (التمرين 4) = نقطة واحدة</li>
+            <li>✔️ قرأ موضوعه أو شارك رأيه في النهاية = نقطة واحدة</li>
+        </ul>
+    </div>
+
+    <div class="assistant-instructions">
+        <strong>📝 جدول تسجيل النقاط:</strong>
+        <table style="margin-top: 10px;">
+            <tr style="background: #4caf50; color: white;">
+                <td><strong>اسم الطالب</strong></td>
+                <td><strong>ت1</strong></td>
+                <td><strong>ت2</strong></td>
+                <td><strong>ت3</strong></td>
+                <td><strong>ت4</strong></td>
+                <td><strong>مشاركة</strong></td>
+                <td><strong>المجموع</strong></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>/5</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>/5</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>/5</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>/5</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>/5</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="assistant-instructions">
+        <strong>📖 إجابات التمرين 2 (أدوات الربط):</strong>
+        <ol>
+            <li>I like English, <strong>so</strong> I study it every day.</li>
+            <li>I want to play football, <strong>but</strong> it is raining now.</li>
+            <li>I study hard <strong>because</strong> I want to get good grades.</li>
+            <li>I was tired, <strong>so</strong> I went to bed early.</li>
+            <li>I like reading <strong>and</strong> writing, <strong>but</strong> I don't like math.</li>
+        </ol>
+    </div>
+
+    <div class="assistant-instructions" style="background: #e8f5e9; padding: 15px; border-radius: 5px; margin-top: 15px;">
+        <strong>🎉 رسالة ختامية للطلاب:</strong>
+        <p style="margin-top: 10px; font-size: 15px; line-height: 1.8;">
+            "أحسنتم جميعاً! لقد أكملتم 4 أيام من التعلم المكثف. تذكروا: تعلم اللغة الإنجليزية رحلة طويلة، والمهم هو الاستمرار. استمروا في القراءة والكتابة والممارسة. أنتم قادرون على النجاح! 💪🌟"
+        </p>
+    </div>
+</div>
+
+<!-- زر الطباعة -->
+<div class="no-print" style="text-align: center; margin-top: 20px; color: #666;">
+    <button onclick="window.print()" style="background: #333; color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+        🖨️ طباعة الورقة
+    </button>
+</div>
+
+</body>
+</html>

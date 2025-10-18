@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورقة عمل - اليوم الثالث - المجموعة المقبولة</title>
+    <style>
+        @media print {
+            @page {
+                size: A4;
+                margin: 1cm;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                background: white;
+            }
+            .worksheet {
+                box-shadow: none;
+                padding: 10px;
+            }
+            .no-print {
+                display: none;
+            }
+            .exercise {
+                margin-bottom: 10px;
+            }
+        }
+        
+        body {
+            font-family: 'Arial', 'Tahoma', sans-serif;
+            max-width: 21cm;
+            margin: 0 auto;
+            padding: 15px;
+            background: #f5f5f5;
+        }
+        
+        .worksheet {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        /* خط خاص للحروف - يشبه خط اليد */
+        .letter-box, .exercise strong, .sentence-box, .reading-text {
+            font-family: 'Comic Sans MS', 'Sassoon Primary', 'KG Primary Penmanship', cursive, sans-serif;
+        }
+        
+        /* النصوص الإنجليزية بمحاذاة اليسار */
+        .english-text, .sentence-model, .example-sentence, .reading-text, .word-bank-item, 
+        .scrambled-words, .question, .options, .vocab-item strong {
+            direction: ltr;
+            text-align: left;
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #333;
+            padding-bottom: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .header h1 {
+            color: #000;
+            margin: 5px 0;
+            font-size: 20px;
+        }
+        
+        .header .subtitle {
+            color: #333;
+            font-size: 12px;
+            margin-top: 3px;
+        }
+        
+        .info-box {
+            background: #fff3cd;
+            padding: 8px;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            border-right: 3px solid #ffc107;
+            font-size: 12px;
+        }
+        
+        .exercise {
+            margin-bottom: 8px;
+            page-break-inside: avoid;
+        }
+        
+        .exercise-title {
+            background: #ffc107;
+            color: #000;
+            padding: 4px 8px;
+            border-radius: 3px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+        
+        .reading-box {
+            background: #f9f9f9;
+            border: 3px solid #333;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            line-height: 1.8;
+            direction: ltr;
+            text-align: left;
+        }
+        
+        .reading-text {
+            font-size: 16px;
+            color: #000;
+            line-height: 2;
+            direction: ltr;
+            text-align: left;
+        }
+        
+        .question-box {
+            border: 2px solid #ffc107;
+            padding: 8px;
+            margin: 8px 0;
+            border-radius: 5px;
+            background: #fffef7;
+            direction: ltr;
+            text-align: left;
+        }
+        
+        .question {
+            font-size: 14px;
+            font-weight: bold;
+            margin: 5px 0;
+            direction: ltr;
+            text-align: left;
+        }
+        
+        .options {
+            margin: 5px 0 5px 20px;
+            font-size: 13px;
+            direction: ltr;
+            text-align: left;
+        }
+        
+        .checkbox-line {
+            margin: 5px 0;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin: 8px 0;
+        }
+        
+        .assistant-box {
+            background: #fff8e1;
+            border: 2px solid #ffc107;
+            border-radius: 5px;
+            padding: 12px;
+            margin-top: 15px;
+            page-break-before: always;
+        }
+        
+        .assistant-box h3 {
+            color: #000;
+            margin-top: 0;
+            font-size: 16px;
+            border-bottom: 2px solid #ffc107;
+            padding-bottom: 5px;
+        }
+        
+        .assistant-instructions {
+            background: white;
+            padding: 10px;
+            border-radius: 3px;
+            margin: 8px 0;
+            border: 1px solid #ffc107;
+        }
+        
+        .assistant-instructions li {
+            margin: 5px 0;
+            line-height: 1.4;
+            font-size: 13px;
+        }
+        
+        .note {
+            background: #fff3cd;
+            border-right: 4px solid #ffc107;
+            padding: 8px;
+            border-radius: 3px;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+        
+        .vocabulary-box {
+            background: #e3f2fd;
+            border: 2px solid #2196F3;
+            padding: 8px;
+            margin: 8px 0;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+        
+        .vocab-item {
+            margin: 3px 0;
+            direction: ltr;
+            text-align: left;
+        }
+        
+        .vocab-item strong {
+            direction: ltr;
+        }
+    </style>
+</head>
+<body>
+    <div class="worksheet">
+        <!-- Group Name Header -->
+        <div style="text-align:center; font-size:38px; font-weight:bold; color:#ffc107; margin-bottom:8px; margin-top:10px; letter-spacing:2px;">المجموعة المقبولة</div>
+        <!-- Header -->
+        <div class="header">
+            <h1>ورقة عمل - اليوم الثالث 🟡</h1>
+            <div class="subtitle">إعداد أ. محمد العثيمين - أبي بكر بن العربي الثانوية</div>
+        </div>
+
+        <!-- Student Info -->
+        <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 10px; margin-bottom: 10px; padding: 8px; border: 2px solid #ffc107; border-radius: 5px; background: #fff9e6;">
+            <div style="display: flex; align-items: center;"><strong>الاسم:</strong> <span style="border-bottom: 1px solid #ffc107; flex: 1; margin-right: 5px;"></span></div>
+            <div style="display: flex; align-items: center;"><strong>الفصل:</strong> <span style="border-bottom: 1px solid #ffc107; flex: 1; margin-right: 5px;"></span></div>
+            <div style="display: flex; align-items: center;"><strong>الرقم:</strong> <span style="border-bottom: 1px solid #ffc107; flex: 1; margin-right: 5px;"></span></div>
+            <div style="display: flex; align-items: center;"><strong>المجموعة:</strong> <span style="border-bottom: 1px solid #ffc107; flex: 1; margin-right: 5px;"></span></div>
+        </div>
+
+        <!-- Goal Box -->
+        <div class="info-box">
+            <strong>🎯 هدف اليوم:</strong> قراءة نص بسيط وفهمه (حوالي 40 كلمة) + الإجابة على أسئلة الفهم
+        </div>
+
+        <!-- Vocabulary Box -->
+        <div class="vocabulary-box">
+            <strong>📖 كلمات مفيدة قبل القراءة:</strong>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 5px; margin-top: 5px;">
+                <div class="vocab-item"><strong>school</strong> = مدرسة</div>
+                <div class="vocab-item"><strong>walk</strong> = يمشي</div>
+                <div class="vocab-item"><strong>every day</strong> = كل يوم</div>
+                <div class="vocab-item"><strong>loves</strong> = يحب</div>
+                <div class="vocab-item"><strong>friends</strong> = أصدقاء</div>
+                <div class="vocab-item"><strong>after school</strong> = بعد المدرسة</div>
+            </div>
+        </div>
+
+        <!-- Exercise 1: Reading Text -->
+        <div class="exercise">
+            <div class="exercise-title">التمرين 1️⃣: اقرأ النص بعناية</div>
+            
+            <div class="reading-box">
+                <div class="reading-text">
+                    My name is Ahmed. I am a student. I go to school every day. I walk to school with my brother. My school is big and clean. I love my school. I have many friends at school. We play football after school. I like English and Math. My teacher is kind.
+                </div>
+            </div>
+            
+            <div style="margin-top: 8px; font-size: 12px; color: #666;">
+                <strong>📝 ملاحظة:</strong> اقرأ النص مرتين - المرة الأولى بسرعة، والثانية ببطء للفهم
+            </div>
+        </div>
+
+        <!-- Exercise 2: True or False -->
+        <div class="exercise">
+            <div class="exercise-title">التمرين 2️⃣: صح أم خطأ (True or False)</div>
+            <p style="margin: 5px 0; font-size: 13px;"><strong>ضع علامة (✓) أمام الإجابة الصحيحة:</strong></p>
+            
+            <div class="grid-container">
+                <div class="question-box">
+                    <div class="question">1. Ahmed is a student.</div>
+                    <div class="options">
+                        <div class="checkbox-line">☐ True (صح)</div>
+                        <div class="checkbox-line">☐ False (خطأ)</div>
+                    </div>
+                </div>
+                
+                <div class="question-box">
+                    <div class="question">2. Ahmed drives to school.</div>
+                    <div class="options">
+                        <div class="checkbox-line">☐ True (صح)</div>
+                        <div class="checkbox-line">☐ False (خطأ)</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid-container">
+                <div class="question-box">
+                    <div class="question">3. His school is big.</div>
+                    <div class="options">
+                        <div class="checkbox-line">☐ True (صح)</div>
+                        <div class="checkbox-line">☐ False (خطأ)</div>
+                    </div>
+                </div>
+                
+                <div class="question-box">
+                    <div class="question">4. He plays basketball.</div>
+                    <div class="options">
+                        <div class="checkbox-line">☐ True (خطأ)</div>
+                        <div class="checkbox-line">☐ False (خطأ)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercise 3: Multiple Choice -->
+        <div class="exercise">
+            <div class="exercise-title">التمرين 3️⃣: اختر الإجابة الصحيحة</div>
+            <p style="margin: 5px 0; font-size: 13px;"><strong>ضع دائرة حول الإجابة الصحيحة:</strong></p>
+            
+            <div class="question-box">
+                <div class="question">1. What is Ahmed?</div>
+                <div class="options">
+                    <div>a) A teacher   b) A student   c) A doctor</div>
+                </div>
+            </div>
+            
+            <div class="question-box">
+                <div class="question">2. How does Ahmed go to school?</div>
+                <div class="options">
+                    <div>a) By car   b) By bus   c) He walks</div>
+                </div>
+            </div>
+            
+            <div class="question-box">
+                <div class="question">3. What does Ahmed play after school?</div>
+                <div class="options">
+                    <div>a) Basketball   b) Football   c) Tennis</div>
+                </div>
+            </div>
+            
+            <div class="question-box">
+                <div class="question">4. Who goes to school with Ahmed?</div>
+                <div class="options">
+                    <div>a) His friend   b) His brother   c) His sister</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercise 4: Answer the Questions -->
+        <div class="exercise">
+            <div class="exercise-title">التمرين 4️⃣: أجب عن الأسئلة بكلمة أو جملة قصيرة</div>
+            
+            <div style="margin: 8px 0;">
+                <div class="question-box">
+                    <div class="question">1. What is the boy's name?</div>
+                    <div style="border-bottom: 2px dotted #333; margin: 5px 0; height: 25px;"></div>
+                </div>
+                
+                <div class="question-box">
+                    <div class="question">2. Does Ahmed love his school?</div>
+                    <div style="border-bottom: 2px dotted #333; margin: 5px 0; height: 25px;"></div>
+                </div>
+                
+                <div class="question-box">
+                    <div class="question">3. What subjects does Ahmed like?</div>
+                    <div style="border-bottom: 2px dotted #333; margin: 5px 0; height: 25px;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Assistant Instructions -->
+        <div class="assistant-box">
+            <h3>تعليمات المعلم المساعد</h3>
+            
+            <div class="assistant-instructions">
+                <strong>📋 مهامك في هذا النشاط:</strong>
+                <ol>
+                    <li><strong>قبل البدء (5 دقائق):</strong>
+                        <ul>
+                            <li>راجع الكلمات المفيدة في المربع الأزرق: اقرأ كل كلمة ومعناها</li>
+                            <li>اقرأ النص بصوت عالٍ وببطء - اطلب منهم المتابعة بأصابعهم</li>
+                            <li>اقرأ النص مرة ثانية - هذه المرة أسرع قليلاً</li>
+                            <li>اسأل: "من هو الشخص في القصة؟" (Ahmed) / "وين يروح؟" (school)</li>
+                        </ul>
+                    </li>
+                    
+                    <li><strong>أثناء العمل (15 دقيقة):</strong>
+                        <ul>
+                            <li>التمرين 2 (4 دقائق): وضّح أن "True = صح موجود في النص" / "False = خطأ مو موجود"</li>
+                            <li>ساعدهم في العودة للنص للتأكد: "ارجع للنص وابحث عن الكلمة"</li>
+                            <li>التمرين 3 (5 دقائق): اقرأ كل سؤال بصوت عالٍ - اشرح الخيارات</li>
+                            <li>التمرين 4 (6 دقائق): وضّح أنهم يكتبون إجابة قصيرة: كلمة أو جملتين</li>
+                            <li>مثال للسؤال 1: "الإجابة: Ahmed أو His name is Ahmed"</li>
+                            <li>مرّ على كل طالب مرتين على الأقل خلال الـ 15 دقيقة</li>
+                        </ul>
+                    </li>
+                    
+                    <li><strong>في النهاية (5 دقيقة):</strong>
+                        <ul>
+                            <li>راجع النص سريعاً: اطلب من طالبين قراءة جملتين من النص</li>
+                            <li>راجع إجابات التمرين 2 بشكل جماعي: "رقم 1؟ True!"</li>
+                            <li>اطلب من 3 طلاب قراءة إجاباتهم للتمرين 4</li>
+                            <li>سجّل النقاط - امدحهم: "أصبحتم قرّاء ممتازين!"</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="note">
+                <strong>💡 نصائح مهمة:</strong>
+                <ul style="margin: 5px 0; padding-right: 20px;">
+                    <li>القراءة الأولى الجماعية مهمة جداً - اقرأ ببطء وبوضوح</li>
+                    <li>شجّع الطلاب على تحريك أصابعهم تحت الكلمات أثناء القراءة</li>
+                    <li>في True/False، علّمهم الرجوع للنص: "وين كتب هذا الكلام؟ ورّيني"</li>
+                    <li>في الاختيار المتعدد، اقرأ السؤال + الخيارات الثلاثة بصوت عالٍ</li>
+                    <li>في التمرين 4، اقبل أي إجابة صحيحة حتى لو قصيرة: "Ahmed" أو "His name is Ahmed" - كلاهما صح</li>
+                    <li>لا تترجم كل كلمة - ساعدهم في فهم المعنى العام</li>
+                </ul>
+            </div>
+
+            <div class="assistant-instructions" style="margin-top: 15px;">
+                <strong>✅ معايير منح النقاط (كل طالب يمكن أن يحصل على 5 نقاط):</strong>
+                <ul>
+                    <li>✔️ قرأ النص بصوت عالٍ (مع المجموعة أو لوحده) = نقطة</li>
+                    <li>✔️ أكمل التمرين 2 (True/False) - 3 إجابات صح = نقطة</li>
+                    <li>✔️ أكمل التمرين 3 (اختيار متعدد) - 3 إجابات صح = نقطة</li>
+                    <li>✔️ أجاب على سؤالين في التمرين 4 بشكل صحيح = نقطة</li>
+                    <li>✔️ فهم النص واستطاع شرحه لزميله بالعربي = نقطة</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="note" style="margin-top: 10px;">
+            <strong>⏱️ الزمن المقترح:</strong> 25 دقيقة | <strong>📌 ملاحظة:</strong> القراءة الجماعية في البداية ضرورية - لا تتخطاها!
+        </div>
+        <!-- Credit at the end -->
+        <div style="text-align:center; font-size:20px; color:#333; margin-top:40px; margin-bottom:10px; font-weight:bold;">إعداد أ. محمد العثيمين - أبي بكر بن العربي الثانوية</div>
+    </div>
+
+    <div class="no-print" style="text-align: center; margin-top: 20px; color: #666;">
+        <button onclick="window.print()" style="background: #ffc107; color: #000; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; font-weight: bold;">
+            🖨️ طباعة الورقة
+        </button>
+    </div>
+</body>
+</html>

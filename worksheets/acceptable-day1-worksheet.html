@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورقة عمل - اليوم الأول - المجموعة المقبولة</title>
+    <style>
+        @media print {
+            @page {
+                size: A4;
+                margin: 1cm;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                background: white;
+            }
+            .worksheet {
+                box-shadow: none;
+                padding: 10px;
+            }
+            .no-print {
+                display: none;
+            }
+            .exercise {
+                margin-bottom: 10px;
+            }
+        }
+        
+        body {
+            font-family: 'Arial', 'Tahoma', sans-serif;
+            max-width: 21cm;
+            margin: 0 auto;
+            padding: 15px;
+            background: #f5f5f5;
+        }
+        
+        .worksheet {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        /* خط خاص للحروف - يشبه خط اليد */
+        .letter-box, .exercise strong, .sentence-box {
+            font-family: 'Comic Sans MS', 'Sassoon Primary', 'KG Primary Penmanship', cursive, sans-serif;
+        }
+        
+        /* النصوص الإنجليزية بمحاذاة اليسار */
+        .english-text, .sentence-model, .example-sentence, .word-bank-item {
+            direction: ltr;
+            text-align: left;
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #333;
+            padding-bottom: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .header h1 {
+            color: #000;
+            margin: 5px 0;
+            font-size: 20px;
+        }
+        
+        .header .subtitle {
+            color: #333;
+            font-size: 12px;
+            margin-top: 3px;
+        }
+        
+        .info-box {
+            background: #fff3cd;
+            padding: 8px;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            border-right: 3px solid #ffc107;
+            font-size: 12px;
+        }
+        
+        .exercise {
+            margin-bottom: 8px;
+            page-break-inside: avoid;
+        }
+        
+        .exercise-title {
+            background: #ffc107;
+            color: #000;
+            padding: 4px 8px;
+            border-radius: 3px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+        
+        .grammar-box {
+            background: #e7f3ff;
+            border: 2px solid #2196F3;
+            padding: 8px;
+            margin: 8px 0;
+            border-radius: 5px;
+        }
+        
+        .grammar-title {
+            font-weight: bold;
+            color: #1976D2;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+        
+        .example-sentence {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 5px 0;
+            padding: 5px;
+            background: white;
+            border-radius: 3px;
+            direction: ltr;
+            text-align: left;
+        }
+        
+        .sentence-box {
+            border: 2px solid #ffc107;
+            padding: 6px;
+            margin: 5px 0;
+            border-radius: 5px;
+            background: #fffef7;
+            direction: ltr;
+            text-align: left;
+        }
+        
+        .sentence-model {
+            font-size: 15px;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 3px;
+            direction: ltr;
+            text-align: left;
+        }
+        
+        .sentence-parts {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 3px;
+        }
+        
+        .subject {
+            color: #e91e63;
+            font-weight: bold;
+        }
+        
+        .verb {
+            color: #2196F3;
+            font-weight: bold;
+        }
+        
+        .sentence-write-line {
+            border-bottom: 2px dotted #333;
+            height: 22px;
+            margin: 2px 0;
+        }
+        
+        .word-bank {
+            background: #f0f0f0;
+            padding: 6px;
+            border-radius: 5px;
+            margin: 5px 0;
+            border: 2px solid #333;
+        }
+        
+        .word-bank-item {
+            display: inline-block;
+            background: white;
+            border: 1px solid #333;
+            padding: 3px 8px;
+            margin: 2px;
+            border-radius: 3px;
+            font-weight: bold;
+            font-size: 13px;
+        }
+        
+        .assistant-box {
+            background: #fff8e1;
+            border: 2px solid #ffc107;
+            border-radius: 5px;
+            padding: 12px;
+            margin-top: 15px;
+            page-break-before: always;
+        }
+        
+        .assistant-box h3 {
+            color: #000;
+            margin-top: 0;
+            font-size: 16px;
+            border-bottom: 2px solid #ffc107;
+            padding-bottom: 5px;
+        }
+        
+        .assistant-instructions {
+            background: white;
+            padding: 10px;
+            border-radius: 3px;
+            margin: 8px 0;
+            border: 1px solid #ffc107;
+        }
+        
+        .assistant-instructions li {
+            margin: 5px 0;
+            line-height: 1.4;
+            font-size: 13px;
+        }
+        
+        .note {
+            background: #fff3cd;
+            border-right: 4px solid #ffc107;
+            padding: 8px;
+            border-radius: 3px;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+        
+        .matching-table {
+            width: 100%;
+            margin: 8px 0;
+        }
+        
+        .matching-table td {
+            padding: 5px;
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <div class="worksheet">
+        <!-- Group Name Header -->
+        <div style="text-align:center; font-size:38px; font-weight:bold; color:#ffc107; margin-bottom:8px; margin-top:10px; letter-spacing:2px;">المجموعة المقبولة</div>
+        <!-- Header -->
+        <div class="header">
+            <h1>ورقة عمل - اليوم الأول 🟡</h1>
+            <div class="subtitle">إعداد أ. محمد العثيمين - أبي بكر بن العربي الثانوية</div>
+        </div>
+
+        <!-- Student Info -->
+        <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 10px; margin-bottom: 10px; padding: 8px; border: 2px solid #ffc107; border-radius: 5px; background: #fff9e6;">
+            <div style="display: flex; align-items: center;"><strong>الاسم:</strong> <span style="border-bottom: 1px solid #ffc107; flex: 1; margin-right: 5px;"></span></div>
+            <div style="display: flex; align-items: center;"><strong>الفصل:</strong> <span style="border-bottom: 1px solid #ffc107; flex: 1; margin-right: 5px;"></span></div>
+            <div style="display: flex; align-items: center;"><strong>الرقم:</strong> <span style="border-bottom: 1px solid #ffc107; flex: 1; margin-right: 5px;"></span></div>
+            <div style="display: flex; align-items: center;"><strong>المجموعة:</strong> <span style="border-bottom: 1px solid #ffc107; flex: 1; margin-right: 5px;"></span></div>
+        </div>
+
+        <!-- Goal Box -->
+        <div class="info-box">
+            <strong>🎯 هدف اليوم:</strong> تعلم تكوين جمل بسيطة (فاعل + فعل) مثل: The boy runs / She jumps
+        </div>
+
+        <!-- Grammar Box -->
+        <div class="grammar-box">
+            <div class="grammar-title">📚 القاعدة: الفاعل + الفعل (Subject + Verb)</div>
+            <div style="margin: 8px 0;">
+                <div class="example-sentence">
+                    <span class="subject">The boy</span> <span class="verb">runs</span>.
+                </div>
+                <div style="font-size: 12px; margin-top: 3px;">
+                    <span class="subject">الفاعل (من؟)</span> + <span class="verb">الفعل (يفعل ماذا؟)</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercise 1: Read and Understand -->
+        <div class="exercise">
+            <div class="exercise-title">التمرين 1️⃣: اقرأ وافهم البنية</div>
+            <p style="margin: 5px 0; font-size: 13px;"><strong>اقرأ الجمل - لاحظ الفاعل والفعل:</strong></p>
+            
+            <div class="sentence-box">
+                <div class="sentence-model">The boy runs.</div>
+                <div class="sentence-parts">
+                    <span class="subject">الفاعل: The boy</span> | 
+                    <span class="verb">الفعل: runs (يجري)</span>
+                </div>
+            </div>
+            
+            <div class="sentence-box">
+                <div class="sentence-model">The girl jumps.</div>
+                <div class="sentence-parts">
+                    <span class="subject">الفاعل: The girl</span> | 
+                    <span class="verb">الفعل: jumps (تقفز)</span>
+                </div>
+            </div>
+            
+            <div class="sentence-box">
+                <div class="sentence-model">The cat sleeps.</div>
+                <div class="sentence-parts">
+                    <span class="subject">الفاعل: The cat</span> | 
+                    <span class="verb">الفعل: sleeps (ينام)</span>
+                </div>
+            </div>
+            
+            <div class="sentence-box">
+                <div class="sentence-model">The dog plays.</div>
+                <div class="sentence-parts">
+                    <span class="subject">الفاعل: The dog</span> | 
+                    <span class="verb">الفعل: plays (يلعب)</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercise 2: Write the Sentences -->
+        <div class="exercise">
+            <div class="exercise-title">التمرين 2️⃣: اكتب الجمل</div>
+            <p style="margin: 5px 0; font-size: 13px;"><strong>اكتب كل جملة مرتين:</strong></p>
+            
+            <div class="sentence-box">
+                <div class="sentence-model">The man walks.</div>
+                <div class="sentence-parts">(الرجل يمشي)</div>
+                <div class="sentence-write-line"></div>
+                <div class="sentence-write-line"></div>
+            </div>
+            
+            <div class="sentence-box">
+                <div class="sentence-model">The car stops.</div>
+                <div class="sentence-parts">(السيارة تتوقف)</div>
+                <div class="sentence-write-line"></div>
+                <div class="sentence-write-line"></div>
+            </div>
+            
+            <div class="sentence-box">
+                <div class="sentence-model">She reads.</div>
+                <div class="sentence-parts">(هي تقرأ)</div>
+                <div class="sentence-write-line"></div>
+                <div class="sentence-write-line"></div>
+            </div>
+            
+            <div class="sentence-box">
+                <div class="sentence-model">He writes.</div>
+                <div class="sentence-parts">(هو يكتب)</div>
+                <div class="sentence-write-line"></div>
+                <div class="sentence-write-line"></div>
+            </div>
+        </div>
+
+        <!-- Exercise 3: Match Subject with Verb -->
+        <div class="exercise">
+            <div class="exercise-title">التمرين 3️⃣: وصّل الفاعل بالفعل المناسب</div>
+            <p style="margin: 5px 0; font-size: 13px;"><strong>صِل الفاعل بالفعل لتكوين جملة صحيحة:</strong></p>
+            
+            <table class="matching-table">
+                <tr>
+                    <td style="width: 50%;">
+                        <div style="border: 2px solid #ffc107; padding: 10px; border-radius: 5px;">
+                            <div style="font-size: 16px; font-weight: bold; margin: 8px 0;">The boy</div>
+                            <div style="font-size: 16px; font-weight: bold; margin: 8px 0;">The bird</div>
+                            <div style="font-size: 16px; font-weight: bold; margin: 8px 0;">The teacher</div>
+                            <div style="font-size: 16px; font-weight: bold; margin: 8px 0;">The student</div>
+                            <div style="font-size: 16px; font-weight: bold; margin: 8px 0;">The baby</div>
+                        </div>
+                    </td>
+                    <td style="width: 50%;">
+                        <div style="border: 2px solid #ffc107; padding: 10px; border-radius: 5px;">
+                            <div style="font-size: 16px; margin: 8px 0;">flies (يطير)</div>
+                            <div style="font-size: 16px; margin: 8px 0;">cries (يبكي)</div>
+                            <div style="font-size: 16px; margin: 8px 0;">runs (يجري)</div>
+                            <div style="font-size: 16px; margin: 8px 0;">studies (يدرس)</div>
+                            <div style="font-size: 16px; margin: 8px 0;">teaches (يعلّم)</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Exercise 4: Complete the Sentence -->
+        <div class="exercise">
+            <div class="exercise-title">التمرين 4️⃣: أكمل الجملة بالفعل المناسب</div>
+            <p style="margin: 5px 0; font-size: 13px;"><strong>اختر الفعل المناسب من بنك الكلمات:</strong></p>
+            
+            <div class="word-bank">
+                <strong>الأفعال:</strong>
+                <span class="word-bank-item">runs</span>
+                <span class="word-bank-item">sleeps</span>
+                <span class="word-bank-item">eats</span>
+                <span class="word-bank-item">plays</span>
+                <span class="word-bank-item">reads</span>
+            </div>
+            
+            <div style="margin: 10px 0; padding: 10px; border: 2px solid #ffc107; border-radius: 5px; direction: ltr; text-align: left;">
+                <p style="margin: 8px 0; font-size: 15px;">1. The boy _______________.</p>
+                <p style="margin: 8px 0; font-size: 15px;">2. The cat _______________.</p>
+                <p style="margin: 8px 0; font-size: 15px;">3. The girl _______________.</p>
+                <p style="margin: 8px 0; font-size: 15px;">4. The dog _______________.</p>
+                <p style="margin: 8px 0; font-size: 15px;">5. The man _______________.</p>
+            </div>
+        </div>
+
+        <!-- Assistant Instructions -->
+        <div class="assistant-box">
+            <h3>تعليمات المعلم المساعد</h3>
+            
+            <div class="assistant-instructions">
+                <strong>📋 مهامك في هذا النشاط:</strong>
+                <ol>
+                    <li><strong>قبل البدء (3 دقائق):</strong>
+                        <ul>
+                            <li>اشرح الهدف: "اليوم سنتعلم تكوين جمل من جزئين: الفاعل (من؟) والفعل (يفعل ماذا؟)"</li>
+                            <li>اشرح القاعدة باستخدام المربع الأزرق: "The boy = الفاعل، runs = الفعل"</li>
+                            <li>اقرأ الجمل الأربعة في التمرين 1 بصوت عالٍ - خليهم يكررون معك</li>
+                            <li>وضّح الألوان: الوردي = الفاعل، الأزرق = الفعل</li>
+                        </ul>
+                    </li>
+                    
+                    <li><strong>أثناء العمل (15 دقيقة):</strong>
+                        <ul>
+                            <li>مرّ على كل طالب كل 3 دقائق - اطلب منه قراءة جملة واحدة</li>
+                            <li>صحح النطق: "ممتاز! لاحظ أن الفعل ينتهي بـ s مع he/she/it"</li>
+                            <li>ساعد في تحديد الفاعل والفعل: "من الذي يفعل الشيء؟ هذا الفاعل"</li>
+                            <li>في التمرين 3: اشرح المنطق "The bird يطير، إذن bird يناسب flies"</li>
+                            <li>في التمرين 4: ساعدهم في فهم الجملة قبل اختيار الفعل</li>
+                            <li>احتفل بالإنجازات: "رائع! كوّنت 5 جمل صحيحة!"</li>
+                        </ul>
+                    </li>
+                    
+                    <li><strong>في النهاية (5 دقائق):</strong>
+                        <ul>
+                            <li>راجع الجمل الرئيسية: اقرأ 4 جمل بصوت جماعي</li>
+                            <li>اطلب من 3 طلاب قراءة جملة واحدة وتحديد الفاعل والفعل</li>
+                            <li>تأكد أن الجميع أكملوا التمرينين 1 و2 على الأقل</li>
+                            <li>سجّل النقاط في الكشف</li>
+                            <li>امدحهم: "أحسنتم! اليوم الجاي رح نضيف المفعول به للجمل!"</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="note">
+                <strong>💡 نصائح مهمة:</strong>
+                <ul style="margin: 5px 0; padding-right: 20px;">
+                    <li>ركز على مفهوم الفاعل والفعل - استخدم أمثلة حية من الفصل</li>
+                    <li>وضّح أن الفعل ينتهي بـ s مع الفاعل المفرد (he, she, it)</li>
+                    <li>استخدم الإشارات: أشر للشخص (الفاعل) ثم حرّك يدك (الفعل)</li>
+                    <li>شجّع الطلاب على تكوين جمل شفوية قبل الكتابة</li>
+                    <li>إذا احتجت مساعدة، ارفع يدك للمعلم</li>
+                </ul>
+            </div>
+
+            <div class="assistant-instructions" style="margin-top: 15px;">
+                <strong>✅ معايير منح النقاط (كل طالب يمكن أن يحصل على 5 نقاط):</strong>
+                <ul>
+                    <li>✔️ قرأ جمل التمرين 1 بصوت عالٍ = نقطة</li>
+                    <li>✔️ أكمل التمرين 2 (4 جمل) - نصفها على الأقل = نقطة</li>
+                    <li>✔️ أكمل التمرين 3 (التوصيل) - 3 توصيلات صح = نقطة</li>
+                    <li>✔️ أكمل التمرين 4 (إكمال الجمل) - 3 جمل صح = نقطة</li>
+                    <li>✔️ فهم الفرق بين الفاعل والفعل أو ساعد زميله = نقطة</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="note" style="margin-top: 10px;">
+            <strong>⏱️ الزمن المقترح:</strong> 20-25 دقيقة | <strong>📌 ملاحظة:</strong> الأولوية للتمرينين 1 و2 - التمارين 3 و4 إضافية إذا بقي وقت
+        </div>
+        <!-- Credit at the end -->
+        <div style="text-align:center; font-size:20px; color:#333; margin-top:40px; margin-bottom:10px; font-weight:bold;">إعداد أ. محمد العثيمين - أبي بكر بن العربي الثانوية</div>
+    </div>
+
+    <div class="no-print" style="text-align: center; margin-top: 20px; color: #666;">
+        <button onclick="window.print()" style="background: #ffc107; color: #000; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; font-weight: bold;">
+            🖨️ طباعة الورقة
+        </button>
+    </div>
+</body>
+</html>

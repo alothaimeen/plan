@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المجموعة المقبولة - الخطة العلاجية</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* تخصيص ألوان المجموعة المقبولة */
+        :root {
+            --card-color: #ffc107;
+        }
+    </style>
+</head>
+<body>
+    <!-- الحاوية الرئيسية -->
+    <div class="container">
+        
+        <!-- زر العودة -->
+        <a href="index.html" class="btn btn-back">← العودة للرئيسية</a>
+
+        <!-- الترويسة -->
+        <header class="header">
+            <div class="card-icon" style="font-size: 4rem;">🟡</div>
+            <h1>المجموعة المقبولة</h1>
+            <p class="school-name">10 - 17 درجة | بناء الجمل وفهم النصوص</p>
+        </header>
+
+        <!-- بطاقات الأيام الأربعة -->
+        
+        <!-- اليوم الأول -->
+        <div class="day-card">
+            <h3>📅 اليوم الأول</h3>
+            <p class="topic">فاعل + فعل</p>
+            <p class="description">تعلم بناء الجمل البسيطة باستخدام الفاعل والفعل</p>
+            <div class="day-card-buttons">
+                <a href="worksheets/acceptable-day1-worksheet.html" class="btn btn-worksheet">
+                    📝 ورقة العمل
+                </a>
+                <a href="tests/acceptable-day1-test.html" class="btn btn-test">
+                    ✅ الاختبار القصير (5 دقائق)
+                </a>
+            </div>
+        </div>
+
+        <!-- اليوم الثاني -->
+        <div class="day-card">
+            <h3>📅 اليوم الثاني</h3>
+            <p class="topic">فاعل + فعل + مفعول به</p>
+            <p class="description">إكمال الجملة الإنجليزية بإضافة المفعول به</p>
+            <div class="day-card-buttons">
+                <a href="worksheets/acceptable-day2-worksheet.html" class="btn btn-worksheet">
+                    📝 ورقة العمل
+                </a>
+                <a href="tests/acceptable-day2-test.html" class="btn btn-test">
+                    ✅ الاختبار القصير (5 دقائق)
+                </a>
+            </div>
+        </div>
+
+        <!-- اليوم الثالث -->
+        <div class="day-card">
+            <h3>📅 اليوم الثالث</h3>
+            <p class="topic">قراءة وفهم نص قصير</p>
+            <p class="description">تطوير مهارات القراءة والفهم من خلال نصوص بسيطة</p>
+            <div class="day-card-buttons">
+                <a href="worksheets/acceptable-day3-worksheet.html" class="btn btn-worksheet">
+                    📝 ورقة العمل
+                </a>
+                <a href="tests/acceptable-day3-test.html" class="btn btn-test">
+                    ✅ الاختبار القصير (5 دقائق)
+                </a>
+            </div>
+        </div>
+
+        <!-- اليوم الرابع -->
+        <div class="day-card">
+            <h3>📅 اليوم الرابع</h3>
+            <p class="topic">كتابة فقرة عن النفس</p>
+            <p class="description">التدريب على الكتابة من خلال كتابة فقرة تعريفية عن النفس</p>
+            <div class="day-card-buttons">
+                <a href="worksheets/acceptable-day4-worksheet.html" class="btn btn-worksheet">
+                    📝 ورقة العمل
+                </a>
+                <a href="tests/acceptable-day4-test.html" class="btn btn-test">
+                    ✅ الاختبار القصير (5 دقائق)
+                </a>
+            </div>
+        </div>
+
+        <!-- قسم الطباعة -->
+        <section class="print-section">
+            <h3>🖨️ الطباعة والتحميل</h3>
+            <p>يمكنك طباعة جميع المواد مرة واحدة</p>
+            <div class="print-buttons">
+                <button onclick="printAllWorksheets('acceptable')" class="btn btn-print">
+                    📄 طباعة جميع أوراق العمل
+                </button>
+                <button onclick="printAllTests('acceptable')" class="btn btn-print">
+                    📋 طباعة جميع الاختبارات
+                </button>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- تضمين ملف JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

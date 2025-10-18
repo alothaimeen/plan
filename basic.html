@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المجموعة التأسيسية - الخطة العلاجية</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* تخصيص ألوان المجموعة التأسيسية */
+        :root {
+            --card-color: #1565c0;
+        }
+    </style>
+</head>
+<body>
+    <!-- الحاوية الرئيسية -->
+    <div class="container">
+        
+        <!-- زر العودة -->
+        <a href="index.html" class="btn btn-back">← العودة للرئيسية</a>
+
+        <!-- الترويسة -->
+        <header class="header">
+            <div class="card-icon" style="font-size: 4rem;">🔴</div>
+            <h1>المجموعة التأسيسية</h1>
+            <p class="school-name">0 - 9 درجات | تعلم الأساسيات من الصفر</p>
+        </header>
+
+        <!-- بطاقات الأيام الأربعة -->
+        
+        <!-- اليوم الأول -->
+        <div class="day-card">
+            <h3>📅 اليوم الأول</h3>
+            <p class="topic">الحروف A-M</p>
+            <p class="description">تعلم كتابة وتمييز الحروف من A إلى M</p>
+            <div class="day-card-buttons">
+                <a href="worksheets/basic-day1-worksheet.html" class="btn btn-worksheet">
+                    📝 ورقة العمل
+                </a>
+                <a href="tests/basic-day1-test.html" class="btn btn-test">
+                    ✅ الاختبار القصير (5 دقائق)
+                </a>
+            </div>
+        </div>
+
+        <!-- اليوم الثاني -->
+        <div class="day-card">
+            <h3>📅 اليوم الثاني</h3>
+            <p class="topic">الحروف N-Z + الأرقام</p>
+            <p class="description">إكمال الحروف وتعلم الأرقام 1-20</p>
+            <div class="day-card-buttons">
+                <a href="worksheets/basic-day2-worksheet.html" class="btn btn-worksheet">
+                    📝 ورقة العمل
+                </a>
+                <a href="tests/basic-day2-test.html" class="btn btn-test">
+                    ✅ الاختبار القصير (5 دقائق)
+                </a>
+            </div>
+        </div>
+
+        <!-- اليوم الثالث -->
+        <div class="day-card">
+            <h3>📅 اليوم الثالث</h3>
+            <p class="topic">20 كلمة أساسية</p>
+            <p class="description">تعلم كتابة ونطق 20 كلمة شائعة</p>
+            <div class="day-card-buttons">
+                <a href="worksheets/basic-day3-worksheet.html" class="btn btn-worksheet">
+                    📝 ورقة العمل
+                </a>
+                <a href="tests/basic-day3-test.html" class="btn btn-test">
+                    ✅ الاختبار القصير (5 دقائق)
+                </a>
+            </div>
+        </div>
+
+        <!-- اليوم الرابع -->
+        <div class="day-card">
+            <h3>📅 اليوم الرابع</h3>
+            <p class="topic">جمل بسيطة</p>
+            <p class="description">بناء جمل بسيطة باستخدام I am و I have</p>
+            <div class="day-card-buttons">
+                <a href="worksheets/basic-day4-worksheet.html" class="btn btn-worksheet">
+                    📝 ورقة العمل
+                </a>
+                <a href="tests/basic-day4-test.html" class="btn btn-test">
+                    ✅ الاختبار القصير (5 دقائق)
+                </a>
+            </div>
+        </div>
+
+        <!-- قسم الطباعة -->
+        <section class="print-section">
+            <h3>🖨️ الطباعة والتحميل</h3>
+            <div class="print-buttons">
+                <button onclick="printAllWorksheets('basic')" class="btn btn-primary">
+                    📄 طباعة جميع أوراق العمل
+                </button>
+                <button onclick="printAllTests('basic')" class="btn btn-primary">
+                    📋 طباعة جميع الاختبارات
+                </button>
+            </div>
+            <p style="margin-top: 16px; color: #9e9e9e; font-size: 0.9rem;">
+                💡 ستفتح الملفات في تبويبات منفصلة، يمكنك طباعتها بالضغط على Ctrl+P
+            </p>
+        </section>
+
+        <!-- التذييل -->
+        <footer class="footer">
+            <p>© 2025 أبي بكر بن العربي الثانوية</p>
+        </footer>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

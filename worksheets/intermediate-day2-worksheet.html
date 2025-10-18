@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المجموعة المتوسطة - اليوم 2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Tahoma, sans-serif;
+            line-height: 1.6;
+            padding: 15px;
+            background: white;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .info-box {
+            background: #e8f5e9;
+            border-right: 4px solid #4caf50;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        .exercise {
+            margin: 15px 0;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #fafafa;
+        }
+
+        .exercise-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #4caf50;
+            margin-bottom: 8px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #4caf50;
+        }
+
+        .english-text {
+            font-family: 'Andika', sans-serif;
+            direction: ltr;
+            text-align: left;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .reading-passage {
+            font-family: 'Andika', sans-serif;
+            direction: ltr;
+            text-align: left;
+            font-size: 17px;
+            line-height: 2;
+            background: #f0f8ff;
+            padding: 15px;
+            border-radius: 5px;
+            border: 2px solid #4caf50;
+        }
+
+        .answer-line {
+            border-bottom: 1px solid #333;
+            display: inline-block;
+            min-width: 150px;
+            margin: 0 5px;
+        }
+
+        .note {
+            background: #fff3cd;
+            border-right: 4px solid #ffc107;
+            padding: 8px;
+            margin: 10px 0;
+            font-size: 13px;
+            border-radius: 5px;
+        }
+
+        .assistant-box {
+            margin-top: 30px;
+            padding: 15px;
+            border: 2px solid #333;
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+
+        .assistant-box h3 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .assistant-instructions {
+            margin: 15px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+        }
+
+        .assistant-instructions ol, .assistant-instructions ul {
+            margin-right: 20px;
+        }
+
+        .assistant-instructions li {
+            margin: 5px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+
+        table td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: center;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+            .no-print {
+                display: none;
+            }
+            @page {
+                size: A4;
+                margin: 1cm;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- اسم المجموعة -->
+<div style="text-align:center; font-size:38px; font-weight:bold; color:#4caf50; margin-bottom:8px; margin-top:10px; letter-spacing:2px;">
+    المجموعة المتوسطة
+</div>
+
+<!-- العنوان -->
+<div class="header">
+    <h1>ورقة عمل - اليوم 2 🌟</h1>
+    <div class="subtitle">إعداد أ. محمد العثيمين - أبي بكر بن العربي الثانوية</div>
+</div>
+
+<!-- معلومات الطالب -->
+<div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 10px; margin-bottom: 10px; padding: 8px; border: 2px solid #333; border-radius: 5px; background: #f9f9f9;">
+    <div style="display: flex; align-items: center;">
+        <strong>الاسم:</strong> 
+        <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span>
+    </div>
+    <div style="display: flex; align-items: center;">
+        <strong>الفصل:</strong> 
+        <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span>
+    </div>
+    <div style="display: flex; align-items: center;">
+        <strong>الرقم:</strong> 
+        <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span>
+    </div>
+    <div style="display: flex; align-items: center;">
+        <strong>المجموعة:</strong> 
+        <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span>
+    </div>
+</div>
+
+<!-- صندوق الهدف -->
+<div class="info-box">
+    <strong>🎯 هدف اليوم:</strong> قراءة نص عن التغييرات الكبرى + فهم النص + ممارسة المحادثة
+</div>
+
+<!-- التمرين 1 - النص القرائي -->
+<div class="exercise">
+    <div class="exercise-title">التمرين 1: اقرأ النص التالي</div>
+    <p style="margin: 5px 0; font-size: 13px;"><strong>اقرأ النص بتركيز ثم أجب عن الأسئلة:</strong></p>
+    
+    <div class="reading-passage" style="margin-top: 10px;">
+        <h3 style="text-align: center; color: #4caf50; margin-bottom: 10px;">Big Changes in Saudi Arabia</h3>
+        <p style="margin: 8px 0;">
+            Saudi Arabia is experiencing big changes these days. The country is building new cities and modern buildings. Many young people are learning new skills and studying technology. Schools are using new teaching methods and computers. People are traveling more and seeing the world. Sports and entertainment are becoming more popular. Cinemas are opening in many cities. Women are working in different fields and driving cars. Life in Saudi Arabia is changing fast, and the future looks bright and exciting for everyone.
+        </p>
+    </div>
+</div>
+
+<!-- التمرين 2 - أسئلة الفهم -->
+<div class="exercise">
+    <div class="exercise-title">التمرين 2: أسئلة الفهم</div>
+    <p style="margin: 5px 0; font-size: 13px;"><strong>اختر الإجابة الصحيحة:</strong></p>
+    
+    <div class="english-text" style="margin-top: 10px;">
+        <p><strong>1. What is happening in Saudi Arabia?</strong></p>
+        <p style="margin-right: 20px;">
+            a) Nothing is changing ⃝<br>
+            b) Big changes are happening ⃝<br>
+            c) Only schools are changing ⃝
+        </p>
+
+        <p style="margin-top: 10px;"><strong>2. What are young people learning?</strong></p>
+        <p style="margin-right: 20px;">
+            a) Old methods ⃝<br>
+            b) New skills and technology ⃝<br>
+            c) How to drive only ⃝
+        </p>
+
+        <p style="margin-top: 10px;"><strong>3. What is opening in many cities?</strong></p>
+        <p style="margin-right: 20px;">
+            a) Schools ⃝<br>
+            b) Hospitals ⃝<br>
+            c) Cinemas ⃝
+        </p>
+
+        <p style="margin-top: 10px;"><strong>4. True or False: Women cannot work in Saudi Arabia now.</strong></p>
+        <p style="margin-right: 20px;">
+            True ⃝ &nbsp;&nbsp;&nbsp; False ⃝
+        </p>
+
+        <p style="margin-top: 10px;"><strong>5. How does the text describe the future?</strong></p>
+        <p style="margin-right: 20px;">
+            a) Dark and difficult ⃝<br>
+            b) Bright and exciting ⃝<br>
+            c) Same as before ⃝
+        </p>
+    </div>
+</div>
+
+<!-- التمرين 3 - أسئلة مفتوحة -->
+<div class="exercise">
+    <div class="exercise-title">التمرين 3: أسئلة مفتوحة</div>
+    <p style="margin: 5px 0; font-size: 13px;"><strong>أجب عن الأسئلة بجمل كاملة:</strong></p>
+    
+    <div class="english-text" style="margin-top: 10px;">
+        <p><strong>1. What changes do you see in your school?</strong></p>
+        <p style="border-bottom: 1px solid #333; min-height: 30px; margin: 5px 0;"></p>
+
+        <p style="margin-top: 15px;"><strong>2. What new skill do you want to learn?</strong></p>
+        <p style="border-bottom: 1px solid #333; min-height: 30px; margin: 5px 0;"></p>
+
+        <p style="margin-top: 15px;"><strong>3. How is life different from 10 years ago?</strong></p>
+        <p style="border-bottom: 1px solid #333; min-height: 30px; margin: 5px 0;"></p>
+    </div>
+</div>
+
+<!-- التمرين 4 - نشاط حواري -->
+<div class="exercise">
+    <div class="exercise-title">التمرين 4: نشاط المحادثة 🗣️</div>
+    <p style="margin: 5px 0; font-size: 13px;"><strong>اعمل مع زميلك: تبادل الأدوار واطرح الأسئلة</strong></p>
+    
+    <div class="english-text" style="margin-top: 10px;">
+        <div style="background: #e8f5e9; padding: 15px; border-radius: 5px; margin: 10px 0;">
+            <p style="margin: 8px 0;"><strong>Student A:</strong> What changes do you see in our school?</p>
+            <p style="margin: 8px 0;"><strong>Student B:</strong> I see _______________.</p>
+        </div>
+
+        <div style="background: #fff3cd; padding: 15px; border-radius: 5px; margin: 10px 0;">
+            <p style="margin: 8px 0;"><strong>Student A:</strong> Do you like these changes? Why?</p>
+            <p style="margin: 8px 0;"><strong>Student B:</strong> Yes/No, because _______________.</p>
+        </div>
+
+        <div style="background: #e3f2fd; padding: 15px; border-radius: 5px; margin: 10px 0;">
+            <p style="margin: 8px 0;"><strong>Student A:</strong> What changes do you want to see in the future?</p>
+            <p style="margin: 8px 0;"><strong>Student B:</strong> I want _______________.</p>
+        </div>
+
+        <div style="background: #fce4ec; padding: 15px; border-radius: 5px; margin: 10px 0;">
+            <p style="margin: 8px 0;"><strong>Student A:</strong> Are you learning any new skills?</p>
+            <p style="margin: 8px 0;"><strong>Student B:</strong> Yes, I am learning _______________.</p>
+        </div>
+    </div>
+</div>
+
+<!-- التذييل -->
+<div class="note" style="margin-top: 10px;">
+    <strong>⏱️ الزمن المقترح:</strong> 20-25 دقيقة | 
+    <strong>📌 ملاحظة:</strong> اقرأ النص مرتين للفهم الجيد
+</div>
+
+<!-- عبارة الإعداد -->
+<div style="text-align: center; margin-top: 15px; font-size: 20px; font-weight: bold; color: #333;">
+    إعداد أ. محمد العثيمين - أبي بكر بن العربي الثانوية
+</div>
+
+<!-- صفحة تعليمات المعلم المساعد -->
+<div class="assistant-box" style="page-break-before: always;">
+    <h3>📖 تعليمات المعلم المساعد</h3>
+    
+    <div class="assistant-instructions">
+        <strong>📋 مهامك في هذا النشاط:</strong>
+        <ol>
+            <li><strong>قبل البدء (3 دقائق):</strong>
+                <ul>
+                    <li>اقرأ النص بصوت واضح وبطيء (مرة واحدة)</li>
+                    <li>اشرح الكلمات الصعبة: experiencing (يشهد)، skills (مهارات)، entertainment (ترفيه)، fields (مجالات)</li>
+                    <li>اطلب من طالب قراءة النص بصوت عالٍ</li>
+                    <li>وضّح التمارين</li>
+                </ul>
+            </li>
+            
+            <li><strong>أثناء العمل (15 دقيقة):</strong>
+                <ul>
+                    <li>مرّ على كل طالب وتأكد من فهمه للنص</li>
+                    <li>في التمرين 2: ساعدهم في العودة للنص للعثور على الإجابات</li>
+                    <li>في التمرين 3: شجعهم على كتابة جمل كاملة</li>
+                    <li>في التمرين 4: راقب المحادثات وصحح النطق</li>
+                    <li>احتفل بالإجابات الصحيحة</li>
+                </ul>
+            </li>
+            
+            <li><strong>في النهاية (5 دقائق):</strong>
+                <ul>
+                    <li>مراجعة جماعية: اطلب من طالب قراءة إجاباته للتمرين 3</li>
+                    <li>اطلب من زوجين تقديم محادثتهم من التمرين 4</li>
+                    <li>ناقش: ما أهم تغيير رأيتموه في حياتكم؟</li>
+                    <li>تسجيل النقاط</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <div class="note">
+        <strong>💡 نصائح مهمة:</strong>
+        <ul>
+            <li>النص طويل نسبياً (84 كلمة) - خذ وقتك في القراءة</li>
+            <li>ساعد الطلاب على فهم السياق العام قبل التفاصيل</li>
+            <li>استخدم أمثلة من حياتهم اليومية (مثل: التكنولوجيا في المدرسة)</li>
+            <li>شجّع النقاش باللغة الإنجليزية حتى لو كان بسيطاً</li>
+            <li>في المحادثة: اطلب منهم التحدث بثقة حتى لو أخطأوا</li>
+            <li>كن صبوراً ومشجعاً</li>
+        </ul>
+    </div>
+
+    <div class="assistant-instructions">
+        <strong>✅ معايير منح النقاط (كل طالب يمكن أن يحصل على 5 نقاط):</strong>
+        <ul>
+            <li>✔️ قرأ النص أو استمع بتركيز = نقطة واحدة</li>
+            <li>✔️ أكمل التمرين 2 (أسئلة الاختيار) = نقطة واحدة</li>
+            <li>✔️ أكمل التمرين 3 (أسئلة مفتوحة) = نقطة واحدة</li>
+            <li>✔️ شارك في نشاط المحادثة (التمرين 4) = نقطة واحدة</li>
+            <li>✔️ قرأ بصوت عالٍ أو ساعد زميله = نقطة واحدة</li>
+        </ul>
+    </div>
+
+    <div class="assistant-instructions">
+        <strong>📝 جدول تسجيل النقاط:</strong>
+        <table style="margin-top: 10px;">
+            <tr style="background: #4caf50; color: white;">
+                <td><strong>اسم الطالب</strong></td>
+                <td><strong>ت1</strong></td>
+                <td><strong>ت2</strong></td>
+                <td><strong>ت3</strong></td>
+                <td><strong>ت4</strong></td>
+                <td><strong>مشاركة</strong></td>
+                <td><strong>المجموع</strong></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>/5</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>/5</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>/5</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>/5</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>/5</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="assistant-instructions">
+        <strong>📖 إجابات التمرين 2 (للمعلم المساعد فقط):</strong>
+        <ol>
+            <li>b) Big changes are happening</li>
+            <li>b) New skills and technology</li>
+            <li>c) Cinemas</li>
+            <li>False</li>
+            <li>b) Bright and exciting</li>
+        </ol>
+    </div>
+</div>
+
+<!-- زر الطباعة -->
+<div class="no-print" style="text-align: center; margin-top: 20px; color: #666;">
+    <button onclick="window.print()" style="background: #333; color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+        🖨️ طباعة الورقة
+    </button>
+</div>
+
+</body>
+</html>

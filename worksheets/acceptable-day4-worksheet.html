@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورقة عمل - اليوم الرابع - المجموعة المقبولة</title>
+    <style>
+        @media print {
+            @page {
+                size: A4;
+                margin: 1cm;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                background: white;
+            }
+            .worksheet {
+                box-shadow: none;
+                padding: 10px;
+            }
+            .no-print {
+                display: none;
+            }
+            .exercise {
+                margin-bottom: 10px;
+            }
+        }
+        
+        body {
+            font-family: 'Arial', 'Tahoma', sans-serif;
+            max-width: 21cm;
+            margin: 0 auto;
+            padding: 15px;
+            background: #f5f5f5;
+        }
+        
+        .worksheet {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        /* خط خاص للحروف - يشبه خط اليد */
+        .letter-box, .exercise strong, .sentence-box {
+            font-family: 'Comic Sans MS', 'Sassoon Primary', 'KG Primary Penmanship', cursive, sans-serif;
+        }
+        
+        /* النصوص الإنجليزية بمحاذاة اليسار */
+        .english-text, .sentence-model, .example-sentence, .word-bank-item {
+            direction: ltr;
+            text-align: left;
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #333;
+            padding-bottom: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .header h1 {
+            color: #000;
+            margin: 5px 0;
+            font-size: 20px;
+        }
+        
+        .header .subtitle {
+            color: #333;
+            font-size: 12px;
+            margin-top: 3px;
+        }
+        
+        .info-box {
+            background: #fff3cd;
+            padding: 8px;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            border-right: 3px solid #ffc107;
+            font-size: 12px;
+        }
+        
+        .exercise {
+            margin-bottom: 8px;
+            page-break-inside: avoid;
+        }
+        
+        .exercise-title {
+            background: #ffc107;
+            color: #000;
+            padding: 4px 8px;
+            border-radius: 3px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+        
+        .sentence-box {
+            border: 2px solid #ffc107;
+            padding: 6px;
+            margin: 5px 0;
+            border-radius: 5px;
+            background: #fffef7;
+            direction: ltr;
+            text-align: left;
+        }
+        
+        .sentence-model {
+            font-size: 15px;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 3px;
+            direction: ltr;
+            text-align: left;
+        }
+        
+        .sentence-helper {
+            font-size: 11px;
+            color: #666;
+            margin-bottom: 3px;
+        }
+        
+        .sentence-write-line {
+            border-bottom: 2px dotted #333;
+            height: 22px;
+            margin: 3px 0;
+        }
+        
+        .word-bank {
+            background: #f0f0f0;
+            padding: 8px;
+            border-radius: 5px;
+            margin: 5px 0;
+            border: 2px solid #333;
+        }
+        
+        .word-bank-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: 13px;
+        }
+        
+        .word-bank-item {
+            display: inline-block;
+            background: white;
+            border: 1px solid #333;
+            padding: 3px 8px;
+            margin: 2px;
+            border-radius: 3px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin: 8px 0;
+        }
+        
+        .example-box {
+            background: #e3f2fd;
+            border: 2px solid #2196F3;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+        }
+        
+        .example-box > div:not(.example-title) {
+            direction: ltr;
+            text-align: left;
+        }
+        
+        .example-title {
+            font-weight: bold;
+            color: #1976D2;
+            margin-bottom: 5px;
+            font-size: 13px;
+            direction: rtl;
+            text-align: right;
+        }
+        
+        .assistant-box {
+            background: #fff8e1;
+            border: 2px solid #ffc107;
+            border-radius: 5px;
+            padding: 12px;
+            margin-top: 15px;
+            page-break-before: always;
+        }
+        
+        .assistant-box h3 {
+            color: #000;
+            margin-top: 0;
+            font-size: 16px;
+            border-bottom: 2px solid #ffc107;
+            padding-bottom: 5px;
+        }
+        
+        .assistant-instructions {
+            background: white;
+            padding: 10px;
+            border-radius: 3px;
+            margin: 8px 0;
+            border: 1px solid #ffc107;
+        }
+        
+        .assistant-instructions li {
+            margin: 5px 0;
+            line-height: 1.4;
+            font-size: 13px;
+        }
+        
+        .note {
+            background: #fff3cd;
+            border-right: 4px solid #ffc107;
+            padding: 8px;
+            border-radius: 3px;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+        
+        .writing-area {
+            border: 3px solid #ffc107;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            background: white;
+            min-height: 150px;
+        }
+        
+        .writing-line {
+            border-bottom: 2px solid #ddd;
+            height: 30px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="worksheet">
+        <!-- Group Name Header -->
+        <div style="text-align:center; font-size:38px; font-weight:bold; color:#ffc107; margin-bottom:8px; margin-top:10px; letter-spacing:2px;">المجموعة المقبولة</div>
+        <!-- Header -->
+        <div class="header">
+            <h1>ورقة عمل - اليوم الرابع 🟡</h1>
+            <div class="subtitle">إعداد أ. محمد العثيمين - أبي بكر بن العربي الثانوية</div>
+        </div>
+
+        <!-- Student Info -->
+        <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 10px; margin-bottom: 10px; padding: 8px; border: 2px solid #ffc107; border-radius: 5px; background: #fff9e6;">
+            <div style="display: flex; align-items: center;"><strong>الاسم:</strong> <span style="border-bottom: 1px solid #ffc107; flex: 1; margin-right: 5px;"></span></div>
+            <div style="display: flex; align-items: center;"><strong>الفصل:</strong> <span style="border-bottom: 1px solid #ffc107; flex: 1; margin-right: 5px;"></span></div>
+            <div style="display: flex; align-items: center;"><strong>الرقم:</strong> <span style="border-bottom: 1px solid #ffc107; flex: 1; margin-right: 5px;"></span></div>
+            <div style="display: flex; align-items: center;"><strong>المجموعة:</strong> <span style="border-bottom: 1px solid #ffc107; flex: 1; margin-right: 5px;"></span></div>
+        </div>
+
+        <!-- Goal Box -->
+        <div class="info-box">
+            <strong>🎯 هدف اليوم:</strong> كتابة جمل بسيطة عن نفسك (About Me) - استخدام I am / I have / I like
+        </div>
+
+        <!-- Example Box -->
+        <div class="example-box">
+            <div class="example-title">📝 مثال: كيف تكتب عن نفسك؟</div>
+            <div style="font-size: 14px; line-height: 1.8;">
+                <strong>My name is Omar. I am 11 years old. I live in Riyadh. I have one brother. I like football and reading. I go to school every day. I am a good student.</strong>
+            </div>
+            <div style="font-size: 11px; margin-top: 5px; color: #666;">
+                (اسمي عمر. عمري 11 سنة. أسكن في الرياض. عندي أخ واحد. أحب كرة القدم والقراءة. أروح المدرسة كل يوم. أنا طالب ممتاز.)
+            </div>
+        </div>
+
+        <!-- Exercise 1: Complete About You -->
+        <div class="exercise">
+            <div class="exercise-title">التمرين 1️⃣: أكمل المعلومات عنك</div>
+            <p style="margin: 5px 0; font-size: 13px;"><strong>أكمل الفراغات بمعلوماتك الشخصية:</strong></p>
+            
+            <div style="margin: 10px 0;">
+                <div class="sentence-box">
+                    <div class="sentence-model">My name is <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>.</div>
+                    <div class="sentence-helper">(اكتب اسمك بالإنجليزي)</div>
+                </div>
+                
+                <div class="sentence-box">
+                    <div class="sentence-model">I am <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> years old.</div>
+                    <div class="sentence-helper">(اكتب عمرك)</div>
+                </div>
+                
+                <div class="sentence-box">
+                    <div class="sentence-model">I live in <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>.</div>
+                    <div class="sentence-helper">(اكتب اسم مدينتك)</div>
+                </div>
+                
+                <div class="sentence-box">
+                    <div class="sentence-model">I have <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>.</div>
+                    <div class="sentence-helper">(brothers/sisters/one brother/two sisters... إلخ)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercise 2: Write About What You Like -->
+        <div class="exercise">
+            <div class="exercise-title">التمرين 2️⃣: اكتب عن اهتماماتك (I like...)</div>
+            <p style="margin: 5px 0; font-size: 13px;"><strong>اكتب جملتين عن الأشياء التي تحبها:</strong></p>
+            
+            <div class="word-bank">
+                <div class="word-bank-title">💡 بنك الكلمات - استخدم هذه الكلمات للمساعدة:</div>
+                <div>
+                    <span class="word-bank-item">football</span>
+                    <span class="word-bank-item">reading</span>
+                    <span class="word-bank-item">math</span>
+                    <span class="word-bank-item">English</span>
+                    <span class="word-bank-item">drawing</span>
+                    <span class="word-bank-item">swimming</span>
+                    <span class="word-bank-item">games</span>
+                    <span class="word-bank-item">pizza</span>
+                </div>
+            </div>
+            
+            <div style="margin: 10px 0; padding: 10px; border: 2px solid #ffc107; border-radius: 5px;">
+                <p style="margin: 3px 0; font-size: 13px;"><strong>الجملة 1:</strong> I like <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>.</p>
+                <p style="margin: 10px 0 3px 0; font-size: 13px;"><strong>الجملة 2:</strong> I like <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>.</p>
+            </div>
+        </div>
+
+        <!-- Exercise 3: Write Complete Sentences -->
+        <div class="exercise">
+            <div class="exercise-title">التمرين 3️⃣: اكتب جملتين كاملتين من اختيارك</div>
+            <p style="margin: 5px 0; font-size: 13px;"><strong>اكتب جملتين عن حياتك اليومية (مثل: I go to... / I play... / I study...):</strong></p>
+            
+            <div class="grid-container">
+                <div class="word-bank" style="background: #ffe6e6;">
+                    <strong>أفعال مفيدة:</strong><br>
+                    <span class="word-bank-item">go</span>
+                    <span class="word-bank-item">play</span>
+                    <span class="word-bank-item">study</span>
+                    <span class="word-bank-item">watch</span>
+                    <span class="word-bank-item">eat</span>
+                </div>
+                
+                <div class="word-bank" style="background: #e6ffe6;">
+                    <strong>أماكن وأشياء:</strong><br>
+                    <span class="word-bank-item">school</span>
+                    <span class="word-bank-item">home</span>
+                    <span class="word-bank-item">park</span>
+                    <span class="word-bank-item">TV</span>
+                    <span class="word-bank-item">food</span>
+                </div>
+            </div>
+            
+            <div style="margin: 10px 0; padding: 10px; border: 2px solid #ffc107; border-radius: 5px;">
+                <p style="margin: 3px 0; font-size: 13px;"><strong>الجملة 1:</strong></p>
+                <div class="sentence-write-line"></div>
+                
+                <p style="margin: 10px 0 3px 0; font-size: 13px;"><strong>الجملة 2:</strong></p>
+                <div class="sentence-write-line"></div>
+            </div>
+        </div>
+
+        <!-- Exercise 4: Final Writing - About Me -->
+        <div class="exercise">
+            <div class="exercise-title">التمرين 4️⃣: النشاط النهائي - اكتب فقرة قصيرة عن نفسك</div>
+            <p style="margin: 5px 0; font-size: 13px;"><strong>استخدم جميع الجمل من التمارين السابقة لكتابة فقرة:</strong></p>
+            
+            <div style="background: #f0f0f0; padding: 8px; border-radius: 5px; margin: 5px 0; font-size: 11px;">
+                <strong>📝 خطوات الكتابة:</strong><br>
+                1. ابدأ بـ My name is...<br>
+                2. اكتب عن عمرك ومدينتك<br>
+                3. اكتب عن عائلتك<br>
+                4. اكتب عن اهتماماتك (I like...)<br>
+                5. اكتب جملة أخيرة عن نفسك
+            </div>
+            
+            <div class="writing-area">
+                <div style="font-weight: bold; margin-bottom: 10px; color: #ffc107;">✍️ اكتب هنا (5-7 جمل):</div>
+                <div class="writing-line"></div>
+                <div class="writing-line"></div>
+                <div class="writing-line"></div>
+                <div class="writing-line"></div>
+                <div class="writing-line"></div>
+                <div class="writing-line"></div>
+                <div class="writing-line"></div>
+            </div>
+        </div>
+
+        <!-- Assistant Instructions -->
+        <div class="assistant-box">
+            <h3>تعليمات المعلم المساعد</h3>
+            
+            <div class="assistant-instructions">
+                <strong>📋 مهامك في هذا النشاط:</strong>
+                <ol>
+                    <li><strong>قبل البدء (5 دقائق):</strong>
+                        <ul>
+                            <li>اقرأ المثال في المربع الأزرق بصوت عالٍ - اطلب منهم المتابعة</li>
+                            <li>اشرح الهدف: "اليوم كل واحد رح يكتب عن نفسه بالإنجليزي!"</li>
+                            <li>وضّح أن التمارين 1، 2، 3 تساعدهم في كتابة التمرين 4 النهائي</li>
+                            <li>اطلب من كل طالب قول اسمه بالإنجليزي بصوت عالٍ</li>
+                        </ul>
+                    </li>
+                    
+                    <li><strong>أثناء العمل (17 دقيقة):</strong>
+                        <ul>
+                            <li>التمرين 1 (4 دقائق): ساعد كل طالب في كتابة اسمه بالإنجليزي - تهجئة صحيحة</li>
+                            <li>تأكد من كتابة الاسم بحرف كبير في البداية (Ahmed, not ahmed)</li>
+                            <li>التمرين 2 (4 دقائق): ساعدهم في اختيار شيئين يحبونهم من بنك الكلمات</li>
+                            <li>التمرين 3 (4 دقائق): شجّعهم على استخدام الأفعال والأماكن من الصناديق</li>
+                            <li>التمرين 4 (5 دقائق): ساعدهم في نقل جميع الجمل من التمارين السابقة</li>
+                            <li>ذكّرهم: "كل جملة تبدأ بحرف كبير وتنتهي بنقطة"</li>
+                            <li>مرّ على كل طالب مرتين - صحح الأخطاء بلطف</li>
+                        </ul>
+                    </li>
+                    
+                    <li><strong>في النهاية (3 دقائق):</strong>
+                        <ul>
+                            <li>اطلب من 3 طلاب متطوعين قراءة فقراتهم بصوت عالٍ</li>
+                            <li>احتفل بالإنجاز: "ممتاز! كتبتم فقرة كاملة بالإنجليزي!"</li>
+                            <li>اجمع الأوراق للمراجعة والتقييم</li>
+                            <li>سجّل النقاط - أعطِ نقطة إضافية لمن قرأ فقرته بصوت عالٍ</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="note">
+                <strong>💡 نصائح مهمة:</strong>
+                <ul style="margin: 5px 0; padding-right: 20px;">
+                    <li>التمرين 1 أساسي - تأكد أن الجميع أكملوه بشكل صحيح</li>
+                    <li>ساعدهم في تهجئة الأسماء العربية بالإنجليزي: محمد = Mohammed/Muhammad</li>
+                    <li>في التمرين 4، ذكّرهم بنسخ الجمل من التمارين 1، 2، 3 وترتيبها</li>
+                    <li>شجّع الإبداع: "ممكن تضيف جملة إضافية من عندك!"</li>
+                    <li>ركز على الكتابة النظيفة والواضحة - حتى لو كانت بطيئة</li>
+                    <li>اقبل الأخطاء البسيطة - المهم أنهم كتبوا جملاً كاملة</li>
+                </ul>
+            </div>
+
+            <div class="assistant-instructions" style="margin-top: 15px;">
+                <strong>✅ معايير منح النقاط (كل طالب يمكن أن يحصل على 5 نقاط):</strong>
+                <ul>
+                    <li>✔️ أكمل التمرين 1 (4 جمل) بشكل صحيح = نقطة</li>
+                    <li>✔️ أكمل التمرين 2 (جملتين I like...) = نقطة</li>
+                    <li>✔️ أكمل التمرين 3 (جملتين من اختياره) = نقطة</li>
+                    <li>✔️ كتب فقرة في التمرين 4 (5 جمل على الأقل) = نقطة</li>
+                    <li>✔️ قرأ فقرته بصوت عالٍ أو ساعد زميله = نقطة</li>
+                </ul>
+            </div>
+
+            <div class="note" style="background: #ffebee; border-right-color: #f44336; margin-top: 15px;">
+                <strong>⚠️ تنبيه مهم - هذا اختبار الأسبوع:</strong><br>
+                هذه الورقة تُعتبر اختباراً تقييمياً للأسبوع الأول. الرجاء:<br>
+                ✓ جمع جميع الأوراق في نهاية الحصة<br>
+                ✓ كتابة ملاحظات على أداء كل طالب<br>
+                ✓ تسليم الأوراق للمعلم الرئيسي للمراجعة والدرجات
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="note" style="margin-top: 10px;">
+            <strong>⏱️ الزمن المقترح:</strong> 25 دقيقة | <strong>📌 ملاحظة:</strong> التمرين 4 هو الأهم - يُظهر قدرة الطالب على الكتابة الحرة
+        </div>
+        <!-- Credit at the end -->
+        <div style="text-align:center; font-size:20px; color:#333; margin-top:40px; margin-bottom:10px; font-weight:bold;">إعداد أ. محمد العثيمين - أبي بكر بن العربي الثانوية</div>
+    </div>
+
+    <div class="no-print" style="text-align: center; margin-top: 20px; color: #666;">
+        <button onclick="window.print()" style="background: #ffc107; color: #000; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; font-weight: bold;">
+            🖨️ طباعة الورقة
+        </button>
+    </div>
+</body>
+</html>

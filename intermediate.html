@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المجموعة المتوسطة - الخطة العلاجية</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* تخصيص ألوان المجموعة المتوسطة */
+        :root {
+            --card-color: #4caf50;
+        }
+    </style>
+</head>
+<body>
+    <!-- الحاوية الرئيسية -->
+    <div class="container">
+        
+        <!-- زر العودة -->
+        <a href="index.html" class="btn btn-back">← العودة للرئيسية</a>
+
+        <!-- الترويسة -->
+        <header class="header">
+            <div class="card-icon" style="font-size: 4rem;">🟢</div>
+            <h1>المجموعة المتوسطة</h1>
+            <p class="school-name">18+ درجة | القواعد المتقدمة والمحادثة</p>
+        </header>
+
+        <!-- بطاقات الأيام الأربعة -->
+        
+        <!-- اليوم الأول -->
+        <div class="day-card">
+            <h3>📅 اليوم الأول</h3>
+            <p class="topic">Present Simple vs Continuous + Speaking</p>
+            <p class="description">المقارنة بين الأزمنة البسيطة والمستمرة مع التطبيق في المحادثة</p>
+            <div class="day-card-buttons">
+                <a href="worksheets/intermediate-day1-worksheet.html" class="btn btn-worksheet">
+                    📝 ورقة العمل
+                </a>
+                <a href="tests/intermediate-day1-test.html" class="btn btn-test">
+                    ✅ الاختبار القصير (5 دقائق)
+                </a>
+            </div>
+        </div>
+
+        <!-- اليوم الثاني -->
+        <div class="day-card">
+            <h3>📅 اليوم الثاني</h3>
+            <p class="topic">Reading Comprehension + Conversation</p>
+            <p class="description">فهم النصوص المتقدمة وممارسة المحادثة التفاعلية</p>
+            <div class="day-card-buttons">
+                <a href="worksheets/intermediate-day2-worksheet.html" class="btn btn-worksheet">
+                    📝 ورقة العمل
+                </a>
+                <a href="tests/intermediate-day2-test.html" class="btn btn-test">
+                    ✅ الاختبار القصير (5 دقائق)
+                </a>
+            </div>
+        </div>
+
+        <!-- اليوم الثالث -->
+        <div class="day-card">
+            <h3>📅 اليوم الثالث</h3>
+            <p class="topic">Paragraph Structure + Presentation</p>
+            <p class="description">بناء الفقرات المنظمة ومهارات العرض والتقديم</p>
+            <div class="day-card-buttons">
+                <a href="worksheets/intermediate-day3-worksheet.html" class="btn btn-worksheet">
+                    📝 ورقة العمل
+                </a>
+                <a href="tests/intermediate-day3-test.html" class="btn btn-test">
+                    ✅ الاختبار القصير (5 دقائق)
+                </a>
+            </div>
+        </div>
+
+        <!-- اليوم الرابع -->
+        <div class="day-card">
+            <h3>📅 اليوم الرابع</h3>
+            <p class="topic">Writing + Linking Words + Discussion</p>
+            <p class="description">الكتابة المتقدمة باستخدام أدوات الربط والمناقشة الجماعية</p>
+            <div class="day-card-buttons">
+                <a href="worksheets/intermediate-day4-worksheet.html" class="btn btn-worksheet">
+                    📝 ورقة العمل
+                </a>
+                <a href="tests/intermediate-day4-test.html" class="btn btn-test">
+                    ✅ الاختبار القصير (5 دقائق)
+                </a>
+            </div>
+        </div>
+
+        <!-- قسم الطباعة -->
+        <section class="print-section">
+            <h3>🖨️ الطباعة والتحميل</h3>
+            <p>يمكنك طباعة جميع المواد مرة واحدة</p>
+            <div class="print-buttons">
+                <button onclick="printAllWorksheets('intermediate')" class="btn btn-print">
+                    📄 طباعة جميع أوراق العمل
+                </button>
+                <button onclick="printAllTests('intermediate')" class="btn btn-print">
+                    📋 طباعة جميع الاختبارات
+                </button>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- تضمين ملف JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

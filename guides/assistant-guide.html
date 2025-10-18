@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل المعلم المساعد - النهائي</title>
+    <style>
+        @media print {
+            @page { size: A4; margin: 1cm; }
+            body { margin: 0; padding: 0; }
+            .page-break { page-break-before: always; }
+        }
+        
+        body {
+            font-family: Arial, Tahoma, sans-serif;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 10mm;
+            color: #222;
+            line-height: 1.4;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 12px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        
+        .header .subtitle {
+            font-size: 12px;
+            margin-top: 3px;
+        }
+        
+        .section {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            background: #fafafa;
+        }
+        
+        .section h2 {
+            margin: 0 0 6px 0;
+            font-size: 17px;
+            color: #667eea;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 3px;
+        }
+        
+        .info-box {
+            background: #e3f2fd;
+            border-right: 4px solid #2196f3;
+            padding: 8px;
+            margin: 8px 0;
+            border-radius: 4px;
+        }
+        
+        .warning-box {
+            background: #fff3cd;
+            border-right: 4px solid #ffc107;
+            padding: 8px;
+            margin: 8px 0;
+            border-radius: 4px;
+        }
+        
+        .success-box {
+            background: #e8f5e9;
+            border-right: 4px solid #4caf50;
+            padding: 8px;
+            margin: 8px 0;
+            border-radius: 4px;
+        }
+        
+        .task-list {
+            counter-reset: task-counter;
+            list-style: none;
+            padding: 0;
+        }
+        
+        .task-list li {
+            counter-increment: task-counter;
+            margin: 10px 0;
+            padding: 8px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            position: relative;
+            padding-right: 38px;
+        }
+        
+        .task-list li::before {
+            content: counter(task-counter);
+            position: absolute;
+            right: 8px;
+            top: 8px;
+            background: #667eea;
+            color: white;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 13px;
+        }
+        
+        .task-title {
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 4px;
+            font-size: 14px;
+        }
+        
+        ul {
+            margin-right: 20px;
+            margin-top: 4px;
+            margin-bottom: 4px;
+        }
+        
+        ul li {
+            margin: 2px 0;
+            font-size: 14px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 8px 0;
+        }
+        
+        table th, table td {
+            border: 1px solid #333;
+            padding: 5px;
+            text-align: center;
+            font-size: 13px;
+        }
+        
+        thead th {
+            background: #667eea;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .faq {
+            margin: 8px 0;
+            padding: 8px;
+            background: white;
+            border-right: 3px solid #667eea;
+            border-radius: 4px;
+        }
+        
+        .faq-q {
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 4px;
+            font-size: 14px;
+        }
+        
+        .faq-a {
+            color: #555;
+            margin-right: 12px;
+            font-size: 13px;
+            line-height: 1.4;
+        }
+        
+        .tip {
+            background: #fff9c4;
+            padding: 8px;
+            margin: 8px 0;
+            border-radius: 4px;
+            border-right: 3px solid #fdd835;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- الصفحة الأولى -->
+    <div class="header">
+        <h1>📘 دليل المعلم المساعد</h1>
+        <div class="subtitle">الخطة العلاجية للغة الإنجليزية - 4 أيام</div>
+        <div class="subtitle">إعداد أ. محمد العثيمين | أبي بكر بن العربي الثانوية</div>
+    </div>
+    
+    <div class="success-box">
+        <h2 style="margin: 0; font-size: 16px; color: #2e7d32;">🎯 دورك كمعلم مساعد</h2>
+        <p style="margin: 6px 0 3px 0; font-size: 14px;">
+            دورك أساسي في نجاح الخطة العلاجية. أنت المسؤول عن:
+        </p>
+        <ul style="margin: 3px 0; font-size: 13px;">
+            <li>تقديم الدعم المباشر للطلاب أثناء التمارين</li>
+            <li>التأكد من فهم كل طالب للمطلوب منه</li>
+            <li>تشجيع المشاركة والتعاون</li>
+            <li>تصحيح الأخطاء بطريقة إيجابية</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h2>⏱️ المهام اليومية الثلاث</h2>
+        
+        <ul class="task-list">
+            <li>
+                <div class="task-title">⏰ قبل البدء (3 دقائق)</div>
+                <ul>
+                    <li><strong>اشرح هدف اليوم</strong> - ماذا سنتعلم اليوم؟</li>
+                    <li><strong>اقرأ الأمثلة بصوت واضح</strong> - نطق صحيح وببطء</li>
+                    <li><strong>وضّح التمارين</strong> - ماذا يجب أن يفعل الطلاب؟</li>
+                    <li><strong>أجب عن الأسئلة</strong> - تأكد أن الجميع فهم</li>
+                </ul>
+            </li>
+            
+            <li>
+                <div class="task-title">✍️ أثناء العمل (15-20 دقيقة)</div>
+                <ul>
+                    <li><strong>مرّ على كل طالب</strong> - دورة كاملة كل 5 دقائق</li>
+                    <li><strong>صحح الأخطاء بلطف</strong> - "جيد، لكن حاول هكذا..."</li>
+                    <li><strong>ساعد من يجد صعوبة</strong> - اجلس بجانبه وأرشده</li>
+                    <li><strong>شجّع المحاولات</strong> - "ممتاز! استمر..."</li>
+                    <li><strong>احتفل بالإنجازات</strong> - "أحسنت! تطور رائع!"</li>
+                </ul>
+            </li>
+            
+            <li>
+                <div class="task-title">🎯 في النهاية (5 دقائق)</div>
+                <ul>
+                    <li><strong>المراجعة الجماعية</strong> - اطلب من طالب قراءة إجابته</li>
+                    <li><strong>تأكد من إكمال التمارين</strong> - راجع كل ورقة</li>
+                    <li><strong>سجّل النقاط</strong> - استخدم الجدول أدناه</li>
+                    <li><strong>اجمع الأوراق</strong> - رتبها وسلمها للمعلم</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h2>🛠️ كيفية الشرح والتصحيح</h2>
+        
+        <div class="tip">
+            <strong>💡 نصيحة ذهبية:</strong> استخدم أمثلة بصرية وحركات اليد. الطلاب يتعلمون بالنظر والتقليد!
+        </div>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 8px 0;">
+            <div>
+                <strong style="font-size: 14px;">استخدم أمثلة بصرية:</strong>
+                <ul style="font-size: 13px; margin: 4px 0;">
+                    <li>ارسم على السبورة أو الورقة</li>
+                    <li>استخدم أصابعك لعد الحروف</li>
+                    <li>اشر إلى الأشياء في الفصل</li>
+                </ul>
+                
+                <strong style="font-size: 14px;">كن صبوراً:</strong>
+                <ul style="font-size: 13px; margin: 4px 0;">
+                    <li>لا تستعجل الطالب</li>
+                    <li>أعطه وقتاً للتفكير</li>
+                    <li>كرر الشرح بطريقة مختلفة</li>
+                </ul>
+            </div>
+            
+            <div>
+                <strong style="font-size: 14px;">اشرح بأكثر من طريقة:</strong>
+                <ul style="font-size: 13px; margin: 4px 0;">
+                    <li>الطريقة 1: بالعربية</li>
+                    <li>الطريقة 2: بالإنجليزية البسيطة</li>
+                    <li>الطريقة 3: بالحركات والإشارات</li>
+                </ul>
+                
+                <strong style="font-size: 14px;">اطلب المساعدة عند الحاجة:</strong>
+                <ul style="font-size: 13px; margin: 4px 0;">
+                    <li>إذا لم تفهم سؤالاً، اسأل المعلم</li>
+                    <li>إذا كان الطالب يواجه صعوبة كبيرة</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- نهاية الصفحة الأولى -->
+    <div class="page-break"></div>
+    
+    <!-- الصفحة الثانية -->
+    <div class="section">
+        <h2>📊 جدول تسجيل النقاط (نموذج فارغ)</h2>
+        
+        <p style="font-size: 13px; margin: 5px 0;"><strong>تعليمات:</strong> ضع علامة ✓ في كل تمرين مكتمل. المشاركة تعني أن الطالب قرأ أو ساعد زميله.</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 5%;">#</th>
+                    <th style="width: 30%;">اسم الطالب</th>
+                    <th style="width: 10%;">ت1</th>
+                    <th style="width: 10%;">ت2</th>
+                    <th style="width: 10%;">ت3</th>
+                    <th style="width: 10%;">ت4</th>
+                    <th style="width: 15%;">مشاركة</th>
+                    <th style="width: 10%;">المجموع /5</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>3</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>5</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>6</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>7</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>8</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>9</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>10</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            </tbody>
+        </table>
+        
+        <div class="warning-box" style="margin-top: 10px;">
+            <h3 style="margin: 0 0 6px 0; font-size: 15px;">✅ معايير منح النقاط</h3>
+            <table style="width: 100%; border: 1px solid #ffc107; background-color: #fff9e6;">
+                <tr>
+                    <td style="border: 1px solid #ffc107; text-align: right; padding: 5px; width: 50%; font-size: 13px;">
+                        ✔️ أكمل التمرين 1 = <strong>نقطة</strong><br>
+                        ✔️ أكمل التمرين 2 = <strong>نقطة</strong><br>
+                        ✔️ أكمل التمرين 3 = <strong>نقطة</strong>
+                    </td>
+                    <td style="border: 1px solid #ffc107; text-align: right; padding: 5px; width: 50%; font-size: 13px;">
+                        ✔️ أكمل التمرين 4 = <strong>نقطة</strong><br>
+                        ✔️ شارك أو ساعد زميله = <strong>نقطة</strong>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>💡 نصائح سريعة</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+            <ul style="margin: 0; font-size: 13px;">
+                <li>📢 <strong>استخدم الإشارات والإيماءات</strong> - الاتصال غير اللفظي مهم</li>
+                <li>🤝 <strong>شجّع التعاون بين الطلاب</strong> - القوي يساعد الضعيف</li>
+                <li>🌟 <strong>امدح النجاحات الصغيرة</strong> - كل تقدم مهم</li>
+            </ul>
+            <ul style="margin: 0; font-size: 13px;">
+                <li>😊 <strong>كن إيجابياً ومبتسماً</strong> - الابتسامة تخلق جو إيجابي</li>
+                <li>🆘 <strong>اطلب المساعدة عند الحاجة</strong> - لا تتردد في السؤال</li>
+                <li>🎉 <strong>استمتع بالتدريس!</strong> - حماسك ينعكس على الطلاب</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>❓ أسئلة شائعة (FAQs)</h2>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+            <div>
+                <div class="faq">
+                    <div class="faq-q">س1: ماذا لو رفض طالب العمل؟</div>
+                    <div class="faq-a">
+                        ✅ حاول تشجيعه برفق<br>
+                        ✅ اسأله عن السبب<br>
+                        ✅ اطلب مساعدة المعلم
+                    </div>
+                </div>
+                
+                <div class="faq">
+                    <div class="faq-q">س2: ماذا لو أكمل مبكراً؟</div>
+                    <div class="faq-a">
+                        ✅ اطلب منه مساعدة زميل<br>
+                        ✅ أعطه تمريناً إضافياً<br>
+                        ✅ اطلب منه قراءة إجاباته
+                    </div>
+                </div>
+                
+                <div class="faq">
+                    <div class="faq-q">س3: كيف أتعامل مع المزعج؟</div>
+                    <div class="faq-a">
+                        ✅ تحدث معه بهدوء<br>
+                        ✅ اطلب منه التركيز<br>
+                        ✅ أخبر المعلم إذا استمر
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="faq">
+                    <div class="faq-q">س4: ماذا لو لم أفهم سؤالاً؟</div>
+                    <div class="faq-a">
+                        ✅ لا تتردد في سؤال المعلم<br>
+                        ✅ يمكنك تخطي السؤال<br>
+                        ✅ لا تحاول التخمين
+                    </div>
+                </div>
+                
+                <div class="faq">
+                    <div class="faq-q">س5: كيف أتأكد أن الطالب فهم؟</div>
+                    <div class="faq-a">
+                        ✅ اطلب منه شرح الإجابة<br>
+                        ✅ اطلب منه حل مثال آخر<br>
+                        ✅ لاحظ تعابير وجهه
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="info-box" style="text-align: center; margin-top: 10px;">
+        <h3 style="margin: 0 0 6px 0; color: #1565c0; font-size: 15px;">🌟 رسالة تحفيزية 🌟</h3>
+        <p style="font-size: 13px; margin: 3px 0; line-height: 1.5;">
+            <strong>أنت جزء أساسي من نجاح هذه الخطة!</strong><br>
+            كل دقيقة تقضيها مع الطلاب تُحدث فرقاً في حياتهم.<br>
+            <strong style="color: #d32f2f;">شكراً لك على جهودك الرائعة! 💪</strong>
+        </p>
+    </div>
+</body>
+</html>

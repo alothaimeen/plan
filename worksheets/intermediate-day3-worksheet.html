@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المجموعة المتوسطة - اليوم 3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Tahoma, sans-serif;
+            line-height: 1.6;
+            padding: 15px;
+            background: white;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .info-box {
+            background: #e8f5e9;
+            border-right: 4px solid #4caf50;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        .exercise {
+            margin: 15px 0;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #fafafa;
+        }
+
+        .exercise-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #4caf50;
+            margin-bottom: 8px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #4caf50;
+        }
+
+        .english-text {
+            font-family: 'Andika', sans-serif;
+            direction: ltr;
+            text-align: left;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .paragraph-example {
+            font-family: 'Andika', sans-serif;
+            direction: ltr;
+            text-align: left;
+            font-size: 17px;
+            line-height: 2;
+            background: #f0f8ff;
+            padding: 15px;
+            border-radius: 5px;
+            border: 2px solid #4caf50;
+        }
+
+        .writing-box {
+            border: 2px solid #4caf50;
+            padding: 10px;
+            min-height: 150px;
+            margin: 10px 0;
+            background: white;
+            border-radius: 5px;
+        }
+
+        .note {
+            background: #fff3cd;
+            border-right: 4px solid #ffc107;
+            padding: 8px;
+            margin: 10px 0;
+            font-size: 13px;
+            border-radius: 5px;
+        }
+
+        .assistant-box {
+            margin-top: 30px;
+            padding: 15px;
+            border: 2px solid #333;
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+
+        .assistant-box h3 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .assistant-instructions {
+            margin: 15px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+        }
+
+        .assistant-instructions ol, .assistant-instructions ul {
+            margin-right: 20px;
+        }
+
+        .assistant-instructions li {
+            margin: 5px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+
+        table td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: center;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+            .no-print {
+                display: none;
+            }
+            @page {
+                size: A4;
+                margin: 1cm;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- اسم المجموعة -->
+<div style="text-align:center; font-size:38px; font-weight:bold; color:#4caf50; margin-bottom:8px; margin-top:10px; letter-spacing:2px;">
+    المجموعة المتوسطة
+</div>
+
+<!-- العنوان -->
+<div class="header">
+    <h1>ورقة عمل - اليوم 3 🌟</h1>
+    <div class="subtitle">إعداد أ. محمد العثيمين - أبي بكر بن العربي الثانوية</div>
+</div>
+
+<!-- معلومات الطالب -->
+<div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 10px; margin-bottom: 10px; padding: 8px; border: 2px solid #333; border-radius: 5px; background: #f9f9f9;">
+    <div style="display: flex; align-items: center;">
+        <strong>الاسم:</strong> 
+        <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span>
+    </div>
+    <div style="display: flex; align-items: center;">
+        <strong>الفصل:</strong> 
+        <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span>
+    </div>
+    <div style="display: flex; align-items: center;">
+        <strong>الرقم:</strong> 
+        <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span>
+    </div>
+    <div style="display: flex; align-items: center;">
+        <strong>المجموعة:</strong> 
+        <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span>
+    </div>
+</div>
+
+<!-- صندوق الهدف -->
+<div class="info-box">
+    <strong>🎯 هدف اليوم:</strong> فهم بنية الفقرة + كتابة فقرة منظمة + تحضير عرض قصير
+</div>
+
+<!-- التمرين 1 -->
+<div class="exercise">
+    <div class="exercise-title">التمرين 1: تحليل بنية الفقرة</div>
+    <p style="margin: 5px 0; font-size: 13px;"><strong>اقرأ الفقرة التالية ثم حدد أجزاءها:</strong></p>
+    
+    <div class="paragraph-example" style="margin-top: 10px;">
+        <p style="margin: 8px 0;">
+            <span style="background: #ffeb3b; padding: 2px;">My name is Ahmed and I am a high school student.</span> 
+            <span style="background: #81c784; padding: 2px;">I study at Abi Bakr Al-Arabi School in Riyadh. I have many friends and we enjoy learning together. My favorite subject is English because it helps me communicate with people from different countries. I also like sports and play football every weekend.</span> 
+            <span style="background: #64b5f6; padding: 2px;">I hope to become an engineer in the future.</span>
+        </p>
+    </div>
+
+    <div style="margin-top: 15px; font-size: 15px;">
+        <p><strong>الآن حدد الأجزاء:</strong></p>
+        <p style="margin: 10px 0;">
+            <strong>1. Topic Sentence</strong> (الجملة الرئيسية - أصفر):<br>
+            <span style="border-bottom: 1px solid #333; display: inline-block; width: 90%; min-height: 25px; margin-top: 5px;"></span>
+        </p>
+        
+        <p style="margin: 10px 0;">
+            <strong>2. Supporting Details</strong> (التفاصيل الداعمة - أخضر): كم جملة؟ <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>
+        </p>
+        
+        <p style="margin: 10px 0;">
+            <strong>3. Concluding Sentence</strong> (الجملة الختامية - أزرق):<br>
+            <span style="border-bottom: 1px solid #333; display: inline-block; width: 90%; min-height: 25px; margin-top: 5px;"></span>
+        </p>
+    </div>
+</div>
+
+<!-- التمرين 2 -->
+<div class="exercise">
+    <div class="exercise-title">التمرين 2: ترتيب الجمل</div>
+    <p style="margin: 5px 0; font-size: 13px;"><strong>رتب الجمل التالية لتكوين فقرة منظمة (1-6):</strong></p>
+    
+    <div class="english-text" style="margin-top: 10px;">
+        <p>___ I hope to visit many countries and learn about different cultures.</p>
+        <p>___ My family is very important to me.</p>
+        <p>___ We eat dinner together every evening and talk about our day.</p>
+        <p>___ I have two brothers and one sister.</p>
+        <p>___ My parents always support me in my studies.</p>
+        <p>___ We also travel together during vacations.</p>
+    </div>
+</div>
+
+<!-- التمرين 3 -->
+<div class="exercise">
+    <div class="exercise-title">التمرين 3: اكتب فقرة منظمة</div>
+    <p style="margin: 5px 0; font-size: 13px;"><strong>اكتب فقرة (60-80 كلمة) عن أحد المواضيع التالية:</strong></p>
+    
+    <div style="margin: 10px 0;">
+        <p>✅ <strong>My Daily Routine</strong> (روتيني اليومي)</p>
+        <p>✅ <strong>Changes in My Life</strong> (التغييرات في حياتي)</p>
+        <p>✅ <strong>My Family</strong> (عائلتي)</p>
+    </div>
+
+    <div style="margin-top: 10px; font-size: 14px; background: #fff3cd; padding: 10px; border-radius: 5px;">
+        <strong>تذكر:</strong>
+        <ul style="margin-right: 20px; margin-top: 5px;">
+            <li>ابدأ بجملة رئيسية واضحة (Topic Sentence)</li>
+            <li>أضف 4-5 جمل داعمة (Supporting Details)</li>
+            <li>اختم بجملة ختامية (Concluding Sentence)</li>
+        </ul>
+    </div>
+
+    <div class="writing-box" style="margin-top: 15px; direction: ltr; text-align: left;">
+        <div style="font-family: 'Andika', sans-serif; font-size: 16px; color: #999; font-style: italic;">
+            Write your paragraph here...
+        </div>
+    </div>
+</div>
+
+<!-- التمرين 4 -->
+<div class="exercise">
+    <div class="exercise-title">التمرين 4: تحضير عرض قصير 🎤</div>
+    <p style="margin: 5px 0; font-size: 13px;"><strong>حضّر عرضاً شفهياً قصيراً (1-2 دقيقة) عن الموضوع الذي كتبت عنه</strong></p>
+    
+    <div style="margin-top: 10px; font-size: 14px;">
+        <div style="background: #e8f5e9; padding: 15px; border-radius: 5px; margin: 10px 0;">
+            <p style="margin: 5px 0;"><strong>📝 خطوات التحضير:</strong></p>
+            <ol style="margin-right: 20px; margin-top: 8px;">
+                <li>اقرأ فقرتك عدة مرات</li>
+                <li>ضع خطاً تحت النقاط المهمة</li>
+                <li>تدرب على النطق الصحيح</li>
+                <li>استعد للإجابة عن سؤالين</li>
+            </ol>
+        </div>
+
+        <div style="background: #fff3cd; padding: 15px; border-radius: 5px; margin: 10px 0;">
+            <p style="margin: 5px 0;"><strong>🗣️ نصائح للعرض:</strong></p>
+            <ul style="margin-right: 20px; margin-top: 8px;">
+                <li>تحدث بصوت واضح</li>
+                <li>انظر إلى زملائك</li>
+                <li>لا تقرأ مباشرة من الورقة</li>
+                <li>ابتسم وكن واثقاً</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- التذييل -->
+<div class="note" style="margin-top: 10px;">
+    <strong>⏱️ الزمن المقترح:</strong> 22-25 دقيقة | 
+    <strong>📌 ملاحظة:</strong> التمرين 4 يحتاج إلى وقت للتحضير والعرض
+</div>
+
+<!-- عبارة الإعداد -->
+<div style="text-align: center; margin-top: 15px; font-size: 20px; font-weight: bold; color: #333;">
+    إعداد أ. محمد العثيمين - أبي بكر بن العربي الثانوية
+</div>
+
+<!-- صفحة تعليمات المعلم المساعد -->
+<div class="assistant-box" style="page-break-before: always;">
+    <h3>📖 تعليمات المعلم المساعد</h3>
+    
+    <div class="assistant-instructions">
+        <strong>📋 مهامك في هذا النشاط:</strong>
+        <ol>
+            <li><strong>قبل البدء (3 دقائق):</strong>
+                <ul>
+                    <li>اشرح بنية الفقرة الثلاثية: Topic Sentence (البداية) + Supporting Details (الوسط) + Concluding Sentence (النهاية)</li>
+                    <li>اقرأ المثال في التمرين 1 بصوت واضح</li>
+                    <li>وضّح الألوان: أصفر (البداية)، أخضر (التفاصيل)، أزرق (الخاتمة)</li>
+                    <li>شجع الطلاب على الكتابة بثقة</li>
+                </ul>
+            </li>
+            
+            <li><strong>أثناء العمل (15 دقيقة):</strong>
+                <ul>
+                    <li>التمرين 1: ساعدهم على تحديد أجزاء الفقرة</li>
+                    <li>التمرين 2: اشرح أن الجملة الرئيسية تأتي أولاً</li>
+                    <li>التمرين 3: مرّ على كل طالب أثناء الكتابة وقدم نصائح سريعة</li>
+                    <li>تأكد من أنهم يكتبون 60-80 كلمة (عدّ الكلمات إذا لزم الأمر)</li>
+                    <li>التمرين 4: أعط 3-4 دقائق للتحضير للعرض</li>
+                </ul>
+            </li>
+            
+            <li><strong>في النهاية (7 دقائق):</strong>
+                <ul>
+                    <li>اختر 3-4 طلاب لتقديم عروضهم القصيرة</li>
+                    <li>شجع الآخرين على الاستماع بانتباه</li>
+                    <li>اطلب من الطلاب طرح سؤال واحد لكل عارض</li>
+                    <li>امدح الأداء الجيد والمحاولات الشجاعة</li>
+                    <li>تسجيل النقاط</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <div class="note">
+        <strong>💡 نصائح مهمة:</strong>
+        <ul>
+            <li>هذا الدرس يركز على مهارة الكتابة المنظمة - خذ وقتك</li>
+            <li>في التمرين 3: لا تتوقع كتابة مثالية، المهم المحاولة والتنظيم</li>
+            <li>ساعد الطلاب على العد: جملة البداية (1) + تفاصيل (4-5) + جملة الخاتمة (1) = فقرة كاملة</li>
+            <li>في العرض: شجع حتى الطلاب الخجولين على المحاولة</li>
+            <li>استخدم التصفيق والتشجيع لبناء الثقة</li>
+            <li>إذا كان الوقت ضيقاً، ركز على التمارين 1 و 3 (الأهم)</li>
+        </ul>
+    </div>
+
+    <div class="assistant-instructions">
+        <strong>✅ معايير منح النقاط (كل طالب يمكن أن يحصل على 5 نقاط):</strong>
+        <ul>
+            <li>✔️ أكمل التمرين 1 (تحليل بنية الفقرة) = نقطة واحدة</li>
+            <li>✔️ أكمل التمرين 2 (ترتيب الجمل) = نقطة واحدة</li>
+            <li>✔️ كتب فقرة في التمرين 3 (حتى لو كانت قصيرة) = نقطة واحدة</li>
+            <li>✔️ حضّر أو قدم عرضاً في التمرين 4 = نقطة واحدة</li>
+            <li>✔️ استمع للعروض أو طرح سؤالاً = نقطة واحدة</li>
+        </ul>
+    </div>
+
+    <div class="assistant-instructions">
+        <strong>📝 جدول تسجيل النقاط:</strong>
+        <table style="margin-top: 10px;">
+            <tr style="background: #4caf50; color: white;">
+                <td><strong>اسم الطالب</strong></td>
+                <td><strong>ت1</strong></td>
+                <td><strong>ت2</strong></td>
+                <td><strong>ت3</strong></td>
+                <td><strong>ت4</strong></td>
+                <td><strong>مشاركة</strong></td>
+                <td><strong>المجموع</strong></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>/5</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>/5</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>/5</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>/5</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>/5</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="assistant-instructions">
+        <strong>📖 إجابات التمرين 2 (الترتيب الصحيح):</strong>
+        <ol>
+            <li>My family is very important to me. (2)</li>
+            <li>I have two brothers and one sister. (3)</li>
+            <li>My parents always support me in my studies. (4)</li>
+            <li>We eat dinner together every evening and talk about our day. (5)</li>
+            <li>We also travel together during vacations. (6)</li>
+            <li>I hope to visit many countries and learn about different cultures. (1 - ختامية)</li>
+        </ol>
+        <p><strong>ملاحظة:</strong> الترتيب الأفضل: 2, 3, 4, 5, 6, 1</p>
+    </div>
+</div>
+
+<!-- زر الطباعة -->
+<div class="no-print" style="text-align: center; margin-top: 20px; color: #666;">
+    <button onclick="window.print()" style="background: #333; color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+        🖨️ طباعة الورقة
+    </button>
+</div>
+
+</body>
+</html>

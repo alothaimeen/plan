@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورقة عمل - اليوم الثالث - المجموعة التأسيسية</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @media print {
+            @page {
+                size: A4;
+                margin: 1cm;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                background: white;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+            .worksheet {
+                box-shadow: none;
+                padding: 10px;
+            }
+            .no-print {
+                display: none;
+            }
+            .exercise {
+                margin-bottom: 10px;
+            }
+            
+            /* تأكيد طباعة الألوان */
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+        }
+        
+        body {
+            font-family: 'Arial', 'Tahoma', sans-serif;
+            max-width: 21cm;
+            margin: 0 auto;
+            padding: 15px;
+            background: #f5f5f5;
+        }
+        
+        .worksheet {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        /* خط خاص للحروف - يشبه خط اليد */
+        .letter-box, .exercise strong, .circle-exercise, .word-box {
+            font-family: 'Comic Sans MS', 'Sassoon Primary', 'KG Primary Penmanship', cursive, sans-serif;
+        }
+        
+        /* النصوص الإنجليزية بمحاذاة اليسار */
+        .word-box, .word-image, .picture-word, .matching-word {
+            direction: ltr;
+            text-align: left;
+        }
+        
+        /* نظام الأسطر الأربعة للكتابة */
+        .handwriting-line {
+            position: relative;
+            height: 60px;
+            margin: 15px 0;
+            direction: ltr;
+            text-align: left;
+        }
+        
+        .handwriting-line::before,
+        .handwriting-line::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: #ff0000;
+            left: 0;
+        }
+        
+        .handwriting-line::before {
+            top: 0;
+        }
+        
+        .handwriting-line::after {
+            bottom: 0;
+        }
+        
+        .handwriting-line .middle-lines {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        
+        .handwriting-line .middle-lines::before,
+        .handwriting-line .middle-lines::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background: #000;
+            left: 0;
+        }
+        
+        .handwriting-line .middle-lines::before {
+            top: 20px;
+        }
+        
+        .handwriting-line .middle-lines::after {
+            top: 40px;
+        }
+        
+        .word-practice-item {
+            display: inline-block;
+            position: relative;
+            margin-right: 15px;
+            vertical-align: top;
+        }
+        
+        .word-model-inline {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: #666;
+            position: relative;
+            top: 15px;
+            display: inline-block;
+            margin-right: 5px;
+        }
+        
+        .word-space {
+            display: inline-block;
+            width: 60px;
+            border-bottom: 2px dotted #999;
+            position: relative;
+            top: 15px;
+            margin: 0 5px;
+        }
+        
+        .word-separator {
+            display: inline-block;
+            width: 2px;
+            height: 50px;
+            background: #ccc;
+            position: relative;
+            top: 5px;
+            margin: 0 8px;
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #333;
+            padding-bottom: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .header h1 {
+            color: #000;
+            margin: 5px 0;
+            font-size: 20px;
+        }
+        
+        .header .subtitle {
+            color: #333;
+            font-size: 12px;
+            margin-top: 3px;
+        }
+        
+        .info-box {
+            background: #f0f0f0;
+            padding: 8px;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            border-right: 3px solid #333;
+            font-size: 12px;
+        }
+        
+        .exercise {
+            margin-bottom: 8px;
+            page-break-inside: avoid;
+        }
+        
+        .exercise-title {
+            background: #333;
+            color: white;   
+            padding: 4px 8px;
+            border-radius: 3px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+        
+        /* نظام الخطوط الأربعة للكتابة - 4 كلمات في سطر واحد */
+        .handwriting-practice {
+            margin: 8px 0;
+        }
+        
+        .practice-line {
+            position: relative;
+            height: 45px;
+            width: 100%;
+            margin: 8px 0;
+            background: white;
+            display: flex;
+            align-items: center;
+            page-break-inside: avoid;
+            border-top: 2px solid #ff0000;
+            border-bottom: 2px solid #ff0000;
+        }
+        
+        /* الخط الأسود الأول */
+        .middle-line-1 {
+            position: absolute;
+            top: 13px;
+            left: 0;
+            right: 0;
+            height: 0;
+            border-top: 1px solid #000;
+            z-index: 1;
+            pointer-events: none;
+        }
+        
+        /* الخط الأسود الثاني */
+        .middle-line-2 {
+            position: absolute;
+            top: 30px;
+            left: 0;
+            right: 0;
+            height: 0;
+            border-top: 1px solid #000;
+            z-index: 1;
+            pointer-events: none;
+        }
+        
+        @media print {
+            .practice-line {
+                border-top: 2px solid #ff0000 !important;
+                border-bottom: 2px solid #ff0000 !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+            
+            .middle-line-1,
+            .middle-line-2 {
+                border-top: 1px solid #000 !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+        }
+        
+        .line-content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            padding: 0 5px;
+        }
+        
+        .word-unit {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            min-width: 0;
+        }
+        
+        .word-model {
+            font-family: 'Andika', sans-serif;
+            font-size: 40px;
+            font-weight: bold;
+            color: #000;
+            white-space: nowrap;
+            margin-left: 8px;
+            direction: ltr;
+            position: relative;
+            top: -8px;
+        }
+        
+        .word-arabic {
+            font-size: 11px;
+            color: #666;
+            margin-left: 3px;
+            white-space: nowrap;
+        }
+        
+        .word-practice-space {
+            flex: 1;
+            min-width: 40px;
+            height: 35px;
+        }
+        
+        .word-divider {
+            width: 1px;
+            height: 35px;
+            background: #ccc;
+            margin: 0 3px;
+            border-left: 1px solid #ccc;
+        }
+        
+        @media print {
+            .word-divider {
+                border-left: 1px solid #ccc !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+        }
+        
+        .assistant-box {
+            background: #f5f5f5;
+            border: 2px solid #333;
+            border-radius: 5px;
+            padding: 12px;
+            margin-top: 15px;
+            page-break-before: always;
+        }
+        
+        .assistant-box h3 {
+            color: #000;
+            margin-top: 0;
+            font-size: 16px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        
+        .assistant-instructions {
+            background: white;
+            padding: 10px;
+            border-radius: 3px;
+            margin: 8px 0;
+            border: 1px solid #333;
+        }
+        
+        .assistant-instructions li {
+            margin: 5px 0;
+            line-height: 1.4;
+            font-size: 13px;
+        }
+        
+        .note {
+            background: #f0f0f0;
+            border-right: 4px solid #333;
+            padding: 8px;
+            border-radius: 3px;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+        
+        .fill-blank {
+            border-bottom: 2px solid #333;
+            display: inline-block;
+            min-width: 80px;
+            margin: 0 3px;
+            text-align: center;
+        }
+        
+        @media print {
+            .fill-blank {
+                border-bottom: 2px solid #333 !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="worksheet">
+        <!-- Group Name Header -->
+        <div style="text-align:center; font-size:38px; font-weight:bold; color:#1565c0; margin-bottom:8px; margin-top:10px; letter-spacing:2px;">المجموعة التأسيسية</div>
+        <!-- Header -->
+        <div class="header">
+            <h1>ورقة عمل - اليوم الثالث 🌟</h1>
+            <div class="subtitle">إعداد أ. محمد العثيمين - أبي بكر بن العربي الثانوية</div>
+        </div>
+
+        <!-- Student Info -->
+        <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 10px; margin-bottom: 10px; padding: 8px; border: 2px solid #333; border-radius: 5px; background: #f9f9f9;">
+            <div style="display: flex; align-items: center;"><strong>الاسم:</strong> <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span></div>
+            <div style="display: flex; align-items: center;"><strong>الفصل:</strong> <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span></div>
+            <div style="display: flex; align-items: center;"><strong>الرقم:</strong> <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span></div>
+            <div style="display: flex; align-items: center;"><strong>المجموعة:</strong> <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span></div>
+        </div>
+
+        <!-- Goal Box -->
+        <div class="info-box">
+            <strong>🎯 هدف اليوم:</strong> تعلم 20 كلمة أساسية من الوحدة مع ربطها بالحروف والأرقام
+        </div>
+
+        <!-- Exercise 1: Word Practice with 4-Line System -->
+        <div class="exercise">
+            <div class="exercise-title">التمرين 1️⃣: التدريب على كتابة الكلمات الأساسية</div>
+            <p style="margin: 5px 0; font-size: 12px;"><strong>اكتب كل كلمة مرة واحدة في الفراغ المخصص:</strong></p>
+            
+            <div class="handwriting-practice">
+                <!-- Line 1: I, am, boy -->
+                <div class="practice-line">
+                    <div class="middle-line-1"></div>
+                    <div class="middle-line-2"></div>
+                    <div class="line-content">
+                        <div class="word-unit">
+                            <span class="word-arabic">أنا</span>
+                            <span class="word-model">I</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                        <div class="word-divider"></div>
+                        <div class="word-unit">
+                            <span class="word-arabic">يكون</span>
+                            <span class="word-model">am</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                        <div class="word-divider"></div>
+                        <div class="word-unit">
+                            <span class="word-arabic">ولد</span>
+                            <span class="word-model">boy</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Line 2: girl, man, big -->
+                <div class="practice-line">
+                    <div class="middle-line-1"></div>
+                    <div class="middle-line-2"></div>
+                    <div class="line-content">
+                        <div class="word-unit">
+                            <span class="word-arabic">بنت</span>
+                            <span class="word-model">girl</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                        <div class="word-divider"></div>
+                        <div class="word-unit">
+                            <span class="word-arabic">رجل</span>
+                            <span class="word-model">man</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                        <div class="word-divider"></div>
+                        <div class="word-unit">
+                            <span class="word-arabic">كبير</span>
+                            <span class="word-model">big</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Line 3: new, old, car -->
+                <div class="practice-line">
+                    <div class="middle-line-1"></div>
+                    <div class="middle-line-2"></div>
+                    <div class="line-content">
+                        <div class="word-unit">
+                            <span class="word-arabic">جديد</span>
+                            <span class="word-model">new</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                        <div class="word-divider"></div>
+                        <div class="word-unit">
+                            <span class="word-arabic">قديم</span>
+                            <span class="word-model">old</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                        <div class="word-divider"></div>
+                        <div class="word-unit">
+                            <span class="word-arabic">سيارة</span>
+                            <span class="word-model">car</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Line 4: sky, book, pen -->
+                <div class="practice-line">
+                    <div class="middle-line-1"></div>
+                    <div class="middle-line-2"></div>
+                    <div class="line-content">
+                        <div class="word-unit">
+                            <span class="word-arabic">سماء</span>
+                            <span class="word-model">sky</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                        <div class="word-divider"></div>
+                        <div class="word-unit">
+                            <span class="word-arabic">كتاب</span>
+                            <span class="word-model">book</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                        <div class="word-divider"></div>
+                        <div class="word-unit">
+                            <span class="word-arabic">قلم</span>
+                            <span class="word-model">pen</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Line 5: cat, dog, red -->
+                <div class="practice-line">
+                    <div class="middle-line-1"></div>
+                    <div class="middle-line-2"></div>
+                    <div class="line-content">
+                        <div class="word-unit">
+                            <span class="word-arabic">قطة</span>
+                            <span class="word-model">cat</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                        <div class="word-divider"></div>
+                        <div class="word-unit">
+                            <span class="word-arabic">كلب</span>
+                            <span class="word-model">dog</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                        <div class="word-divider"></div>
+                        <div class="word-unit">
+                            <span class="word-arabic">أحمر</span>
+                            <span class="word-model">red</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Line 6: blue, sun, moon -->
+                <div class="practice-line">
+                    <div class="middle-line-1"></div>
+                    <div class="middle-line-2"></div>
+                    <div class="line-content">
+                        <div class="word-unit">
+                            <span class="word-arabic">أزرق</span>
+                            <span class="word-model">blue</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                        <div class="word-divider"></div>
+                        <div class="word-unit">
+                            <span class="word-arabic">شمس</span>
+                            <span class="word-model">sun</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                        <div class="word-divider"></div>
+                        <div class="word-unit">
+                            <span class="word-arabic">قمر</span>
+                            <span class="word-model">moon</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Line 7: star, house -->
+                <div class="practice-line">
+                    <div class="middle-line-1"></div>
+                    <div class="middle-line-2"></div>
+                    <div class="line-content">
+                        <div class="word-unit">
+                            <span class="word-arabic">نجمة</span>
+                            <span class="word-model">star</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                        <div class="word-divider"></div>
+                        <div class="word-unit">
+                            <span class="word-arabic">منزل</span>
+                            <span class="word-model">house</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Exercise 2: Matching -->
+        <div class="exercise">
+            <div class="exercise-title">التمرين 2️⃣: صل الكلمة بمعناها</div>
+            <p style="margin: 5px 0; font-size: 12px;"><strong>اربط الكلمة الإنجليزية بمعناها العربي:</strong></p>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; direction: ltr; text-align: left;">
+                <div>
+                    <div style="margin: 3px 0;">1. I <span style="border-bottom: 1px dotted #333; width: 60px; display: inline-block;"></span></div>
+                    <div style="margin: 3px 0;">2. boy <span style="border-bottom: 1px dotted #333; width: 60px; display: inline-block;"></span></div>
+                    <div style="margin: 3px 0;">3. big <span style="border-bottom: 1px dotted #333; width: 60px; display: inline-block;"></span></div>
+                    <div style="margin: 3px 0;">4. car <span style="border-bottom: 1px dotted #333; width: 60px; display: inline-block;"></span></div>
+                    <div style="margin: 3px 0;">5. cat <span style="border-bottom: 1px dotted #333; width: 60px; display: inline-block;"></span></div>
+                </div>
+                <div style="text-align: right;">
+                    <div style="margin: 3px 0;">(أ) كبير</div>
+                    <div style="margin: 3px 0;">(ب) ولد</div>
+                    <div style="margin: 3px 0;">(ج) قطة</div>
+                    <div style="margin: 3px 0;">(د) سيارة</div>
+                    <div style="margin: 3px 0;">(هـ) أنا</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Assistant Instructions -->
+        <div class="assistant-box">
+            <h3>تعليمات المعلم المساعد</h3>
+            
+            <div class="assistant-instructions">
+                <strong>📋 مهامك في هذا النشاط:</strong>
+                <ol>
+                    <li><strong>قبل البدء (3 دقائق):</strong>
+                        <ul>
+                            <li>اشرح الهدف: "اليوم سنتعلم 20 كلمة أساسية من وحدة Big Changes"</li>
+                            <li>اقرأ الكلمات العشرة الأولى بصوت عالٍ ببطء - خليهم يكررون معك</li>
+                            <li>وضّح التمرين 4: "اختاروا الكلمة المناسبة من القائمة وضعوها في الفراغ"</li>
+                        </ul>
+                    </li>
+                    
+                    <li><strong>أثناء العمل (15 دقيقة):</strong>
+                        <ul>
+                            <li>مرّ على كل طالب كل 3 دقائق - اطلب منه قراءة 3 كلمات بصوت عالٍ</li>
+                            <li>صحح النطق بلطف: "ممتاز! بس الكلمة تُنطق هكذا: big"</li>
+                            <li>ساعد من يجد صعوبة في الكتابة: أمسك يده واكتب أول كلمتين معه</li>
+                            <li>في التمرين 3: اشرح لهم كيفية التوصيل (مثلاً: boy = ولد)</li>
+                            <li>في التمرين 4: ساعدهم في فهم الجملة قبل اختيار الكلمة</li>
+                            <li>احتفل بالإنجازات: "رائع! كتبت 10 كلمات بشكل صحيح!"</li>
+                        </ul>
+                    </li>
+                    
+                    <li><strong>في النهاية (5 دقائق):</strong>
+                        <ul>
+                            <li>اقرأ معهم جميع الكلمات (20 كلمة) بصوت عالٍ</li>
+                            <li>اطلب من 3 طلاب قراءة 5 كلمات لكل واحد</li>
+                            <li>تأكد أن الجميع أكملوا التمرينين 1 و2 على الأقل</li>
+                            <li>سجّل النقاط في الكشف</li>
+                            <li>امدحهم: "أحسنتم! اليوم الجاي رح نستخدم هذه الكلمات في جمل!"</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="note">
+                <strong>💡 نصائح مهمة:</strong>
+                <ul style="margin: 5px 0; padding-right: 20px;">
+                    <li>ركز على النطق الصحيح - كرر الكلمة أكثر من مرة</li>
+                    <li>استخدم الإشارات للكلمات (مثلاً: ارفع يدك لكلمة "big")</li>
+                    <li>شجّع الطلاب على مساعدة بعضهم في القراءة</li>
+                    <li>إذا احتجت مساعدة، ارفع يدك للمعلم</li>
+                    <li>الأولوية للتمرينين 1 و2 - التمارين 3 و4 إذا بقي وقت</li>
+                </ul>
+            </div>
+
+            <div class="assistant-instructions" style="margin-top: 15px;">
+                <strong>✅ معايير منح النقاط (كل طالب يمكن أن يحصل على 5 نقاط):</strong>
+                <ul>
+                    <li>✔️ أكمل التمرين 1 (10 كلمات) - نصفها على الأقل = نقطة</li>
+                    <li>✔️ أكمل التمرين 2 (10 كلمات) - نصفها على الأقل = نقطة</li>
+                    <li>✔️ أكمل التمرين 3 (التوصيل) - 3 توصيلات صح على الأقل = نقطة</li>
+                    <li>✔️ قرأ 5 كلمات بصوت عالٍ بشكل صحيح = نقطة</li>
+                    <li>✔️ انضباط + تعاون + ساعد زميله = نقطة</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="note" style="margin-top: 10px;">
+            <strong>⏱️ الزمن المقترح:</strong> 20-25 دقيقة | <strong>📌 ملاحظة:</strong> الأولوية للتمرينين 1 و2 - التمارين 3 و4 إضافية إذا بقي وقت
+        </div>
+        <!-- Credit at the end -->
+        <div style="text-align:center; font-size:20px; color:#333; margin-top:40px; margin-bottom:10px; font-weight:bold;">إعداد أ. محمد العثيمين - أبي بكر بن العربي الثانوية</div>
+    </div>
+
+    <div class="no-print" style="text-align: center; margin-top: 20px; color: #666;">
+        <button onclick="window.print()" style="background: #333; color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+            🖨️ طباعة الورقة
+        </button>
+    </div>
+</body>
+</html>
