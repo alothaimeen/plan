@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المجموعة الممتازة - Excellent Level</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .excellent-hero {
+            background: linear-gradient(135deg, #9c27b0 0%, #7b1fa2 100%);
+            color: white;
+            padding: 60px 30px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(156, 39, 176, 0.3);
+        }
+
+        .excellent-hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        .excellent-hero p {
+            font-size: 1.3em;
+            margin: 10px 0;
+            opacity: 0.95;
+        }
+
+        .level-badge {
+            background: white;
+            color: #9c27b0;
+            padding: 15px 35px;
+            border-radius: 50px;
+            display: inline-block;
+            font-weight: bold;
+            font-size: 1.3em;
+            margin-top: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .description-box {
+            background: #f3e5f5;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            border-right: 6px solid #9c27b0;
+        }
+
+        .description-box h2 {
+            color: #9c27b0;
+            margin-top: 0;
+        }
+
+        .description-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .description-box li {
+            padding: 10px 0;
+            font-size: 1.1em;
+        }
+
+        .description-box li:before {
+            content: "✨ ";
+            margin-left: 10px;
+        }
+
+        .days-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .day-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border-top: 5px solid #9c27b0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .day-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(156, 39, 176, 0.2);
+        }
+
+        .day-card h3 {
+            color: #9c27b0;
+            font-size: 1.6em;
+            margin-bottom: 15px;
+        }
+
+        .day-card .day-number {
+            background: linear-gradient(135deg, #9c27b0 0%, #7b1fa2 100%);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .day-card .topic {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .day-card .materials {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .material-btn {
+            background: #f3e5f5;
+            color: #9c27b0;
+            padding: 12px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .material-btn:hover {
+            background: #9c27b0;
+            color: white;
+            transform: translateX(-5px);
+        }
+
+        .material-btn i {
+            font-size: 1.2em;
+        }
+
+        .special-role-box {
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            border: 3px solid #ff6f00;
+            text-align: center;
+        }
+
+        .special-role-box h3 {
+            color: #ff6f00;
+            font-size: 1.8em;
+            margin-top: 0;
+        }
+
+        .special-role-box ul {
+            list-style: none;
+            padding: 0;
+            text-align: right;
+        }
+
+        .special-role-box li {
+            padding: 12px 0;
+            font-size: 1.15em;
+            color: #333;
+        }
+
+        .special-role-box li:before {
+            content: "⭐ ";
+            margin-left: 10px;
+        }
+
+        .guide-link {
+            background: #ff9800;
+            color: white;
+            padding: 15px 35px;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 15px;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 152, 0, 0.3);
+        }
+
+        .guide-link:hover {
+            background: #f57c00;
+            transform: scale(1.05);
+        }
+
+        .stats-box {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+
+        .stat-item-excellent {
+            padding: 20px;
+            border-right: 3px solid #9c27b0;
+        }
+
+        .stat-item-excellent .number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #9c27b0;
+            display: block;
+        }
+
+        .stat-item-excellent .label {
+            color: #666;
+            font-size: 1.05em;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- العودة للصفحة الرئيسية -->
+        <a href="index.html" style="display: inline-block; margin-bottom: 20px; color: #9c27b0; text-decoration: none; font-size: 1.1em;">
+            ← العودة للصفحة الرئيسية
+        </a>
+
+        <!-- Hero Section -->
+        <div class="excellent-hero">
+            <h1>🟣 المجموعة الممتازة</h1>
+            <p>Excellent Level - Class 8</p>
+            <p style="font-size: 1.15em;">للطلاب المتفوقين الذين حصلوا على 25+ درجة</p>
+            <div class="level-badge">
+                المستوى: متوسط إلى فوق المتوسط
+            </div>
+        </div>
+
+        <!-- Description -->
+        <div class="description-box">
+            <h2>✨ عن هذا المستوى</h2>
+            <p style="font-size: 1.15em; line-height: 1.8; color: #555;">
+                أنتم الطلاب المتميزون في الفصل 8! هذا المحتوى مصمم خصيصاً لتطوير مهاراتكم في اللغة الإنجليزية من خلال المنهج المدرسي الفعلي (<strong>Unit 1: Big Changes</strong>). 
+            </p>
+            <h3 style="color: #9c27b0; margin-top: 25px;">ما ستتعلمه:</h3>
+            <ul>
+                <li>Grammar: Present Simple, Progressive, Past Simple & Present Perfect</li>
+                <li>Reading: نصوص من المنهج عن السعودية، الإمارات، الفضاء، الإنترنت</li>
+                <li>Writing: كتابة فقرات ومقالات منظمة</li>
+                <li>Conversation: محادثات متقدمة مع تعبيرات جديدة</li>
+                <li>Vocabulary: مفردات القضايا العالمية والتغييرات الكبرى</li>
+            </ul>
+        </div>
+
+        <!-- Statistics -->
+        <div class="stats-box">
+            <div class="stat-item-excellent">
+                <span class="number">18</span>
+                <span class="label">طالب</span>
+            </div>
+            <div class="stat-item-excellent">
+                <span class="number">4</span>
+                <span class="label">أيام تدريب</span>
+            </div>
+            <div class="stat-item-excellent">
+                <span class="number">25+</span>
+                <span class="label">درجتك الحالية</span>
+            </div>
+            <div class="stat-item-excellent">
+                <span class="number">32+</span>
+                <span class="label">الهدف المتوقع</span>
+            </div>
+        </div>
+
+        <!-- Special Role Box -->
+        <div class="special-role-box">
+            <h3>🌟 دورك الخاص كمعلم مساعد</h3>
+            <p style="font-size: 1.15em; margin-bottom: 20px;">
+                بعد إتقان المحتوى، ستكون قادراً على مساعدة زملائك في المجموعات الأخرى!
+            </p>
+            <ul>
+                <li>أتقن المحتوى أولاً بنفسك</li>
+                <li>ساعد طلاب المجموعة التأسيسية والمقبولة والمتوسطة</li>
+                <li>استخدم الصبر والتشجيع مع الجميع</li>
+                <li>كن قدوة حسنة في الالتزام والأخلاق</li>
+                <li>اطلب المساعدة من المعلم عند الحاجة</li>
+            </ul>
+            <a href="guides/assistant-guide.html" class="guide-link">
+                📘 دليل المعلم المساعد الكامل
+            </a>
+        </div>
+
+        <!-- Days Cards -->
+        <h2 style="color: #9c27b0; text-align: center; font-size: 2em; margin-bottom: 30px;">
+            📅 برنامج الأربعة أيام
+        </h2>
+
+        <div class="days-container">
+            <!-- Day 1 -->
+            <div class="day-card">
+                <div class="day-number">1</div>
+                <h3>اليوم الأول</h3>
+                <p class="topic">Grammar & Conversation</p>
+                <p style="color: #666; font-size: 0.95em; margin-bottom: 20px;">
+                    القواعد: Present Simple, Progressive, Past & Present Perfect + محادثات متقدمة
+                </p>
+                <div class="materials">
+                    <a href="worksheets/excellent-day1-worksheet.html" class="material-btn">
+                        <span>📝 ورقة العمل</span>
+                        <span>→</span>
+                    </a>
+                    <a href="tests/excellent-day1-test.html" class="material-btn">
+                        <span>✏️ الاختبار القصير</span>
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="day-card">
+                <div class="day-number">2</div>
+                <h3>اليوم الثاني</h3>
+                <p class="topic">Reading & Vocabulary</p>
+                <p style="color: #666; font-size: 0.95em; margin-bottom: 20px;">
+                    قراءة نصوص Big Changes + المفردات المتقدمة + Global Issues
+                </p>
+                <div class="materials">
+                    <a href="worksheets/excellent-day2-worksheet.html" class="material-btn">
+                        <span>📝 ورقة العمل</span>
+                        <span>→</span>
+                    </a>
+                    <a href="tests/excellent-day2-test.html" class="material-btn">
+                        <span>✏️ الاختبار القصير</span>
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 3 -->
+            <div class="day-card">
+                <div class="day-number">3</div>
+                <h3>اليوم الثالث</h3>
+                <p class="topic">Writing & Critical Thinking</p>
+                <p style="color: #666; font-size: 0.95em; margin-bottom: 20px;">
+                    كتابة مقالات + Past Progressive + التفكير النقدي
+                </p>
+                <div class="materials">
+                    <a href="worksheets/excellent-day3-worksheet.html" class="material-btn">
+                        <span>📝 ورقة العمل</span>
+                        <span>→</span>
+                    </a>
+                    <a href="tests/excellent-day3-test.html" class="material-btn">
+                        <span>✏️ الاختبار القصير</span>
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 4 -->
+            <div class="day-card">
+                <div class="day-number">4</div>
+                <h3>اليوم الرابع</h3>
+                <p class="topic">Listening & Speaking</p>
+                <p style="color: #666; font-size: 0.95em; margin-bottom: 20px;">
+                    الاستماع المتقدم + عرض تقديمي + المراجعة النهائية
+                </p>
+                <div class="materials">
+                    <a href="worksheets/excellent-day4-worksheet.html" class="material-btn">
+                        <span>📝 ورقة العمل</span>
+                        <span>→</span>
+                    </a>
+                    <a href="tests/excellent-day4-test.html" class="material-btn">
+                        <span>✏️ الاختبار القصير</span>
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Instructions Box -->
+        <div style="background: #e3f2fd; padding: 30px; border-radius: 15px; border-right: 5px solid #2196f3; margin-bottom: 30px;">
+            <h3 style="color: #2196f3; margin-top: 0;">📋 تعليمات مهمة</h3>
+            <ol style="line-height: 2; font-size: 1.05em;">
+                <li>ابدأ باليوم الأول وأكمل ورقة العمل كاملة</li>
+                <li>بعد الانتهاء من ورقة العمل، قم بحل الاختبار القصير (12 دقيقة)</li>
+                <li>صحح إجاباتك مع المعلم واحتفظ بالورقة</li>
+                <li>انتقل لليوم التالي بعد التأكد من فهم الموضوع</li>
+                <li>إذا أنهيت المحتوى مبكراً، ساعد زملاءك في المجموعات الأخرى</li>
+            </ol>
+        </div>
+
+        <!-- Success Tips -->
+        <div style="background: #fff3e0; padding: 30px; border-radius: 15px; border-right: 5px solid #ff9800;">
+            <h3 style="color: #ff9800; margin-top: 0;">💡 نصائح للنجاح</h3>
+            <ul style="line-height: 2; font-size: 1.05em;">
+                <li>🎯 ركز على فهم القواعد، ليس الحفظ فقط</li>
+                <li>📖 اقرأ النصوص بعناية وحاول فهم الفكرة العامة</li>
+                <li>✍️ تدرب على الكتابة يومياً، ولو جملة واحدة</li>
+                <li>🗣️ تحدث بالإنجليزية مع زملائك قدر المستطاع</li>
+                <li>❓ لا تتردد في السؤال عند عدم الفهم</li>
+                <li>⭐ كن قدوة حسنة لزملائك في الالتزام</li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2025 - الخطة العلاجية للغة الإنجليزية | إعداد أ. محمد العثيمين</p>
+            <p>أبي بكر بن العربي الثانوية</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

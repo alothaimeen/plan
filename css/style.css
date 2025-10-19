@@ -122,9 +122,23 @@ body {
    ============================================ */
 .cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: var(--spacing-md);
     margin-bottom: var(--spacing-lg);
+}
+
+/* استجابة للشاشات المختلفة */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* لضمان ظهور 4 بطاقات في صف واحد على الشاشات الكبيرة */
+@media (min-width: 1200px) {
+    .cards-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 .card {
@@ -152,6 +166,10 @@ body {
 
 .card.intermediate {
     --card-color: var(--color-intermediate);
+}
+
+.card.excellent {
+    --card-color: #9c27b0;
 }
 
 .card-icon {

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختبار اليوم الأول - المجموعة الممتازة</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .excellent-test {
+            background: linear-gradient(135deg, #f3e5f5 0%, #ffffff 100%);
+            padding: 30px;
+            max-width: 850px;
+            margin: 20px auto;
+            border-left: 8px solid #9c27b0;
+            box-shadow: 0 4px 15px rgba(156, 39, 176, 0.2);
+        }
+
+        .test-header {
+            text-align: center;
+            border-bottom: 3px solid #9c27b0;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        .test-header h1 {
+            color: #9c27b0;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .test-info {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .test-info p {
+            margin: 8px 0;
+            font-size: 1.05em;
+        }
+
+        .time-box {
+            background: linear-gradient(135deg, #9c27b0 0%, #7b1fa2 100%);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 1.2em;
+        }
+
+        .section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            border-right: 4px solid #9c27b0;
+        }
+
+        .section h3 {
+            color: #9c27b0;
+            margin-top: 0;
+            border-bottom: 2px dashed #9c27b0;
+            padding-bottom: 10px;
+        }
+
+        .question {
+            margin: 15px 0;
+            padding: 12px;
+            background: #f9f9f9;
+            border-radius: 6px;
+            line-height: 1.8;
+        }
+
+        .question-num {
+            background: #9c27b0;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 50%;
+            margin-left: 8px;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        .answer-space {
+            border-bottom: 2px solid #9c27b0;
+            display: inline-block;
+            min-width: 200px;
+            margin: 0 8px;
+        }
+
+        .score-box {
+            background: #e8f5e9;
+            border: 2px solid #4caf50;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: left;
+            float: left;
+            margin-top: 10px;
+        }
+
+        .print-button {
+            background: #9c27b0;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1.1em;
+            margin: 20px auto;
+            display: block;
+            box-shadow: 0 4px 12px rgba(156, 39, 176, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .print-button:hover {
+            background: #7b1fa2;
+            transform: translateY(-2px);
+        }
+
+        @media print {
+            .print-button { display: none; }
+            .excellent-test { box-shadow: none; }
+        }
+
+        .instructions {
+            background: #fff3e0;
+            border-right: 4px solid #ff9800;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .instructions strong {
+            color: #ff9800;
+        }
+    </style>
+</head>
+<body>
+    <button class="print-button" onclick="window.print()">🖨️ طباعة الاختبار</button>
+
+    <div class="excellent-test">
+        <div class="test-header">
+            <h1>🟣 اختبار اليوم الأول</h1>
+            <p style="color: #666; margin-top: 10px;">Grammar & Conversation</p>
+        </div>
+
+        <div class="test-info">
+            <p><strong>الاسم:</strong> _______________________________</p>
+            <p><strong>الفصل:</strong> الثامن (8)  |  <strong>التاريخ:</strong> _______________</p>
+        </div>
+
+        <div class="time-box">
+            ⏱️ الوقت المحدد: 12 دقيقة | الدرجة الكلية: 20 درجة
+        </div>
+
+        <div class="instructions">
+            <strong>📌 التعليمات:</strong><br>
+            • اقرأ كل سؤال بعناية<br>
+            • أجب على جميع الأسئلة<br>
+            • تأكد من كتابة اسمك في الأعلى
+        </div>
+
+        <!-- Section 1: Grammar -->
+        <div class="section">
+            <h3>Part 1: Grammar (8 marks)</h3>
+            <div class="score-box">النتيجة: ___ / 8</div>
+            <div style="clear: both;"></div>
+            
+            <p style="color: #666; margin: 15px 0;"><strong>A. Choose the correct answer (4 marks):</strong></p>
+
+            <div class="question">
+                <span class="question-num">1</span>
+                The UAE <span class="answer-space"></span> seven emirates.
+                <br><span style="margin-right: 35px;">(a) has   (b) have   (c) having   (d) is having</span>
+            </div>
+
+            <div class="question">
+                <span class="question-num">2</span>
+                I <span class="answer-space"></span> in Riyadh since 2018.
+                <br><span style="margin-right: 35px;">(a) live   (b) lived   (c) have lived   (d) am living</span>
+            </div>
+
+            <div class="question">
+                <span class="question-num">3</span>
+                Look! The students <span class="answer-space"></span> for the test.
+                <br><span style="margin-right: 35px;">(a) study   (b) studied   (c) are studying   (d) have studied</span>
+            </div>
+
+            <div class="question">
+                <span class="question-num">4</span>
+                King Abdulaziz <span class="answer-space"></span> Saudi Arabia in 1932.
+                <br><span style="margin-right: 35px;">(a) establishes   (b) established   (c) has established   (d) is establishing</span>
+            </div>
+
+            <p style="color: #666; margin: 20px 0 15px 0;"><strong>B. Complete with the correct tense (4 marks):</strong></p>
+
+            <div class="question">
+                <span class="question-num">5</span>
+                My brother usually <span class="answer-space"></span> (play) football on Fridays.
+            </div>
+
+            <div class="question">
+                <span class="question-num">6</span>
+                We <span class="answer-space"></span> (visit) Dubai last summer.
+            </div>
+
+            <div class="question">
+                <span class="question-num">7</span>
+                She <span class="answer-space"></span> (work) on her project right now.
+            </div>
+
+            <div class="question">
+                <span class="question-num">8</span>
+                How long <span class="answer-space"></span> you <span class="answer-space"></span> (study) English?
+            </div>
+        </div>
+
+        <!-- Section 2: Vocabulary -->
+        <div class="section">
+            <h3>Part 2: Vocabulary & Expressions (6 marks)</h3>
+            <div class="score-box">النتيجة: ___ / 6</div>
+            <div style="clear: both;"></div>
+
+            <p style="color: #666; margin: 15px 0;"><strong>Complete the sentences with: In fact, You see, By the way, fit in</strong></p>
+
+            <div class="question">
+                <span class="question-num">1</span>
+                I'm from Jeddah. <span class="answer-space"></span>, my whole family lives there.
+            </div>
+
+            <div class="question">
+                <span class="question-num">2</span>
+                <span class="answer-space"></span>, what do you do in your free time?
+            </div>
+
+            <div class="question">
+                <span class="question-num">3</span>
+                I <span class="answer-space"></span> well at my new school. Everyone is friendly.
+            </div>
+
+            <p style="color: #666; margin: 20px 0 15px 0;"><strong>Choose the correct word:</strong></p>
+
+            <div class="question">
+                <span class="question-num">4</span>
+                The Internet has <span class="answer-space"></span> our lives completely.
+                <br><span style="margin-right: 35px;">(a) changed   (b) launched   (c) hosted   (d) established</span>
+            </div>
+
+            <div class="question">
+                <span class="question-num">5</span>
+                Saudi Arabia was officially <span class="answer-space"></span> in 1932.
+                <br><span style="margin-right: 35px;">(a) affected   (b) launched   (c) established   (d) transformed</span>
+            </div>
+
+            <div class="question">
+                <span class="question-num">6</span>
+                Climate change <span class="answer-space"></span> many countries around the world.
+                <br><span style="margin-right: 35px;">(a) affects   (b) launches   (c) hosts   (d) takes for granted</span>
+            </div>
+        </div>
+
+        <!-- Section 3: Conversation -->
+        <div class="section">
+            <h3>Part 3: Conversation (6 marks)</h3>
+            <div class="score-box">النتيجة: ___ / 6</div>
+            <div style="clear: both;"></div>
+
+            <p style="color: #666; margin: 15px 0;"><strong>Complete this short conversation:</strong></p>
+
+            <div style="line-height: 2.5; padding: 15px; background: #fafafa; border-radius: 8px;">
+                <p><strong>Ahmed:</strong> Hello! Tell me about yourself.</p>
+                <p><strong>You:</strong> ___________________________________________________________</p>
+                <p style="color: #999; font-size: 0.9em; margin: 5px 0;">(Use Present Simple - 1 mark)</p>
+
+                <p style="margin-top: 20px;"><strong>Ahmed:</strong> Where are you from?</p>
+                <p><strong>You:</strong> ___________________________________________________________</p>
+                <p style="color: #999; font-size: 0.9em; margin: 5px 0;">(Give a complete answer - 2 marks)</p>
+
+                <p style="margin-top: 20px;"><strong>Ahmed:</strong> How long have you been studying at this school?</p>
+                <p><strong>You:</strong> ___________________________________________________________</p>
+                <p style="color: #999; font-size: 0.9em; margin: 5px 0;">(Use Present Perfect - 2 marks)</p>
+
+                <p style="margin-top: 20px;"><strong>Ahmed:</strong> What are you doing this weekend?</p>
+                <p><strong>You:</strong> ___________________________________________________________</p>
+                <p style="color: #999; font-size: 0.9em; margin: 5px 0;">(Use Present Progressive or going to - 1 mark)</p>
+            </div>
+        </div>
+
+        <!-- Total Score -->
+        <div style="background: linear-gradient(135deg, #9c27b0 0%, #7b1fa2 100%); color: white; padding: 20px; border-radius: 10px; text-align: center; margin-top: 30px;">
+            <h3 style="margin: 0 0 10px 0; font-size: 1.5em;">الدرجة النهائية</h3>
+            <p style="font-size: 2em; margin: 0;">_____ / 20</p>
+            <p style="margin: 10px 0 0 0; font-size: 0.95em;">النسبة المئوية: _____٪</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px; padding: 15px; background: #f0f0f0; border-radius: 8px;">
+            <p style="color: #9c27b0; font-size: 1.1em;"><strong>✨ Excellent work! Keep it up!</strong></p>
+        </div>
+    </div>
+
+    <button class="print-button" onclick="window.print()">🖨️ طباعة الاختبار</button>
+</body>
+</html>
