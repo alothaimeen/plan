@@ -1,0 +1,2509 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Remedial Plan - Intermediate Level - All Days
+  </title>
+  <link href="../css/style.css" rel="stylesheet"/>
+  <style>
+   .intermediate-worksheet {
+            background: linear-gradient(135deg, #f3e5f5 0%, #ffffff 100%);
+            padding: 30px;
+            max-width: 900px;
+            margin: 20px auto;
+            border-left: 8px solid #9c27b0;
+            box-shadow: 0 4px 15px rgba(156, 39, 176, 0.2);
+        }
+
+        .worksheet-header {
+            text-align: center;
+            border-bottom: 3px solid #9c27b0;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .worksheet-header h1 {
+            color: #9c27b0;
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+
+        .day-title {
+            background: #9c27b0;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            display: inline-block;
+            font-size: 1.2em;
+            margin: 15px 0;
+        }
+
+        .student-info {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .student-info p {
+            margin: 8px 0;
+            font-size: 1.1em;
+        }
+
+        .objective-box {
+            background: linear-gradient(135deg, #9c27b0 0%, #7b1fa2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .objective-box h3 {
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+
+        .exercise {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            border-right: 4px solid #9c27b0;
+        }
+
+        .exercise h3 {
+            color: #9c27b0;
+            margin-top: 0;
+            font-size: 1.4em;
+            border-bottom: 2px dashed #9c27b0;
+            padding-bottom: 10px;
+        }
+
+        .question {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            line-height: 1.8;
+        }
+
+        .question-number {
+            background: #9c27b0;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 50%;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        .answer-line {
+            border-bottom: 2px solid #9c27b0;
+            display: inline-block;
+            min-width: 250px;
+            margin: 0 10px;
+        }
+
+        .bonus-activity {
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 20px;
+            border: 3px dashed #ff6f00;
+        }
+
+        .bonus-activity h3 {
+            color: #ff6f00;
+            margin-top: 0;
+        }
+
+        .print-button {
+            background: #9c27b0;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1.1em;
+            margin: 20px auto;
+            display: block;
+            box-shadow: 0 4px 12px rgba(156, 39, 176, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .print-button:hover {
+            background: #7b1fa2;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(156, 39, 176, 0.4);
+        }
+
+        .grammar-tip {
+            background: #e1f5fe;
+            border-right: 4px solid #0288d1;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+
+        .grammar-tip strong {
+            color: #0288d1;
+        }
+
+        .reading-passage {
+            background: #fafafa;
+            padding: 20px;
+            border-radius: 10px;
+            line-height: 1.9;
+            border-right: 4px solid #0288d1;
+            margin: 20px 0;
+        }
+
+        .vocab-box {
+            background: #e1f5fe;
+            border-right: 4px solid #0288d1;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+
+        .vocab-box strong {
+            color: #0288d1;
+        }
+
+        .writing-box {
+            background: #fff9c4;
+            border-right: 4px solid #fbc02d;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .listening-box {
+            background: #e8f5e9;
+            border-right: 4px solid #4caf50;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .presentation-box {
+            background: #fff3e0;
+            border-right: 4px solid #ff9800;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .final-review {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 20px;
+            border: 3px solid #2196f3;
+        }
+
+        /* الأنماط الخاصة بالطباعة */
+        @media print {
+            .print-button { 
+                display: none !important; 
+            }
+            
+            .intermediate-worksheet { 
+                box-shadow: none; 
+                page-break-after: always;
+                margin: 0;
+                padding: 20px;
+                max-width: none;
+            }
+            
+            .day-separator {
+                page-break-before: always;
+            }
+            
+            /* فاصل صفحة خاص للنشاط الإضافي في اليوم الثالث فقط */
+            .day3-bonus-pagebreak {
+                page-break-before: always;
+            }
+            
+            /* السماح بتقطيع التمارين والأسئلة لتوفير الورق */
+            /* تم إزالة page-break-inside: avoid من .exercise, .question, .bonus-activity */
+            
+            /* فقط منع تقطيع العناوين الرئيسية */
+            .worksheet-header, .day-title, .objective-box h3 {
+                page-break-after: avoid;
+            }
+            
+            /* تحسينات إضافية للطباعة */
+            .exercise h3 {
+                page-break-after: avoid; /* منع تقطيع عناوين التمارين */
+            }
+            
+            .question-number {
+                page-break-after: avoid; /* منع تقطيع رقم السؤال عن السؤال */
+            }
+            
+            /* تقليل المسافات قليلاً عند الطباعة لتوفير المساحة */
+            .exercise {
+                margin-bottom: 12px;
+            }
+            
+            .question {
+                margin: 8px 0;
+                padding: 8px;
+            }
+            
+            .final-review {
+                margin-top: 15px;
+                padding: 15px;
+            }
+            
+            /* تحسين خطوط الطباعة */
+            body {
+                font-family: "Arial", sans-serif;
+                line-height: 1.4;
+            }
+        }
+
+        /* فئة خاصة لفاصل الصفحات */
+        .day-separator {
+            page-break-before: always;
+        }
+        
+        /* فاصل صفحة خاص للنشاط الإضافي في اليوم الثالث */
+        .day3-bonus-pagebreak {
+            page-break-before: always;
+        }
+  </style>
+ </head>
+ <body>
+  <button class="print-button" onclick="window.print()">
+   🖨️ طباعة جميع أوراق العمل (4 أيام)
+  </button>
+  <div>
+   <div style="text-align:center; font-size:38px; font-weight:bold; color:#4caf50; margin-bottom:8px; margin-top:10px; letter-spacing:2px;">
+    المجموعة المتوسطة
+   </div>
+   <div class="header">
+    <h1>
+     الخطة العلاجية - المستوى المتوسط - جميع الأيام
+    </h1>
+    <div class="subtitle">
+     إعداد أ. محمد العثيمين - أبي بكر بن العربي الثانوية
+    </div>
+   </div>
+   <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 10px; margin-bottom: 10px; padding: 8px; border: 2px solid #333; border-radius: 5px; background: #f9f9f9;">
+    <div style="display: flex; align-items: center;">
+     <strong>
+      الاسم:
+     </strong>
+     <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;">
+     </span>
+    </div>
+    <div style="display: flex; align-items: center;">
+     <strong>
+      الفصل:
+     </strong>
+     <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;">
+     </span>
+    </div>
+    <div style="display: flex; align-items: center;">
+     <strong>
+      الرقم:
+     </strong>
+     <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;">
+     </span>
+    </div>
+    <div style="display: flex; align-items: center;">
+     <strong>
+      المجموعة:
+     </strong>
+     <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;">
+     </span>
+    </div>
+   </div>
+   <div class="info-box">
+    <strong>
+     🎯 هدف اليوم:
+    </strong>
+    التمييز بين المضارع البسيط والمضارع المستمر + ممارسة المحادثة
+   </div>
+   <div class="exercise">
+    <div class="exercise-title">
+     التمرين 1: تمييز الزمن
+    </div>
+    <p style="margin: 5px 0; font-size: 13px;">
+     <strong>
+      حدد الزمن المستخدم في كل جملة: Present Simple (PS) أو Present Continuous (PC)
+     </strong>
+    </p>
+    <div class="english-text" style="margin-top: 10px;">
+     <table>
+      <tr>
+       <td style="width: 70%; text-align: left; padding: 10px;">
+        1. I study English every day.
+       </td>
+       <td style="width: 30%;">
+        _______
+       </td>
+      </tr>
+      <tr>
+       <td style="text-align: left; padding: 10px;">
+        2. She is reading a book now.
+       </td>
+       <td>
+        _______
+       </td>
+      </tr>
+      <tr>
+       <td style="text-align: left; padding: 10px;">
+        3. They play football on Fridays.
+       </td>
+       <td>
+        _______
+       </td>
+      </tr>
+      <tr>
+       <td style="text-align: left; padding: 10px;">
+        4. We are watching TV at the moment.
+       </td>
+       <td>
+        _______
+       </td>
+      </tr>
+      <tr>
+       <td style="text-align: left; padding: 10px;">
+        5. He goes to school by bus.
+       </td>
+       <td>
+        _______
+       </td>
+      </tr>
+      <tr>
+       <td style="text-align: left; padding: 10px;">
+        6. I am doing my homework right now.
+       </td>
+       <td>
+        _______
+       </td>
+      </tr>
+      <tr>
+       <td style="text-align: left; padding: 10px;">
+        7. My mother cooks dinner every evening.
+       </td>
+       <td>
+        _______
+       </td>
+      </tr>
+      <tr>
+       <td style="text-align: left; padding: 10px;">
+        8. The students are writing a test now.
+       </td>
+       <td>
+        _______
+       </td>
+      </tr>
+     </table>
+    </div>
+   </div>
+   <div class="exercise">
+    <div class="exercise-title">
+     التمرين 2: إكمال الجمل
+    </div>
+    <p style="margin: 5px 0; font-size: 13px;">
+     <strong>
+      اختر الفعل الصحيح بين القوسين:
+     </strong>
+    </p>
+    <div class="english-text" style="margin-top: 10px;">
+     <p>
+      1. Ahmed usually
+      <u>
+      </u>
+      (plays / is playing) football after school.
+     </p>
+     <p>
+      2. Look! The teacher
+      <u>
+      </u>
+      (comes / is coming) to our class.
+     </p>
+     <p>
+      3. I
+      <u>
+      </u>
+      (drink / am drinking) milk every morning.
+     </p>
+     <p>
+      4. Be quiet! The baby
+      <u>
+      </u>
+      (sleeps / is sleeping) now.
+     </p>
+     <p>
+      5. My father
+      <u>
+      </u>
+      (works / is working) in a hospital.
+     </p>
+     <p>
+      6. Listen! Someone
+      <u>
+      </u>
+      (knocks / is knocking) on the door.
+     </p>
+     <p>
+      7. We always
+      <u>
+      </u>
+      (eat / are eating) breakfast at 7 AM.
+     </p>
+     <p>
+      8. They
+      <u>
+      </u>
+      (study / are studying) for the exam right now.
+     </p>
+    </div>
+   </div>
+   <div class="exercise">
+    <div class="exercise-title">
+     التمرين 3: تصحيح الأخطاء
+    </div>
+    <p style="margin: 5px 0; font-size: 13px;">
+     <strong>
+      صحح الخطأ في كل جملة:
+     </strong>
+    </p>
+    <div class="english-text" style="margin-top: 10px;">
+     <p>
+      1. I am go to school every day. →
+      <u>
+      </u>
+     </p>
+     <p>
+      2. She study English now. →
+      <u>
+      </u>
+     </p>
+     <p>
+      3. They are play football every Friday. →
+      <u>
+      </u>
+     </p>
+     <p>
+      4. We watching TV at the moment. →
+      <u>
+      </u>
+     </p>
+     <p>
+      5. He is eat lunch every day at 1 PM. →
+      <u>
+      </u>
+     </p>
+    </div>
+   </div>
+   <div class="exercise">
+    <div class="exercise-title">
+     التمرين 4: نشاط المحادثة 🗣️
+    </div>
+    <p style="margin: 5px 0; font-size: 13px;">
+     <strong>
+      اعمل مع زميلك: اطرح الأسئلة وأجب عليها شفهياً
+     </strong>
+    </p>
+    <div class="english-text" style="margin-top: 10px;">
+     <div style="background: #e8f5e9; padding: 15px; border-radius: 5px; margin: 10px 0;">
+      <p style="margin: 8px 0;">
+       <strong>
+        Student A:
+       </strong>
+       What do you do every day?
+      </p>
+      <p style="margin: 8px 0;">
+       <strong>
+        Student B:
+       </strong>
+       I study English and _______________.
+      </p>
+     </div>
+     <div style="background: #fff3cd; padding: 15px; border-radius: 5px; margin: 10px 0;">
+      <p style="margin: 8px 0;">
+       <strong>
+        Student A:
+       </strong>
+       What are you doing now?
+      </p>
+      <p style="margin: 8px 0;">
+       <strong>
+        Student B:
+       </strong>
+       I am _______________.
+      </p>
+     </div>
+     <div style="background: #e3f2fd; padding: 15px; border-radius: 5px; margin: 10px 0;">
+      <p style="margin: 8px 0;">
+       <strong>
+        Student A:
+       </strong>
+       Do you play sports?
+      </p>
+      <p style="margin: 8px 0;">
+       <strong>
+        Student B:
+       </strong>
+       Yes, I _______________.
+      </p>
+     </div>
+     <div style="background: #fce4ec; padding: 15px; border-radius: 5px; margin: 10px 0;">
+      <p style="margin: 8px 0;">
+       <strong>
+        Student A:
+       </strong>
+       What is your friend doing right now?
+      </p>
+      <p style="margin: 8px 0;">
+       <strong>
+        Student B:
+       </strong>
+       He/She is _______________.
+      </p>
+     </div>
+    </div>
+   </div>
+   <div class="note" style="margin-top: 10px;">
+    <strong>
+     ⏱️ الزمن المقترح:
+    </strong>
+    20-25 دقيقة |
+    <strong>
+     📌 ملاحظة:
+    </strong>
+    التمرين 4 يتطلب ممارسة شفهية مع الزملاء
+   </div>
+   <div style="text-align: center; margin-top: 15px; font-size: 20px; font-weight: bold; color: #333;">
+    إعداد أ. محمد العثيمين - أبي بكر بن العربي الثانوية
+   </div>
+   <div class="assistant-box" style="page-break-before: always;">
+    <h3>
+     📖 تعليمات المعلم المساعد
+    </h3>
+    <div class="assistant-instructions">
+     <strong>
+      📋 مهامك في هذا النشاط:
+     </strong>
+     <ol>
+      <li>
+       <strong>
+        قبل البدء (3 دقائق):
+       </strong>
+       <ul>
+        <li>
+         اشرح الفرق بين المضارع البسيط (عادات يومية) والمضارع المستمر (حدث الآن)
+        </li>
+        <li>
+         اقرأ مثالين: "I study English every day" (عادة) vs "I am studying now" (الآن)
+        </li>
+        <li>
+         وضّح الكلمات المفتاحية: every day, always, usually (PS) / now, at the moment, right now (PC)
+        </li>
+        <li>
+         اشرح التمارين بوضوح
+        </li>
+       </ul>
+      </li>
+      <li>
+       <strong>
+        أثناء العمل (15 دقيقة):
+       </strong>
+       <ul>
+        <li>
+         مرّ على كل طالب وتأكد من فهمه للفرق بين الزمنين
+        </li>
+        <li>
+         صحح الأخطاء بلطف واشرح السبب
+        </li>
+        <li>
+         في التمرين 4 (المحادثة): شجّع الطلاب على التحدث بصوت واضح
+        </li>
+        <li>
+         ساعد من يجد صعوبة في النطق أو التركيب
+        </li>
+        <li>
+         احتفل بالإنجازات والمحاولات الجيدة
+        </li>
+       </ul>
+      </li>
+      <li>
+       <strong>
+        في النهاية (5 دقائق):
+       </strong>
+       <ul>
+        <li>
+         المراجعة الجماعية: اطلب من 2-3 طلاب قراءة أجوبتهم
+        </li>
+        <li>
+         اطلب من زوجين تقديم محادثة قصيرة من التمرين 4
+        </li>
+        <li>
+         التأكد من إكمال جميع التمارين
+        </li>
+        <li>
+         تسجيل النقاط
+        </li>
+       </ul>
+      </li>
+     </ol>
+    </div>
+    <div class="note">
+     <strong>
+      💡 نصائح مهمة للتمرين 4 (المحادثة):
+     </strong>
+     <ul>
+      <li>
+       شجّع الطلاب على التحدث بثقة حتى لو أخطأوا
+      </li>
+      <li>
+       استخدم الإشارات والإيماءات لمساعدتهم على الفهم
+      </li>
+      <li>
+       اجعل الطلاب يتبادلون الأدوار (Student A ثم Student B)
+      </li>
+      <li>
+       امدح النطق الصحيح والمحاولات الجيدة
+      </li>
+      <li>
+       شجّع المساعدة المتبادلة بين الزملاء
+      </li>
+      <li>
+       اطلب المساعدة من المعلم الأساسي عند الحاجة
+      </li>
+      <li>
+       كن صبوراً ومشجعاً
+      </li>
+     </ul>
+    </div>
+    <div class="assistant-instructions">
+     <strong>
+      ✅ معايير منح النقاط (كل طالب يمكن أن يحصل على 5 نقاط):
+     </strong>
+     <ul>
+      <li>
+       ✔️ أكمل التمرين 1 (تمييز الزمن) = نقطة واحدة
+      </li>
+      <li>
+       ✔️ أكمل التمرين 2 (إكمال الجمل) = نقطة واحدة
+      </li>
+      <li>
+       ✔️ أكمل التمرين 3 (تصحيح الأخطاء) = نقطة واحدة
+      </li>
+      <li>
+       ✔️ شارك في نشاط المحادثة (التمرين 4) = نقطة واحدة
+      </li>
+      <li>
+       ✔️ ساعد زميله أو قرأ بصوت عالٍ في المراجعة = نقطة واحدة
+      </li>
+     </ul>
+    </div>
+    <div class="assistant-instructions">
+     <strong>
+      📝 جدول تسجيل النقاط:
+     </strong>
+     <table style="margin-top: 10px;">
+      <tr style="background: #4caf50; color: white;">
+       <td>
+        <strong>
+         اسم الطالب
+        </strong>
+       </td>
+       <td>
+        <strong>
+         ت1
+        </strong>
+       </td>
+       <td>
+        <strong>
+         ت2
+        </strong>
+       </td>
+       <td>
+        <strong>
+         ت3
+        </strong>
+       </td>
+       <td>
+        <strong>
+         ت4
+        </strong>
+       </td>
+       <td>
+        <strong>
+         مشاركة
+        </strong>
+       </td>
+       <td>
+        <strong>
+         المجموع
+        </strong>
+       </td>
+      </tr>
+      <tr>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+        /5
+       </td>
+      </tr>
+      <tr>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+        /5
+       </td>
+      </tr>
+      <tr>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+        /5
+       </td>
+      </tr>
+      <tr>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+        /5
+       </td>
+      </tr>
+      <tr>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+        /5
+       </td>
+      </tr>
+     </table>
+    </div>
+   </div>
+   <div class="no-print" style="text-align: center; margin-top: 20px; color: #666;">
+   </div>
+  </div>
+  <div class="day-separator">
+  </div>
+  <div>
+   <div style="text-align:center; font-size:38px; font-weight:bold; color:#4caf50; margin-bottom:8px; margin-top:10px; letter-spacing:2px;">
+    المجموعة المتوسطة
+   </div>
+   <div class="header">
+    <h1>
+     ورقة عمل - اليوم 2 🌟
+    </h1>
+    <div class="subtitle">
+     إعداد أ. محمد العثيمين - أبي بكر بن العربي الثانوية
+    </div>
+   </div>
+   <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 10px; margin-bottom: 10px; padding: 8px; border: 2px solid #333; border-radius: 5px; background: #f9f9f9;">
+    <div style="display: flex; align-items: center;">
+     <strong>
+      الاسم:
+     </strong>
+     <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;">
+     </span>
+    </div>
+    <div style="display: flex; align-items: center;">
+     <strong>
+      الفصل:
+     </strong>
+     <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;">
+     </span>
+    </div>
+    <div style="display: flex; align-items: center;">
+     <strong>
+      الرقم:
+     </strong>
+     <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;">
+     </span>
+    </div>
+    <div style="display: flex; align-items: center;">
+     <strong>
+      المجموعة:
+     </strong>
+     <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;">
+     </span>
+    </div>
+   </div>
+   <div class="info-box">
+    <strong>
+     🎯 هدف اليوم:
+    </strong>
+    قراءة نص عن التغييرات الكبرى + فهم النص + ممارسة المحادثة
+   </div>
+   <div class="exercise">
+    <div class="exercise-title">
+     التمرين 1: اقرأ النص التالي
+    </div>
+    <p style="margin: 5px 0; font-size: 13px;">
+     <strong>
+      اقرأ النص بتركيز ثم أجب عن الأسئلة:
+     </strong>
+    </p>
+    <div class="reading-passage" style="margin-top: 10px;">
+     <h3 style="text-align: center; color: #4caf50; margin-bottom: 10px;">
+      Big Changes in Saudi Arabia
+     </h3>
+     <p style="margin: 8px 0;">
+      Saudi Arabia is experiencing big changes these days. The country is building new cities and modern buildings. Many young people are learning new skills and studying technology. Schools are using new teaching methods and computers. People are traveling more and seeing the world. Sports and entertainment are becoming more popular. Cinemas are opening in many cities. Women are working in different fields and driving cars. Life in Saudi Arabia is changing fast, and the future looks bright and exciting for everyone.
+     </p>
+    </div>
+   </div>
+   <div class="exercise">
+    <div class="exercise-title">
+     التمرين 2: أسئلة الفهم
+    </div>
+    <p style="margin: 5px 0; font-size: 13px;">
+     <strong>
+      اختر الإجابة الصحيحة:
+     </strong>
+    </p>
+    <div class="english-text" style="margin-top: 10px;">
+     <p>
+      <strong>
+       1. What is happening in Saudi Arabia?
+      </strong>
+     </p>
+     <p style="margin-right: 20px;">
+      a) Nothing is changing ⃝
+      <br/>
+      b) Big changes are happening ⃝
+      <br/>
+      c) Only schools are changing ⃝
+     </p>
+     <p style="margin-top: 10px;">
+      <strong>
+       2. What are young people learning?
+      </strong>
+     </p>
+     <p style="margin-right: 20px;">
+      a) Old methods ⃝
+      <br/>
+      b) New skills and technology ⃝
+      <br/>
+      c) How to drive only ⃝
+     </p>
+     <p style="margin-top: 10px;">
+      <strong>
+       3. What is opening in many cities?
+      </strong>
+     </p>
+     <p style="margin-right: 20px;">
+      a) Schools ⃝
+      <br/>
+      b) Hospitals ⃝
+      <br/>
+      c) Cinemas ⃝
+     </p>
+     <p style="margin-top: 10px;">
+      <strong>
+       4. True or False: Women cannot work in Saudi Arabia now.
+      </strong>
+     </p>
+     <p style="margin-right: 20px;">
+      True ⃝     False ⃝
+     </p>
+     <p style="margin-top: 10px;">
+      <strong>
+       5. How does the text describe the future?
+      </strong>
+     </p>
+     <p style="margin-right: 20px;">
+      a) Dark and difficult ⃝
+      <br/>
+      b) Bright and exciting ⃝
+      <br/>
+      c) Same as before ⃝
+     </p>
+    </div>
+   </div>
+   <div class="exercise">
+    <div class="exercise-title">
+     التمرين 3: أسئلة مفتوحة
+    </div>
+    <p style="margin: 5px 0; font-size: 13px;">
+     <strong>
+      أجب عن الأسئلة بجمل كاملة:
+     </strong>
+    </p>
+    <div class="english-text" style="margin-top: 10px;">
+     <p>
+      <strong>
+       1. What changes do you see in your school?
+      </strong>
+     </p>
+     <p style="border-bottom: 1px solid #333; min-height: 30px; margin: 5px 0;">
+     </p>
+     <p style="margin-top: 15px;">
+      <strong>
+       2. What new skill do you want to learn?
+      </strong>
+     </p>
+     <p style="border-bottom: 1px solid #333; min-height: 30px; margin: 5px 0;">
+     </p>
+     <p style="margin-top: 15px;">
+      <strong>
+       3. How is life different from 10 years ago?
+      </strong>
+     </p>
+     <p style="border-bottom: 1px solid #333; min-height: 30px; margin: 5px 0;">
+     </p>
+    </div>
+   </div>
+   <div class="exercise">
+    <div class="exercise-title">
+     التمرين 4: نشاط المحادثة 🗣️
+    </div>
+    <p style="margin: 5px 0; font-size: 13px;">
+     <strong>
+      اعمل مع زميلك: تبادل الأدوار واطرح الأسئلة
+     </strong>
+    </p>
+    <div class="english-text" style="margin-top: 10px;">
+     <div style="background: #e8f5e9; padding: 15px; border-radius: 5px; margin: 10px 0;">
+      <p style="margin: 8px 0;">
+       <strong>
+        Student A:
+       </strong>
+       What changes do you see in our school?
+      </p>
+      <p style="margin: 8px 0;">
+       <strong>
+        Student B:
+       </strong>
+       I see _______________.
+      </p>
+     </div>
+     <div style="background: #fff3cd; padding: 15px; border-radius: 5px; margin: 10px 0;">
+      <p style="margin: 8px 0;">
+       <strong>
+        Student A:
+       </strong>
+       Do you like these changes? Why?
+      </p>
+      <p style="margin: 8px 0;">
+       <strong>
+        Student B:
+       </strong>
+       Yes/No, because _______________.
+      </p>
+     </div>
+     <div style="background: #e3f2fd; padding: 15px; border-radius: 5px; margin: 10px 0;">
+      <p style="margin: 8px 0;">
+       <strong>
+        Student A:
+       </strong>
+       What changes do you want to see in the future?
+      </p>
+      <p style="margin: 8px 0;">
+       <strong>
+        Student B:
+       </strong>
+       I want _______________.
+      </p>
+     </div>
+     <div style="background: #fce4ec; padding: 15px; border-radius: 5px; margin: 10px 0;">
+      <p style="margin: 8px 0;">
+       <strong>
+        Student A:
+       </strong>
+       Are you learning any new skills?
+      </p>
+      <p style="margin: 8px 0;">
+       <strong>
+        Student B:
+       </strong>
+       Yes, I am learning _______________.
+      </p>
+     </div>
+    </div>
+   </div>
+   <div class="note" style="margin-top: 10px;">
+    <strong>
+     ⏱️ الزمن المقترح:
+    </strong>
+    20-25 دقيقة |
+    <strong>
+     📌 ملاحظة:
+    </strong>
+    اقرأ النص مرتين للفهم الجيد
+   </div>
+   <div style="text-align: center; margin-top: 15px; font-size: 20px; font-weight: bold; color: #333;">
+    إعداد أ. محمد العثيمين - أبي بكر بن العربي الثانوية
+   </div>
+   <div class="assistant-box" style="page-break-before: always;">
+    <h3>
+     📖 تعليمات المعلم المساعد
+    </h3>
+    <div class="assistant-instructions">
+     <strong>
+      📋 مهامك في هذا النشاط:
+     </strong>
+     <ol>
+      <li>
+       <strong>
+        قبل البدء (3 دقائق):
+       </strong>
+       <ul>
+        <li>
+         اقرأ النص بصوت واضح وبطيء (مرة واحدة)
+        </li>
+        <li>
+         اشرح الكلمات الصعبة: experiencing (يشهد)، skills (مهارات)، entertainment (ترفيه)، fields (مجالات)
+        </li>
+        <li>
+         اطلب من طالب قراءة النص بصوت عالٍ
+        </li>
+        <li>
+         وضّح التمارين
+        </li>
+       </ul>
+      </li>
+      <li>
+       <strong>
+        أثناء العمل (15 دقيقة):
+       </strong>
+       <ul>
+        <li>
+         مرّ على كل طالب وتأكد من فهمه للنص
+        </li>
+        <li>
+         في التمرين 2: ساعدهم في العودة للنص للعثور على الإجابات
+        </li>
+        <li>
+         في التمرين 3: شجعهم على كتابة جمل كاملة
+        </li>
+        <li>
+         في التمرين 4: راقب المحادثات وصحح النطق
+        </li>
+        <li>
+         احتفل بالإجابات الصحيحة
+        </li>
+       </ul>
+      </li>
+      <li>
+       <strong>
+        في النهاية (5 دقائق):
+       </strong>
+       <ul>
+        <li>
+         مراجعة جماعية: اطلب من طالب قراءة إجاباته للتمرين 3
+        </li>
+        <li>
+         اطلب من زوجين تقديم محادثتهم من التمرين 4
+        </li>
+        <li>
+         ناقش: ما أهم تغيير رأيتموه في حياتكم؟
+        </li>
+        <li>
+         تسجيل النقاط
+        </li>
+       </ul>
+      </li>
+     </ol>
+    </div>
+    <div class="note">
+     <strong>
+      💡 نصائح مهمة:
+     </strong>
+     <ul>
+      <li>
+       النص طويل نسبياً (84 كلمة) - خذ وقتك في القراءة
+      </li>
+      <li>
+       ساعد الطلاب على فهم السياق العام قبل التفاصيل
+      </li>
+      <li>
+       استخدم أمثلة من حياتهم اليومية (مثل: التكنولوجيا في المدرسة)
+      </li>
+      <li>
+       شجّع النقاش باللغة الإنجليزية حتى لو كان بسيطاً
+      </li>
+      <li>
+       في المحادثة: اطلب منهم التحدث بثقة حتى لو أخطأوا
+      </li>
+      <li>
+       كن صبوراً ومشجعاً
+      </li>
+     </ul>
+    </div>
+    <div class="assistant-instructions">
+     <strong>
+      ✅ معايير منح النقاط (كل طالب يمكن أن يحصل على 5 نقاط):
+     </strong>
+     <ul>
+      <li>
+       ✔️ قرأ النص أو استمع بتركيز = نقطة واحدة
+      </li>
+      <li>
+       ✔️ أكمل التمرين 2 (أسئلة الاختيار) = نقطة واحدة
+      </li>
+      <li>
+       ✔️ أكمل التمرين 3 (أسئلة مفتوحة) = نقطة واحدة
+      </li>
+      <li>
+       ✔️ شارك في نشاط المحادثة (التمرين 4) = نقطة واحدة
+      </li>
+      <li>
+       ✔️ قرأ بصوت عالٍ أو ساعد زميله = نقطة واحدة
+      </li>
+     </ul>
+    </div>
+    <div class="assistant-instructions">
+     <strong>
+      📝 جدول تسجيل النقاط:
+     </strong>
+     <table style="margin-top: 10px;">
+      <tr style="background: #4caf50; color: white;">
+       <td>
+        <strong>
+         اسم الطالب
+        </strong>
+       </td>
+       <td>
+        <strong>
+         ت1
+        </strong>
+       </td>
+       <td>
+        <strong>
+         ت2
+        </strong>
+       </td>
+       <td>
+        <strong>
+         ت3
+        </strong>
+       </td>
+       <td>
+        <strong>
+         ت4
+        </strong>
+       </td>
+       <td>
+        <strong>
+         مشاركة
+        </strong>
+       </td>
+       <td>
+        <strong>
+         المجموع
+        </strong>
+       </td>
+      </tr>
+      <tr>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+        /5
+       </td>
+      </tr>
+      <tr>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+        /5
+       </td>
+      </tr>
+      <tr>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+        /5
+       </td>
+      </tr>
+      <tr>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+        /5
+       </td>
+      </tr>
+      <tr>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+        /5
+       </td>
+      </tr>
+     </table>
+    </div>
+    <div class="assistant-instructions">
+     <strong>
+      📖 إجابات التمرين 2 (للمعلم المساعد فقط):
+     </strong>
+     <ol>
+      <li>
+       b) Big changes are happening
+      </li>
+      <li>
+       b) New skills and technology
+      </li>
+      <li>
+       c) Cinemas
+      </li>
+      <li>
+       False
+      </li>
+      <li>
+       b) Bright and exciting
+      </li>
+     </ol>
+    </div>
+   </div>
+   <div class="no-print" style="text-align: center; margin-top: 20px; color: #666;">
+   </div>
+  </div>
+  <div class="day-separator">
+  </div>
+  <div>
+   <div style="text-align:center; font-size:38px; font-weight:bold; color:#4caf50; margin-bottom:8px; margin-top:10px; letter-spacing:2px;">
+    المجموعة المتوسطة
+   </div>
+   <div class="header">
+    <h1>
+     ورقة عمل - اليوم 3 🌟
+    </h1>
+    <div class="subtitle">
+     إعداد أ. محمد العثيمين - أبي بكر بن العربي الثانوية
+    </div>
+   </div>
+   <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 10px; margin-bottom: 10px; padding: 8px; border: 2px solid #333; border-radius: 5px; background: #f9f9f9;">
+    <div style="display: flex; align-items: center;">
+     <strong>
+      الاسم:
+     </strong>
+     <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;">
+     </span>
+    </div>
+    <div style="display: flex; align-items: center;">
+     <strong>
+      الفصل:
+     </strong>
+     <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;">
+     </span>
+    </div>
+    <div style="display: flex; align-items: center;">
+     <strong>
+      الرقم:
+     </strong>
+     <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;">
+     </span>
+    </div>
+    <div style="display: flex; align-items: center;">
+     <strong>
+      المجموعة:
+     </strong>
+     <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;">
+     </span>
+    </div>
+   </div>
+   <div class="info-box">
+    <strong>
+     🎯 هدف اليوم:
+    </strong>
+    فهم بنية الفقرة + كتابة فقرة منظمة + تحضير عرض قصير
+   </div>
+   <div class="exercise">
+    <div class="exercise-title">
+     التمرين 1: تحليل بنية الفقرة
+    </div>
+    <p style="margin: 5px 0; font-size: 13px;">
+     <strong>
+      اقرأ الفقرة التالية ثم حدد أجزاءها:
+     </strong>
+    </p>
+    <div class="paragraph-example" style="margin-top: 10px;">
+     <p style="margin: 8px 0;">
+      <span style="background: #ffeb3b; padding: 2px;">
+       My name is Ahmed and I am a high school student.
+      </span>
+      <span style="background: #81c784; padding: 2px;">
+       I study at Abi Bakr Al-Arabi School in Riyadh. I have many friends and we enjoy learning together. My favorite subject is English because it helps me communicate with people from different countries. I also like sports and play football every weekend.
+      </span>
+      <span style="background: #64b5f6; padding: 2px;">
+       I hope to become an engineer in the future.
+      </span>
+     </p>
+    </div>
+    <div style="margin-top: 15px; font-size: 15px;">
+     <p>
+      <strong>
+       الآن حدد الأجزاء:
+      </strong>
+     </p>
+     <p style="margin: 10px 0;">
+      <strong>
+       1. Topic Sentence
+      </strong>
+      (الجملة الرئيسية - أصفر):
+      <br/>
+      <span style="border-bottom: 1px solid #333; display: inline-block; width: 90%; min-height: 25px; margin-top: 5px;">
+      </span>
+     </p>
+     <p style="margin: 10px 0;">
+      <strong>
+       2. Supporting Details
+      </strong>
+      (التفاصيل الداعمة - أخضر): كم جملة؟
+      <u>
+      </u>
+     </p>
+     <p style="margin: 10px 0;">
+      <strong>
+       3. Concluding Sentence
+      </strong>
+      (الجملة الختامية - أزرق):
+      <br/>
+      <span style="border-bottom: 1px solid #333; display: inline-block; width: 90%; min-height: 25px; margin-top: 5px;">
+      </span>
+     </p>
+    </div>
+   </div>
+   <div class="exercise">
+    <div class="exercise-title">
+     التمرين 2: ترتيب الجمل
+    </div>
+    <p style="margin: 5px 0; font-size: 13px;">
+     <strong>
+      رتب الجمل التالية لتكوين فقرة منظمة (1-6):
+     </strong>
+    </p>
+    <div class="english-text" style="margin-top: 10px;">
+     <p>
+      ___ I hope to visit many countries and learn about different cultures.
+     </p>
+     <p>
+      ___ My family is very important to me.
+     </p>
+     <p>
+      ___ We eat dinner together every evening and talk about our day.
+     </p>
+     <p>
+      ___ I have two brothers and one sister.
+     </p>
+     <p>
+      ___ My parents always support me in my studies.
+     </p>
+     <p>
+      ___ We also travel together during vacations.
+     </p>
+    </div>
+   </div>
+   <div class="exercise">
+    <div class="exercise-title">
+     التمرين 3: اكتب فقرة منظمة
+    </div>
+    <p style="margin: 5px 0; font-size: 13px;">
+     <strong>
+      اكتب فقرة (60-80 كلمة) عن أحد المواضيع التالية:
+     </strong>
+    </p>
+    <div style="margin: 10px 0;">
+     <p>
+      ✅
+      <strong>
+       My Daily Routine
+      </strong>
+      (روتيني اليومي)
+     </p>
+     <p>
+      ✅
+      <strong>
+       Changes in My Life
+      </strong>
+      (التغييرات في حياتي)
+     </p>
+     <p>
+      ✅
+      <strong>
+       My Family
+      </strong>
+      (عائلتي)
+     </p>
+    </div>
+    <div style="margin-top: 10px; font-size: 14px; background: #fff3cd; padding: 10px; border-radius: 5px;">
+     <strong>
+      تذكر:
+     </strong>
+     <ul style="margin-right: 20px; margin-top: 5px;">
+      <li>
+       ابدأ بجملة رئيسية واضحة (Topic Sentence)
+      </li>
+      <li>
+       أضف 4-5 جمل داعمة (Supporting Details)
+      </li>
+      <li>
+       اختم بجملة ختامية (Concluding Sentence)
+      </li>
+     </ul>
+    </div>
+    <div class="writing-box" style="margin-top: 15px; direction: ltr; text-align: left;">
+     <div style="font-family: 'Andika', sans-serif; font-size: 16px; color: #999; font-style: italic;">
+      Write your paragraph here...
+     </div>
+    </div>
+   </div>
+   <div class="exercise">
+    <div class="exercise-title">
+     التمرين 4: تحضير عرض قصير 🎤
+    </div>
+    <p style="margin: 5px 0; font-size: 13px;">
+     <strong>
+      حضّر عرضاً شفهياً قصيراً (1-2 دقيقة) عن الموضوع الذي كتبت عنه
+     </strong>
+    </p>
+    <div style="margin-top: 10px; font-size: 14px;">
+     <div style="background: #e8f5e9; padding: 15px; border-radius: 5px; margin: 10px 0;">
+      <p style="margin: 5px 0;">
+       <strong>
+        📝 خطوات التحضير:
+       </strong>
+      </p>
+      <ol style="margin-right: 20px; margin-top: 8px;">
+       <li>
+        اقرأ فقرتك عدة مرات
+       </li>
+       <li>
+        ضع خطاً تحت النقاط المهمة
+       </li>
+       <li>
+        تدرب على النطق الصحيح
+       </li>
+       <li>
+        استعد للإجابة عن سؤالين
+       </li>
+      </ol>
+     </div>
+     <div style="background: #fff3cd; padding: 15px; border-radius: 5px; margin: 10px 0;">
+      <p style="margin: 5px 0;">
+       <strong>
+        🗣️ نصائح للعرض:
+       </strong>
+      </p>
+      <ul style="margin-right: 20px; margin-top: 8px;">
+       <li>
+        تحدث بصوت واضح
+       </li>
+       <li>
+        انظر إلى زملائك
+       </li>
+       <li>
+        لا تقرأ مباشرة من الورقة
+       </li>
+       <li>
+        ابتسم وكن واثقاً
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="note" style="margin-top: 10px;">
+    <strong>
+     ⏱️ الزمن المقترح:
+    </strong>
+    22-25 دقيقة |
+    <strong>
+     📌 ملاحظة:
+    </strong>
+    التمرين 4 يحتاج إلى وقت للتحضير والعرض
+   </div>
+   <div style="text-align: center; margin-top: 15px; font-size: 20px; font-weight: bold; color: #333;">
+    إعداد أ. محمد العثيمين - أبي بكر بن العربي الثانوية
+   </div>
+   <div class="assistant-box" style="page-break-before: always;">
+    <h3>
+     📖 تعليمات المعلم المساعد
+    </h3>
+    <div class="assistant-instructions">
+     <strong>
+      📋 مهامك في هذا النشاط:
+     </strong>
+     <ol>
+      <li>
+       <strong>
+        قبل البدء (3 دقائق):
+       </strong>
+       <ul>
+        <li>
+         اشرح بنية الفقرة الثلاثية: Topic Sentence (البداية) + Supporting Details (الوسط) + Concluding Sentence (النهاية)
+        </li>
+        <li>
+         اقرأ المثال في التمرين 1 بصوت واضح
+        </li>
+        <li>
+         وضّح الألوان: أصفر (البداية)، أخضر (التفاصيل)، أزرق (الخاتمة)
+        </li>
+        <li>
+         شجع الطلاب على الكتابة بثقة
+        </li>
+       </ul>
+      </li>
+      <li>
+       <strong>
+        أثناء العمل (15 دقيقة):
+       </strong>
+       <ul>
+        <li>
+         التمرين 1: ساعدهم على تحديد أجزاء الفقرة
+        </li>
+        <li>
+         التمرين 2: اشرح أن الجملة الرئيسية تأتي أولاً
+        </li>
+        <li>
+         التمرين 3: مرّ على كل طالب أثناء الكتابة وقدم نصائح سريعة
+        </li>
+        <li>
+         تأكد من أنهم يكتبون 60-80 كلمة (عدّ الكلمات إذا لزم الأمر)
+        </li>
+        <li>
+         التمرين 4: أعط 3-4 دقائق للتحضير للعرض
+        </li>
+       </ul>
+      </li>
+      <li>
+       <strong>
+        في النهاية (7 دقائق):
+       </strong>
+       <ul>
+        <li>
+         اختر 3-4 طلاب لتقديم عروضهم القصيرة
+        </li>
+        <li>
+         شجع الآخرين على الاستماع بانتباه
+        </li>
+        <li>
+         اطلب من الطلاب طرح سؤال واحد لكل عارض
+        </li>
+        <li>
+         امدح الأداء الجيد والمحاولات الشجاعة
+        </li>
+        <li>
+         تسجيل النقاط
+        </li>
+       </ul>
+      </li>
+     </ol>
+    </div>
+    <div class="note">
+     <strong>
+      💡 نصائح مهمة:
+     </strong>
+     <ul>
+      <li>
+       هذا الدرس يركز على مهارة الكتابة المنظمة - خذ وقتك
+      </li>
+      <li>
+       في التمرين 3: لا تتوقع كتابة مثالية، المهم المحاولة والتنظيم
+      </li>
+      <li>
+       ساعد الطلاب على العد: جملة البداية (1) + تفاصيل (4-5) + جملة الخاتمة (1) = فقرة كاملة
+      </li>
+      <li>
+       في العرض: شجع حتى الطلاب الخجولين على المحاولة
+      </li>
+      <li>
+       استخدم التصفيق والتشجيع لبناء الثقة
+      </li>
+      <li>
+       إذا كان الوقت ضيقاً، ركز على التمارين 1 و 3 (الأهم)
+      </li>
+     </ul>
+    </div>
+    <div class="assistant-instructions">
+     <strong>
+      ✅ معايير منح النقاط (كل طالب يمكن أن يحصل على 5 نقاط):
+     </strong>
+     <ul>
+      <li>
+       ✔️ أكمل التمرين 1 (تحليل بنية الفقرة) = نقطة واحدة
+      </li>
+      <li>
+       ✔️ أكمل التمرين 2 (ترتيب الجمل) = نقطة واحدة
+      </li>
+      <li>
+       ✔️ كتب فقرة في التمرين 3 (حتى لو كانت قصيرة) = نقطة واحدة
+      </li>
+      <li>
+       ✔️ حضّر أو قدم عرضاً في التمرين 4 = نقطة واحدة
+      </li>
+      <li>
+       ✔️ استمع للعروض أو طرح سؤالاً = نقطة واحدة
+      </li>
+     </ul>
+    </div>
+    <div class="assistant-instructions">
+     <strong>
+      📝 جدول تسجيل النقاط:
+     </strong>
+     <table style="margin-top: 10px;">
+      <tr style="background: #4caf50; color: white;">
+       <td>
+        <strong>
+         اسم الطالب
+        </strong>
+       </td>
+       <td>
+        <strong>
+         ت1
+        </strong>
+       </td>
+       <td>
+        <strong>
+         ت2
+        </strong>
+       </td>
+       <td>
+        <strong>
+         ت3
+        </strong>
+       </td>
+       <td>
+        <strong>
+         ت4
+        </strong>
+       </td>
+       <td>
+        <strong>
+         مشاركة
+        </strong>
+       </td>
+       <td>
+        <strong>
+         المجموع
+        </strong>
+       </td>
+      </tr>
+      <tr>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+        /5
+       </td>
+      </tr>
+      <tr>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+        /5
+       </td>
+      </tr>
+      <tr>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+        /5
+       </td>
+      </tr>
+      <tr>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+        /5
+       </td>
+      </tr>
+      <tr>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+        /5
+       </td>
+      </tr>
+     </table>
+    </div>
+    <div class="assistant-instructions">
+     <strong>
+      📖 إجابات التمرين 2 (الترتيب الصحيح):
+     </strong>
+     <ol>
+      <li>
+       My family is very important to me. (2)
+      </li>
+      <li>
+       I have two brothers and one sister. (3)
+      </li>
+      <li>
+       My parents always support me in my studies. (4)
+      </li>
+      <li>
+       We eat dinner together every evening and talk about our day. (5)
+      </li>
+      <li>
+       We also travel together during vacations. (6)
+      </li>
+      <li>
+       I hope to visit many countries and learn about different cultures. (1 - ختامية)
+      </li>
+     </ol>
+     <p>
+      <strong>
+       ملاحظة:
+      </strong>
+      الترتيب الأفضل: 2, 3, 4, 5, 6, 1
+     </p>
+    </div>
+   </div>
+   <div class="no-print" style="text-align: center; margin-top: 20px; color: #666;">
+   </div>
+  </div>
+  <div class="day-separator">
+  </div>
+  <div>
+   <div style="text-align:center; font-size:38px; font-weight:bold; color:#4caf50; margin-bottom:8px; margin-top:10px; letter-spacing:2px;">
+    المجموعة المتوسطة
+   </div>
+   <div class="header">
+    <h1>
+     ورقة عمل - اليوم 4 🌟
+    </h1>
+    <div class="subtitle">
+     إعداد أ. محمد العثيمين - أبي بكر بن العربي الثانوية
+    </div>
+   </div>
+   <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 10px; margin-bottom: 10px; padding: 8px; border: 2px solid #333; border-radius: 5px; background: #f9f9f9;">
+    <div style="display: flex; align-items: center;">
+     <strong>
+      الاسم:
+     </strong>
+     <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;">
+     </span>
+    </div>
+    <div style="display: flex; align-items: center;">
+     <strong>
+      الفصل:
+     </strong>
+     <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;">
+     </span>
+    </div>
+    <div style="display: flex; align-items: center;">
+     <strong>
+      الرقم:
+     </strong>
+     <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;">
+     </span>
+    </div>
+    <div style="display: flex; align-items: center;">
+     <strong>
+      المجموعة:
+     </strong>
+     <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;">
+     </span>
+    </div>
+   </div>
+   <div class="info-box">
+    <strong>
+     🎯 هدف اليوم:
+    </strong>
+    كتابة موضوع عن النفس + استخدام أدوات الربط + مناقشة جماعية
+   </div>
+   <div class="exercise">
+    <div class="exercise-title">
+     التمرين 1: اكتب عن نفسك
+    </div>
+    <p style="margin: 5px 0; font-size: 13px;">
+     <strong>
+      اكتب موضوعاً عن نفسك (60 كلمة على الأقل). استخدم النقاط التالية:
+     </strong>
+    </p>
+    <div style="margin: 10px 0; font-size: 14px;">
+     <ul style="margin-right: 20px;">
+      <li>
+       What is your name and age?
+      </li>
+      <li>
+       Where do you study?
+      </li>
+      <li>
+       What are your hobbies?
+      </li>
+      <li>
+       What is your favorite subject? Why?
+      </li>
+      <li>
+       What do you want to be in the future?
+      </li>
+      <li>
+       What makes you happy?
+      </li>
+     </ul>
+    </div>
+    <div style="margin-top: 10px; font-size: 14px; background: #e8f5e9; padding: 10px; border-radius: 5px;">
+     <strong>
+      📝 مثال للبداية:
+     </strong>
+     <p class="english-text" style="margin-top: 5px;">
+      My name is Ahmed and I am 16 years old. I study at Abi Bakr Al-Arabi High School...
+     </p>
+    </div>
+    <div class="writing-box" style="margin-top: 15px;">
+     <div style="font-size: 16px; color: #999; font-style: italic;">
+      Write your composition here... (60+ words)
+     </div>
+    </div>
+    <div style="margin-top: 5px; font-size: 13px; text-align: left; direction: ltr;">
+     <strong>
+      Word Count:
+     </strong>
+     _____ / 60
+    </div>
+   </div>
+   <div class="exercise">
+    <div class="exercise-title">
+     التمرين 2: استخدام أدوات الربط
+    </div>
+    <p style="margin: 5px 0; font-size: 13px;">
+     <strong>
+      اربط الجمل باستخدام الأدوات المناسبة: and, but, because, so
+     </strong>
+    </p>
+    <div class="english-text" style="margin-top: 10px;">
+     <p>
+      <strong>
+       1.
+      </strong>
+      I like English. I study it every day.
+     </p>
+     <p style="margin-left: 20px; color: #666;">
+      → I like English,
+      <u>
+      </u>
+      I study it every day.
+     </p>
+     <p style="margin-top: 10px;">
+      <strong>
+       2.
+      </strong>
+      I want to play football. It is raining now.
+     </p>
+     <p style="margin-left: 20px; color: #666;">
+      → I want to play football,
+      <u>
+      </u>
+      it is raining now.
+     </p>
+     <p style="margin-top: 10px;">
+      <strong>
+       3.
+      </strong>
+      I study hard. I want to get good grades.
+     </p>
+     <p style="margin-left: 20px; color: #666;">
+      → I study hard
+      <u>
+      </u>
+      I want to get good grades.
+     </p>
+     <p style="margin-top: 10px;">
+      <strong>
+       4.
+      </strong>
+      I was tired. I went to bed early.
+     </p>
+     <p style="margin-left: 20px; color: #666;">
+      → I was tired,
+      <u>
+      </u>
+      I went to bed early.
+     </p>
+     <p style="margin-top: 10px;">
+      <strong>
+       5.
+      </strong>
+      I like reading. I like writing. I don't like math.
+     </p>
+     <p style="margin-left: 20px; color: #666;">
+      → I like reading
+      <u>
+      </u>
+      writing,
+      <u>
+      </u>
+      I don't like math.
+     </p>
+    </div>
+   </div>
+   <div class="exercise">
+    <div class="exercise-title">
+     التمرين 3: مناقشة جماعية 💬
+    </div>
+    <p style="margin: 5px 0; font-size: 13px;">
+     <strong>
+      شكّل مجموعة من 4-5 طلاب وناقشوا الأسئلة التالية:
+     </strong>
+    </p>
+    <div class="english-text" style="margin-top: 10px;">
+     <div style="background: #e3f2fd; padding: 15px; border-radius: 5px; margin: 10px 0;">
+      <p style="margin: 8px 0; font-weight: bold;">
+       Question 1: What are the biggest changes in Saudi Arabia?
+      </p>
+      <p style="margin: 8px 0; color: #666; font-size: 15px;">
+       Everyone shares their opinion (1 minute each)
+      </p>
+     </div>
+     <div style="background: #e8f5e9; padding: 15px; border-radius: 5px; margin: 10px 0;">
+      <p style="margin: 8px 0; font-weight: bold;">
+       Question 2: How can we improve our English?
+      </p>
+      <p style="margin: 8px 0; color: #666; font-size: 15px;">
+       Discuss different ways to learn English better
+      </p>
+     </div>
+     <div style="background: #fff3cd; padding: 15px; border-radius: 5px; margin: 10px 0;">
+      <p style="margin: 8px 0; font-weight: bold;">
+       Question 3: What do you want to achieve this year?
+      </p>
+      <p style="margin: 8px 0; color: #666; font-size: 15px;">
+       Share your goals and dreams
+      </p>
+     </div>
+    </div>
+    <div style="margin-top: 15px; font-size: 14px; background: #fce4ec; padding: 10px; border-radius: 5px;">
+     <strong>
+      📋 قواعد المناقشة:
+     </strong>
+     <ul style="margin-right: 20px; margin-top: 5px;">
+      <li>
+       استمع جيداً للآخرين
+      </li>
+      <li>
+       تحدث بوضوح وببطء
+      </li>
+      <li>
+       احترم آراء الجميع
+      </li>
+      <li>
+       استخدم جمل كاملة
+      </li>
+      <li>
+       شجع زملاءك على المشاركة
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div class="exercise">
+    <div class="exercise-title">
+     التمرين 4: تقييم ذاتي ✍️
+    </div>
+    <p style="margin: 5px 0; font-size: 13px;">
+     <strong>
+      أكمل الجمل التالية بصدق:
+     </strong>
+    </p>
+    <div style="margin-top: 10px; font-size: 15px;">
+     <p style="margin: 10px 0;">
+      <strong>
+       1. This week, I learned:
+      </strong>
+      <br/>
+      <span style="border-bottom: 1px solid #333; display: inline-block; width: 90%; min-height: 25px; margin-top: 5px;">
+      </span>
+     </p>
+     <p style="margin: 10px 0;">
+      <strong>
+       2. My English improved in:
+      </strong>
+      <br/>
+      <span style="border-bottom: 1px solid #333; display: inline-block; width: 90%; min-height: 25px; margin-top: 5px;">
+      </span>
+     </p>
+     <p style="margin: 10px 0;">
+      <strong>
+       3. I still need to work on:
+      </strong>
+      <br/>
+      <span style="border-bottom: 1px solid #333; display: inline-block; width: 90%; min-height: 25px; margin-top: 5px;">
+      </span>
+     </p>
+     <p style="margin: 10px 0;">
+      <strong>
+       4. Next week, I will:
+      </strong>
+      <br/>
+      <span style="border-bottom: 1px solid #333; display: inline-block; width: 90%; min-height: 25px; margin-top: 5px;">
+      </span>
+     </p>
+    </div>
+   </div>
+   <div class="note" style="margin-top: 10px;">
+    <strong>
+     ⏱️ الزمن المقترح:
+    </strong>
+    22-25 دقيقة |
+    <strong>
+     📌 ملاحظة:
+    </strong>
+    هذه آخر ورقة عمل - احتفل بالإنجازات! 🎉
+   </div>
+   <div style="text-align: center; margin-top: 15px; font-size: 20px; font-weight: bold; color: #333;">
+    إعداد أ. محمد العثيمين - أبي بكر بن العربي الثانوية
+   </div>
+   <div class="assistant-box" style="page-break-before: always;">
+    <h3>
+     📖 تعليمات المعلم المساعد
+    </h3>
+    <div class="assistant-instructions">
+     <strong>
+      📋 مهامك في هذا النشاط:
+     </strong>
+     <ol>
+      <li>
+       <strong>
+        قبل البدء (3 دقائق):
+       </strong>
+       <ul>
+        <li>
+         ذكّر الطلاب بأن هذا آخر يوم في الخطة العلاجية
+        </li>
+        <li>
+         اشرح أدوات الربط الأربعة: and (و)، but (لكن)، because (لأن)، so (لذلك)
+        </li>
+        <li>
+         اقرأ مثال البداية في التمرين 1
+        </li>
+        <li>
+         شجعهم على الكتابة بثقة وبدون خوف من الأخطاء
+        </li>
+       </ul>
+      </li>
+      <li>
+       <strong>
+        أثناء العمل (15 دقيقة):
+       </strong>
+       <ul>
+        <li>
+         التمرين 1: أعط 7-8 دقائق للكتابة، مرّ على كل طالب وساعده
+        </li>
+        <li>
+         عدّ الكلمات لبعض الطلاب للتأكد من الوصول لـ 60 كلمة
+        </li>
+        <li>
+         التمرين 2: راجع معهم استخدام أدوات الربط
+        </li>
+        <li>
+         التمرين 3: شكّل مجموعات 4-5 طلاب، راقب النقاش وشجعهم
+        </li>
+        <li>
+         التمرين 4: أعط 2-3 دقائق للتقييم الذاتي
+        </li>
+       </ul>
+      </li>
+      <li>
+       <strong>
+        في النهاية (7 دقائق):
+       </strong>
+       <ul>
+        <li>
+         اطلب من 2-3 طلاب قراءة موضوعاتهم (التمرين 1)
+        </li>
+        <li>
+         اطلب من كل مجموعة مشاركة نقطة واحدة من نقاشهم
+        </li>
+        <li>
+         امدح الجميع على جهودهم طوال الأسبوع
+        </li>
+        <li>
+         احتفل بالتقدم الذي حققوه 🎉
+        </li>
+        <li>
+         تسجيل النقاط النهائية
+        </li>
+       </ul>
+      </li>
+     </ol>
+    </div>
+    <div class="note">
+     <strong>
+      💡 نصائح مهمة:
+     </strong>
+     <ul>
+      <li>
+       هذا اليوم الأخير - اجعله إيجابياً ومحفزاً
+      </li>
+      <li>
+       في التمرين 1: لا تتوقع كتابة خالية من الأخطاء، المهم أن يكتبوا 60 كلمة
+      </li>
+      <li>
+       شجع الطلاب على استخدام أدوات الربط في كتابتهم
+      </li>
+      <li>
+       في المناقشة الجماعية: حاول إشراك الجميع، حتى الخجولين
+      </li>
+      <li>
+       التقييم الذاتي (التمرين 4) مهم - شجعهم على الصدق
+      </li>
+      <li>
+       اختم بكلمة تشجيعية عن أهمية الاستمرار في التعلم
+      </li>
+     </ul>
+    </div>
+    <div class="assistant-instructions">
+     <strong>
+      ✅ معايير منح النقاط (كل طالب يمكن أن يحصل على 5 نقاط):
+     </strong>
+     <ul>
+      <li>
+       ✔️ كتب موضوعاً في التمرين 1 (حتى لو أقل من 60 كلمة قليلاً) = نقطة واحدة
+      </li>
+      <li>
+       ✔️ أكمل التمرين 2 (أدوات الربط) = نقطة واحدة
+      </li>
+      <li>
+       ✔️ شارك في المناقشة الجماعية (التمرين 3) = نقطة واحدة
+      </li>
+      <li>
+       ✔️ أكمل التقييم الذاتي (التمرين 4) = نقطة واحدة
+      </li>
+      <li>
+       ✔️ قرأ موضوعه أو شارك رأيه في النهاية = نقطة واحدة
+      </li>
+     </ul>
+    </div>
+    <div class="assistant-instructions">
+     <strong>
+      📝 جدول تسجيل النقاط:
+     </strong>
+     <table style="margin-top: 10px;">
+      <tr style="background: #4caf50; color: white;">
+       <td>
+        <strong>
+         اسم الطالب
+        </strong>
+       </td>
+       <td>
+        <strong>
+         ت1
+        </strong>
+       </td>
+       <td>
+        <strong>
+         ت2
+        </strong>
+       </td>
+       <td>
+        <strong>
+         ت3
+        </strong>
+       </td>
+       <td>
+        <strong>
+         ت4
+        </strong>
+       </td>
+       <td>
+        <strong>
+         مشاركة
+        </strong>
+       </td>
+       <td>
+        <strong>
+         المجموع
+        </strong>
+       </td>
+      </tr>
+      <tr>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+        /5
+       </td>
+      </tr>
+      <tr>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+        /5
+       </td>
+      </tr>
+      <tr>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+        /5
+       </td>
+      </tr>
+      <tr>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+        /5
+       </td>
+      </tr>
+      <tr>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td>
+        /5
+       </td>
+      </tr>
+     </table>
+    </div>
+    <div class="assistant-instructions">
+     <strong>
+      📖 إجابات التمرين 2 (أدوات الربط):
+     </strong>
+     <ol>
+      <li>
+       I like English,
+       <strong>
+        so
+       </strong>
+       I study it every day.
+      </li>
+      <li>
+       I want to play football,
+       <strong>
+        but
+       </strong>
+       it is raining now.
+      </li>
+      <li>
+       I study hard
+       <strong>
+        because
+       </strong>
+       I want to get good grades.
+      </li>
+      <li>
+       I was tired,
+       <strong>
+        so
+       </strong>
+       I went to bed early.
+      </li>
+      <li>
+       I like reading
+       <strong>
+        and
+       </strong>
+       writing,
+       <strong>
+        but
+       </strong>
+       I don't like math.
+      </li>
+     </ol>
+    </div>
+    <div class="assistant-instructions" style="background: #e8f5e9; padding: 15px; border-radius: 5px; margin-top: 15px;">
+     <strong>
+      🎉 رسالة ختامية للطلاب:
+     </strong>
+     <p style="margin-top: 10px; font-size: 15px; line-height: 1.8;">
+      "أحسنتم جميعاً! لقد أكملتم 4 أيام من التعلم المكثف. تذكروا: تعلم اللغة الإنجليزية رحلة طويلة، والمهم هو الاستمرار. استمروا في القراءة والكتابة والممارسة. أنتم قادرون على النجاح! 💪🌟"
+     </p>
+    </div>
+   </div>
+   <div class="no-print" style="text-align: center; margin-top: 20px; color: #666;">
+   </div>
+  </div>
+ </body>
+</html>
