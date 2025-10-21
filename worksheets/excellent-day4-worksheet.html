@@ -8,9 +8,9 @@
     <style>
         .excellent-worksheet {
             background: linear-gradient(135deg, #f3e5f5 0%, #ffffff 100%);
-            padding: 30px;
-            max-width: 900px;
-            margin: 20px auto;
+            padding: 15px;
+            max-width: 950px;
+            margin: 10px auto;
             border-left: 8px solid #9c27b0;
             box-shadow: 0 4px 15px rgba(156, 39, 176, 0.2);
         }
@@ -24,6 +24,7 @@
             color: #9c27b0;
             font-size: 2.2em;
             margin-bottom: 10px;
+            line-height: 1.2;
         }
         .day-title {
             background: linear-gradient(135deg, #9c27b0 0%, #7b1fa2 100%);
@@ -51,8 +52,8 @@
         }
         .exercise {
             background: white;
-            padding: 25px;
-            margin-bottom: 25px;
+            padding: 15px;
+            margin-bottom: 15px;
             border-radius: 12px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.08);
             border-right: 4px solid #9c27b0;
@@ -67,16 +68,16 @@
         .listening-box {
             background: #e8f5e9;
             border-right: 4px solid #4caf50;
-            padding: 20px;
-            margin: 20px 0;
+            padding: 12px;
+            margin: 12px 0;
             border-radius: 8px;
         }
         .question {
-            margin: 20px 0;
-            padding: 15px;
+            margin: 12px 0;
+            padding: 10px;
             background: #f9f9f9;
             border-radius: 8px;
-            line-height: 1.8;
+            line-height: 1.6;
         }
         .question-number {
             background: #9c27b0;
@@ -89,30 +90,22 @@
         .answer-line {
             border-bottom: 2px solid #9c27b0;
             display: inline-block;
-            min-width: 250px;
+            min-width: 200px;
             margin: 0 10px;
         }
         .presentation-box {
             background: #fff3e0;
             border-right: 4px solid #ff9800;
-            padding: 20px;
-            margin: 20px 0;
+            padding: 12px;
+            margin: 12px 0;
             border-radius: 8px;
         }
         .final-review {
             background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
-            padding: 25px;
+            padding: 15px;
             border-radius: 12px;
-            margin-top: 30px;
+            margin-top: 15px;
             border: 3px solid #2196f3;
-        }
-        .congratulations {
-            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
-            padding: 30px;
-            border-radius: 15px;
-            margin-top: 30px;
-            border: 4px solid #ff6f00;
-            text-align: center;
         }
         .print-button {
             background: #9c27b0;
@@ -133,6 +126,56 @@
         }
         @media print {
             .print-button { display: none; }
+            @page {
+                margin: 1.5cm 1cm;
+            }
+            .excellent-worksheet {
+                padding: 15px 10px;
+                margin: 0;
+                box-shadow: none;
+            }
+            .exercise {
+                padding: 10px;
+                margin-bottom: 10px;
+                page-break-inside: auto;
+            }
+            .question, .listening-box, .presentation-box, .final-review {
+                page-break-inside: avoid;
+            }
+            .worksheet-header h1 {
+                font-size: 1.4em;
+                margin-bottom: 5px;
+                line-height: 1.2;
+            }
+            .day-title {
+                padding: 8px 15px;
+                margin: 8px 0;
+                font-size: 1em;
+            }
+            .student-info {
+                padding: 10px;
+                margin-bottom: 12px;
+            }
+            .objective-box {
+                padding: 12px;
+                margin-bottom: 15px;
+            }
+            .question {
+                margin: 8px 0;
+                padding: 8px;
+            }
+            .listening-box, .presentation-box {
+                padding: 10px;
+                margin: 10px 0;
+            }
+            .final-review {
+                padding: 12px;
+                margin-top: 12px;
+            }
+            .congratulations {
+                padding: 15px;
+                margin-top: 15px;
+            }
         }
     </style>
 </head>
@@ -148,7 +191,6 @@
 
         <div class="student-info">
             <p><strong>الاسم:</strong> _______________________________</p>
-            <p><strong>الفصل:</strong> الثامن (8)  |  <strong>التاريخ:</strong> _______________</p>
         </div>
 
         <div class="objective-box">
@@ -176,31 +218,31 @@
             <div class="question">
                 <span class="question-number">1</span>
                 How many immigrants came to the United States between 1880 and 1920?<br>
-                <span class="answer-line" style="min-width: 500px;"></span>
+                <span class="answer-line" style="min-width: 400px;"></span>
             </div>
 
             <div class="question">
                 <span class="question-number">2</span>
                 Where did most immigrants come from?<br>
-                <span class="answer-line" style="min-width: 500px;"></span>
+                <span class="answer-line" style="min-width: 400px;"></span>
             </div>
 
             <div class="question">
                 <span class="question-number">3</span>
                 Why was the trip across the ocean terrible?<br>
-                <span class="answer-line" style="min-width: 500px;"></span>
+                <span class="answer-line" style="min-width: 400px;"></span>
             </div>
 
             <div class="question">
                 <span class="question-number">4</span>
                 What did immigrants see when they arrived in New York?<br>
-                <span class="answer-line" style="min-width: 500px;"></span>
+                <span class="answer-line" style="min-width: 400px;"></span>
             </div>
 
             <div class="question">
                 <span class="question-number">5</span>
                 Why was Ellis Island called "Heartbreak Island"?<br>
-                <span class="answer-line" style="min-width: 500px;"></span>
+                <span class="answer-line" style="min-width: 400px;"></span>
             </div>
         </div>
 
@@ -214,32 +256,28 @@
                 <span class="question-number">1</span>
                 Where is your family from? Tell me about your relatives.<br>
                 <span style="color: #999; font-size: 0.9em;">Your Answer:</span><br>
-                <span class="answer-line" style="min-width: 600px;"></span><br>
-                <span class="answer-line" style="min-width: 600px;"></span>
+                <span class="answer-line" style="min-width: 500px;"></span>
             </div>
 
             <div class="question">
                 <span class="question-number">2</span>
                 Have you ever visited another city or country? When? What did you see?<br>
                 <span style="color: #999; font-size: 0.9em;">Your Answer:</span><br>
-                <span class="answer-line" style="min-width: 600px;"></span><br>
-                <span class="answer-line" style="min-width: 600px;"></span>
+                <span class="answer-line" style="min-width: 500px;"></span>
             </div>
 
             <div class="question">
                 <span class="question-number">3</span>
                 What is the most important change in your life? Explain.<br>
                 <span style="color: #999; font-size: 0.9em;">Your Answer:</span><br>
-                <span class="answer-line" style="min-width: 600px;"></span><br>
-                <span class="answer-line" style="min-width: 600px;"></span>
+                <span class="answer-line" style="min-width: 500px;"></span>
             </div>
 
             <div class="question">
                 <span class="question-number">4</span>
                 How do you usually communicate with your friends and family?<br>
                 <span style="color: #999; font-size: 0.9em;">Your Answer:</span><br>
-                <span class="answer-line" style="min-width: 600px;"></span><br>
-                <span class="answer-line" style="min-width: 600px;"></span>
+                <span class="answer-line" style="min-width: 500px;"></span>
             </div>
         </div>
 
@@ -262,29 +300,27 @@
 
             <div class="question">
                 <strong>Introduction (What will you talk about?):</strong><br>
-                <span class="answer-line" style="min-width: 600px;"></span><br>
-                <span class="answer-line" style="min-width: 600px;"></span>
+                <span class="answer-line" style="min-width: 500px;"></span>
             </div>
 
             <div class="question">
                 <strong>Main Point 1:</strong><br>
-                <span class="answer-line" style="min-width: 600px;"></span>
+                <span class="answer-line" style="min-width: 500px;"></span>
             </div>
 
             <div class="question">
                 <strong>Main Point 2:</strong><br>
-                <span class="answer-line" style="min-width: 600px;"></span>
+                <span class="answer-line" style="min-width: 500px;"></span>
             </div>
 
             <div class="question">
                 <strong>Main Point 3:</strong><br>
-                <span class="answer-line" style="min-width: 600px;"></span>
+                <span class="answer-line" style="min-width: 500px;"></span>
             </div>
 
             <div class="question">
                 <strong>Conclusion (Your opinion or summary):</strong><br>
-                <span class="answer-line" style="min-width: 600px;"></span><br>
-                <span class="answer-line" style="min-width: 600px;"></span>
+                <span class="answer-line" style="min-width: 500px;"></span>
             </div>
         </div>
 
@@ -337,80 +373,8 @@
             <div class="question">
                 <span class="question-number">8</span>
                 Write one sentence using "In fact":<br>
-                <span class="answer-line" style="min-width: 600px;"></span>
+                <span class="answer-line" style="min-width: 500px;"></span>
             </div>
-        </div>
-
-        <!-- Exercise 5: Self-Assessment -->
-        <div class="exercise">
-            <h3>Exercise 5: Self-Assessment ✅</h3>
-            
-            <p style="color: #666; margin-bottom: 20px;"><strong>How well can you do these things now? Rate yourself (1-5):</strong></p>
-            <p style="color: #999; font-size: 0.9em; margin-bottom: 20px;">1 = Not well | 3 = OK | 5 = Very well</p>
-
-            <table style="width: 100%; border-collapse: collapse;">
-                <tr style="background: #f5f5f5;">
-                    <th style="padding: 12px; text-align: right; border: 1px solid #ddd;">Skill</th>
-                    <th style="padding: 12px; text-align: center; border: 1px solid #ddd; width: 100px;">Rating</th>
-                </tr>
-                <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;">Use Present Simple and Present Progressive</td>
-                    <td style="padding: 12px; text-align: center; border: 1px solid #ddd;">_____ / 5</td>
-                </tr>
-                <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;">Use Past Simple and Present Perfect</td>
-                    <td style="padding: 12px; text-align: center; border: 1px solid #ddd;">_____ / 5</td>
-                </tr>
-                <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;">Use Past Progressive</td>
-                    <td style="padding: 12px; text-align: center; border: 1px solid #ddd;">_____ / 5</td>
-                </tr>
-                <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;">Read and understand texts from Unit 1</td>
-                    <td style="padding: 12px; text-align: center; border: 1px solid #ddd;">_____ / 5</td>
-                </tr>
-                <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;">Write organized paragraphs</td>
-                    <td style="padding: 12px; text-align: center; border: 1px solid #ddd;">_____ / 5</td>
-                </tr>
-                <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;">Have conversations in English</td>
-                    <td style="padding: 12px; text-align: center; border: 1px solid #ddd;">_____ / 5</td>
-                </tr>
-                <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;">Understand listening texts</td>
-                    <td style="padding: 12px; text-align: center; border: 1px solid #ddd;">_____ / 5</td>
-                </tr>
-                <tr style="background: #f5f5f5; font-weight: bold;">
-                    <td style="padding: 12px; border: 1px solid #ddd;">Total Score</td>
-                    <td style="padding: 12px; text-align: center; border: 1px solid #ddd;">_____ / 35</td>
-                </tr>
-            </table>
-        </div>
-
-        <!-- Congratulations -->
-        <div class="congratulations">
-            <h2 style="color: #ff6f00; margin-top: 0; font-size: 2em;">🎉 مبروك! Congratulations! 🎉</h2>
-            <p style="font-size: 1.3em; margin: 20px 0; color: #333;">
-                لقد أكملت البرنامج التدريبي بنجاح!
-            </p>
-            <p style="font-size: 1.1em; color: #666; margin: 15px 0;">
-                أنت الآن جاهز للاختبار النهائي وللقيام بدورك كمعلم مساعد!
-            </p>
-            
-            <div style="background: white; padding: 20px; border-radius: 10px; margin-top: 20px;">
-                <h3 style="color: #9c27b0; margin-top: 0;">📚 Next Steps:</h3>
-                <ol style="text-align: right; line-height: 2; color: #333;">
-                    <li>راجع جميع أوراق العمل والاختبارات</li>
-                    <li>اطلب من المعلم الاختبار النهائي</li>
-                    <li>ابدأ دورك كمعلم مساعد لزملائك</li>
-                    <li>استمر في ممارسة الإنجليزية يومياً</li>
-                </ol>
-            </div>
-
-            <p style="font-size: 1.2em; margin-top: 25px; color: #9c27b0; font-weight: bold;">
-                💪 Keep learning! Keep growing! 💪
-            </p>
         </div>
     </div>
 

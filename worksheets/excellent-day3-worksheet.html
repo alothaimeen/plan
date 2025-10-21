@@ -8,68 +8,80 @@
     <style>
         .excellent-worksheet {
             background: linear-gradient(135deg, #f3e5f5 0%, #ffffff 100%);
-            padding: 30px;
-            max-width: 900px;
-            margin: 20px auto;
-            border-left: 8px solid #9c27b0;
-            box-shadow: 0 4px 15px rgba(156, 39, 176, 0.2);
+            padding: 15px;
+            max-width: 950px;
+            margin: 10px auto;
+            border-left: 6px solid #9c27b0;
+            box-shadow: 0 2px 8px rgba(156, 39, 176, 0.15);
         }
         .worksheet-header {
             text-align: center;
-            border-bottom: 3px solid #9c27b0;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
+            border-bottom: 2px solid #9c27b0;
+            padding-bottom: 8px;
+            margin-bottom: 12px;
         }
         .worksheet-header h1 {
             color: #9c27b0;
-            font-size: 2.2em;
-            margin-bottom: 10px;
+            font-size: 1.6em;
+            margin-bottom: 5px;
+            line-height: 1.2;
         }
         .day-title {
             background: #9c27b0;
             color: white;
-            padding: 12px 25px;
-            border-radius: 25px;
+            padding: 6px 15px;
+            border-radius: 20px;
             display: inline-block;
-            font-size: 1.2em;
-            margin: 15px 0;
+            font-size: 1em;
+            margin: 5px 0;
         }
         .student-info {
             background: white;
-            padding: 20px;
-            border-radius: 12px;
-            margin-bottom: 25px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+        }
+        .student-info p {
+            margin: 5px 0;
         }
         .objective-box {
             background: linear-gradient(135deg, #9c27b0 0%, #7b1fa2 100%);
             color: white;
-            padding: 20px;
-            border-radius: 12px;
-            margin-bottom: 30px;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 12px;
             text-align: center;
+        }
+        .objective-box h3 {
+            margin: 0 0 5px 0;
+            font-size: 1.1em;
+        }
+        .objective-box p {
+            margin: 0;
         }
         .exercise {
             background: white;
-            padding: 25px;
-            margin-bottom: 25px;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-            border-right: 4px solid #9c27b0;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+            border-right: 3px solid #9c27b0;
         }
         .exercise h3 {
             color: #9c27b0;
             margin-top: 0;
-            font-size: 1.4em;
-            border-bottom: 2px dashed #9c27b0;
-            padding-bottom: 10px;
+            font-size: 1.2em;
+            border-bottom: 1px dashed #9c27b0;
+            padding-bottom: 8px;
+            margin-bottom: 12px;
         }
         .question {
-            margin: 20px 0;
-            padding: 15px;
+            margin: 12px 0;
+            padding: 10px;
             background: #f9f9f9;
-            border-radius: 8px;
-            line-height: 1.8;
+            border-radius: 6px;
+            line-height: 1.6;
         }
         .question-number {
             background: #9c27b0;
@@ -87,24 +99,24 @@
         }
         .grammar-tip {
             background: #e1f5fe;
-            border-right: 4px solid #0288d1;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 8px;
+            border-right: 3px solid #0288d1;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 6px;
         }
         .writing-box {
             background: #fff9c4;
-            border-right: 4px solid #fbc02d;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 8px;
+            border-right: 3px solid #fbc02d;
+            padding: 12px;
+            margin: 12px 0;
+            border-radius: 6px;
         }
         .bonus-activity {
             background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
-            padding: 25px;
-            border-radius: 12px;
-            margin-top: 30px;
-            border: 3px dashed #ff6f00;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 18px;
+            border: 2px dashed #ff6f00;
         }
         .print-button {
             background: #9c27b0;
@@ -125,6 +137,94 @@
         }
         @media print {
             .print-button { display: none; }
+            
+            @page {
+                margin: 1.5cm 1cm;
+            }
+            
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            
+            .excellent-worksheet {
+                max-width: none;
+                margin: 0;
+                padding: 15px 10px;
+                box-shadow: none;
+                border: none;
+            }
+            
+            .worksheet-header {
+                margin-bottom: 8px;
+                padding-bottom: 5px;
+                page-break-after: avoid;
+            }
+            
+            .worksheet-header h1 {
+                font-size: 1.4em;
+                margin-bottom: 3px;
+                line-height: 1.1;
+            }
+            
+            .worksheet-header p {
+                margin-top: 5px;
+                font-size: 0.9em;
+            }
+            
+            .day-title {
+                padding: 5px 12px;
+                font-size: 0.95em;
+                margin: 3px 0;
+            }
+            
+            .exercise {
+                margin-bottom: 12px;
+                padding: 12px;
+                page-break-inside: auto;
+            }
+            
+            .exercise h3 {
+                font-size: 1.1em;
+                margin-bottom: 8px;
+                page-break-after: avoid;
+            }
+            
+            .question {
+                margin: 8px 0;
+                padding: 8px;
+                page-break-inside: avoid;
+            }
+            
+            .bonus-activity {
+                padding: 12px;
+                margin-top: 12px;
+            }
+            
+            .student-info, .objective-box {
+                margin-bottom: 8px;
+                padding: 8px;
+            }
+            
+            .student-info p {
+                margin: 3px 0;
+            }
+            
+            .objective-box h3 {
+                margin: 0 0 3px 0;
+                font-size: 1em;
+            }
+            
+            .objective-box p {
+                margin: 0;
+                font-size: 0.95em;
+            }
+            
+            .grammar-tip, .writing-box {
+                padding: 8px;
+                margin: 8px 0;
+                page-break-inside: avoid;
+            }
         }
     </style>
 </head>
@@ -135,12 +235,11 @@
         <div class="worksheet-header">
             <h1>🟣 المجموعة الممتازة (Excellent Level)</h1>
             <div class="day-title">اليوم الثالث: Writing & Critical Thinking</div>
-            <p style="color: #666; margin-top: 15px; font-size: 1.1em;">Unit 1: Big Changes</p>
+            <p style="color: #666; margin-top: 8px; font-size: 1em;">Unit 1: Big Changes</p>
         </div>
 
         <div class="student-info">
             <p><strong>الاسم:</strong> _______________________________</p>
-            <p><strong>الفصل:</strong> الثامن (8)  |  <strong>التاريخ:</strong> _______________</p>
         </div>
 
         <div class="objective-box">
@@ -159,7 +258,7 @@
                 • Example: I was studying when you called.
             </div>
 
-            <p style="color: #666; margin: 20px 0;"><strong>A. Complete with the Past Progressive:</strong></p>
+            <p style="color: #666; margin: 12px 0 8px 0;"><strong>A. Complete with the Past Progressive:</strong></p>
 
             <div class="question">
                 <span class="question-number">1</span>
@@ -186,7 +285,7 @@
                 <span class="answer-line"></span> it <span class="answer-line"></span> (rain) when you left home?
             </div>
 
-            <p style="color: #666; margin: 30px 0 20px 0;"><strong>B. Past Progressive + When + Past Simple:</strong></p>
+            <p style="color: #666; margin: 15px 0 8px 0;"><strong>B. Past Progressive + When + Past Simple:</strong></p>
 
             <div class="question">
                 <span class="question-number">6</span>
@@ -216,30 +315,30 @@
                 Example: King Abdulaziz established Riyadh on September 23, 1932.
             </div>
 
-            <p style="color: #666; margin: 20px 0;"><strong>Rewrite these sentences with correct capitals:</strong></p>
+            <p style="color: #666; margin: 12px 0 8px 0;"><strong>Rewrite these sentences with correct capitals:</strong></p>
 
             <div class="question">
                 <span class="question-number">1</span>
                 we visited dubai and abu dhabi last summer.<br>
-                <span class="answer-line" style="min-width: 600px;"></span>
+                <span class="answer-line" style="min-width: 500px;"></span>
             </div>
 
             <div class="question">
                 <span class="question-number">2</span>
                 prince sultan bin salman flew on the space shuttle in june 1985.<br>
-                <span class="answer-line" style="min-width: 600px;"></span>
+                <span class="answer-line" style="min-width: 500px;"></span>
             </div>
 
             <div class="question">
                 <span class="question-number">3</span>
                 the kingdom of saudi arabia was established in september.<br>
-                <span class="answer-line" style="min-width: 600px;"></span>
+                <span class="answer-line" style="min-width: 500px;"></span>
             </div>
 
             <div class="question">
                 <span class="question-number">4</span>
                 my family is from jeddah, but we live in riyadh now.<br>
-                <span class="answer-line" style="min-width: 600px;"></span>
+                <span class="answer-line" style="min-width: 500px;"></span>
             </div>
         </div>
 
@@ -247,7 +346,7 @@
         <div class="exercise">
             <h3>Exercise 3: Write a Paragraph</h3>
             
-            <p style="color: #666; margin-bottom: 20px;"><strong>Topic: "How the Internet Changed My Life"</strong></p>
+            <p style="color: #666; margin-bottom: 12px;"><strong>Topic: "How the Internet Changed My Life"</strong></p>
             
             <div class="writing-box">
                 <strong>📝 Paragraph Structure:</strong><br>
@@ -257,8 +356,8 @@
                 • <strong>Length:</strong> 60-80 words
             </div>
 
-            <p style="color: #666; margin: 20px 0;"><strong>Use these ideas if you need help:</strong></p>
-            <ul style="color: #666; margin-bottom: 20px;">
+            <p style="color: #666; margin: 12px 0 8px 0;"><strong>Use these ideas if you need help:</strong></p>
+            <ul style="color: #666; margin-bottom: 12px; line-height: 1.5;">
                 <li>Communication with friends and family</li>
                 <li>E-learning and online courses</li>
                 <li>Finding information quickly (Google)</li>
@@ -266,9 +365,7 @@
                 <li>Online shopping</li>
             </ul>
 
-            <div style="margin-top: 20px; line-height: 2.5;">
-                <p>___________________________________________________________________</p>
-                <p>___________________________________________________________________</p>
+            <div style="line-height: 2.2;">
                 <p>___________________________________________________________________</p>
                 <p>___________________________________________________________________</p>
                 <p>___________________________________________________________________</p>
@@ -282,34 +379,30 @@
         <div class="exercise">
             <h3>Exercise 4: Critical Thinking</h3>
             
-            <p style="color: #666; margin-bottom: 20px;"><strong>Read and answer with YOUR opinion:</strong></p>
+            <p style="color: #666; margin-bottom: 12px;"><strong>Read and answer with YOUR opinion:</strong></p>
 
             <div class="question">
                 <span class="question-number">1</span>
                 Is change always good? Why or why not?<br>
-                <span class="answer-line" style="min-width: 600px;"></span><br>
-                <span class="answer-line" style="min-width: 600px;"></span>
+                <span class="answer-line" style="min-width: 500px;"></span>
             </div>
 
             <div class="question">
                 <span class="question-number">2</span>
                 What is the most important change in Saudi Arabia in your opinion?<br>
-                <span class="answer-line" style="min-width: 600px;"></span><br>
-                <span class="answer-line" style="min-width: 600px;"></span>
+                <span class="answer-line" style="min-width: 500px;"></span>
             </div>
 
             <div class="question">
                 <span class="question-number">3</span>
                 How can students help make positive changes in their school or city?<br>
-                <span class="answer-line" style="min-width: 600px;"></span><br>
-                <span class="answer-line" style="min-width: 600px;"></span>
+                <span class="answer-line" style="min-width: 500px;"></span>
             </div>
 
             <div class="question">
                 <span class="question-number">4</span>
                 Do you think technology makes life better or worse? Explain.<br>
-                <span class="answer-line" style="min-width: 600px;"></span><br>
-                <span class="answer-line" style="min-width: 600px;"></span>
+                <span class="answer-line" style="min-width: 500px;"></span>
             </div>
         </div>
 
@@ -317,68 +410,32 @@
         <div class="exercise">
             <h3>Exercise 5: Saudi Vision 2030</h3>
             
-            <p style="color: #666; margin-bottom: 20px;"><strong>Read and answer:</strong></p>
+            <p style="color: #666; margin-bottom: 12px;"><strong>Read and answer:</strong></p>
 
-            <div style="background: #f0f0f0; padding: 15px; border-radius: 8px; margin-bottom: 20px; line-height: 1.8;">
-                <p>Saudi Arabia's Vision 2030 has three main themes:</p>
-                <p><strong>1. A vibrant society</strong> - People living good lives</p>
-                <p><strong>2. A thriving economy</strong> - Creating jobs and opportunities</p>
-                <p><strong>3. An ambitious nation</strong> - Strong and responsible government</p>
+            <div style="background: #f0f0f0; padding: 12px; border-radius: 6px; margin-bottom: 12px; line-height: 1.6;">
+                <p style="margin: 5px 0;">Saudi Arabia's Vision 2030 has three main themes:</p>
+                <p style="margin: 5px 0;"><strong>1. A vibrant society</strong> - People living good lives</p>
+                <p style="margin: 5px 0;"><strong>2. A thriving economy</strong> - Creating jobs and opportunities</p>
+                <p style="margin: 5px 0;"><strong>3. An ambitious nation</strong> - Strong and responsible government</p>
             </div>
 
             <div class="question">
                 <span class="question-number">1</span>
                 Which theme do you think is most important? Why?<br>
-                <span class="answer-line" style="min-width: 600px;"></span><br>
-                <span class="answer-line" style="min-width: 600px;"></span>
+                <span class="answer-line" style="min-width: 500px;"></span>
             </div>
 
             <div class="question">
                 <span class="question-number">2</span>
                 How can YOU contribute to Vision 2030 as a student?<br>
-                <span class="answer-line" style="min-width: 600px;"></span><br>
-                <span class="answer-line" style="min-width: 600px;"></span>
+                <span class="answer-line" style="min-width: 500px;"></span>
             </div>
 
             <div class="question">
                 <span class="question-number">3</span>
                 What changes have you seen in your city because of Vision 2030?<br>
-                <span class="answer-line" style="min-width: 600px;"></span><br>
-                <span class="answer-line" style="min-width: 600px;"></span>
+                <span class="answer-line" style="min-width: 500px;"></span>
             </div>
-        </div>
-
-        <!-- Bonus Activity -->
-        <div class="bonus-activity">
-            <h3>⭐ Bonus Challenge Activity</h3>
-            <p style="margin-bottom: 15px;"><strong>Write a short essay (100-120 words):</strong></p>
-            <p style="font-size: 1.1em; margin-bottom: 10px;">"The Most Important Event in Saudi History"</p>
-            <p style="color: #666;">Include:</p>
-            <ul style="color: #666;">
-                <li>✓ What was the event?</li>
-                <li>✓ When did it happen?</li>
-                <li>✓ Why was it important?</li>
-                <li>✓ What was its impact on Saudi Arabia?</li>
-                <li>✓ Use Past Simple and Past Progressive</li>
-            </ul>
-            
-            <div style="margin-top: 20px; line-height: 2.5;">
-                <p>___________________________________________________________________</p>
-                <p>___________________________________________________________________</p>
-                <p>___________________________________________________________________</p>
-                <p>___________________________________________________________________</p>
-                <p>___________________________________________________________________</p>
-                <p>___________________________________________________________________</p>
-                <p>___________________________________________________________________</p>
-                <p>___________________________________________________________________</p>
-                <p>___________________________________________________________________</p>
-                <p>___________________________________________________________________</p>
-            </div>
-        </div>
-
-        <div style="text-align: center; margin-top: 40px; padding: 20px; background: #f0f0f0; border-radius: 10px;">
-            <p style="font-size: 1.2em; color: #9c27b0;"><strong>✍️ Excellent writing today!</strong></p>
-            <p style="color: #666;">Tomorrow: Listening & Speaking - Final Day!</p>
         </div>
     </div>
 

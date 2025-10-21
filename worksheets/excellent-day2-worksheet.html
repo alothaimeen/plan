@@ -8,85 +8,86 @@
     <style>
         .excellent-worksheet {
             background: linear-gradient(135deg, #f3e5f5 0%, #ffffff 100%);
-            padding: 30px;
-            max-width: 900px;
-            margin: 20px auto;
-            border-left: 8px solid #9c27b0;
-            box-shadow: 0 4px 15px rgba(156, 39, 176, 0.2);
+            padding: 15px;
+            max-width: 950px;
+            margin: 10px auto;
+            border-left: 6px solid #9c27b0;
+            box-shadow: 0 2px 8px rgba(156, 39, 176, 0.15);
         }
 
         .worksheet-header {
             text-align: center;
-            border-bottom: 3px solid #9c27b0;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
+            border-bottom: 2px solid #9c27b0;
+            padding-bottom: 12px;
+            margin-bottom: 18px;
         }
 
         .worksheet-header h1 {
             color: #9c27b0;
-            font-size: 2.2em;
-            margin-bottom: 10px;
+            font-size: 1.8em;
+            margin-bottom: 8px;
         }
 
         .day-title {
             background: #9c27b0;
             color: white;
-            padding: 12px 25px;
-            border-radius: 25px;
+            padding: 8px 18px;
+            border-radius: 20px;
             display: inline-block;
-            font-size: 1.2em;
-            margin: 15px 0;
+            font-size: 1.1em;
+            margin: 10px 0;
         }
 
         .student-info {
             background: white;
-            padding: 20px;
-            border-radius: 12px;
-            margin-bottom: 25px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
         }
 
         .objective-box {
             background: linear-gradient(135deg, #9c27b0 0%, #7b1fa2 100%);
             color: white;
-            padding: 20px;
-            border-radius: 12px;
-            margin-bottom: 30px;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 18px;
             text-align: center;
         }
 
         .exercise {
             background: white;
-            padding: 25px;
-            margin-bottom: 25px;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-            border-right: 4px solid #9c27b0;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+            border-right: 3px solid #9c27b0;
         }
 
         .exercise h3 {
             color: #9c27b0;
             margin-top: 0;
-            font-size: 1.4em;
-            border-bottom: 2px dashed #9c27b0;
-            padding-bottom: 10px;
+            font-size: 1.2em;
+            border-bottom: 1px dashed #9c27b0;
+            padding-bottom: 8px;
+            margin-bottom: 12px;
         }
 
         .reading-passage {
             background: #fafafa;
-            padding: 20px;
-            border-radius: 10px;
-            line-height: 1.9;
-            border-right: 4px solid #0288d1;
-            margin: 20px 0;
+            padding: 12px;
+            border-radius: 6px;
+            line-height: 1.6;
+            border-right: 3px solid #0288d1;
+            margin: 12px 0;
         }
 
         .question {
-            margin: 20px 0;
-            padding: 15px;
+            margin: 12px 0;
+            padding: 10px;
             background: #f9f9f9;
-            border-radius: 8px;
-            line-height: 1.8;
+            border-radius: 6px;
+            line-height: 1.6;
         }
 
         .question-number {
@@ -107,10 +108,10 @@
 
         .vocab-box {
             background: #e1f5fe;
-            border-right: 4px solid #0288d1;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 8px;
+            border-right: 3px solid #0288d1;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 6px;
         }
 
         .vocab-box strong {
@@ -119,10 +120,10 @@
 
         .bonus-activity {
             background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
-            padding: 25px;
-            border-radius: 12px;
-            margin-top: 30px;
-            border: 3px dashed #ff6f00;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 18px;
+            border: 2px dashed #ff6f00;
         }
 
         .print-button {
@@ -146,6 +147,74 @@
 
         @media print {
             .print-button { display: none; }
+            
+            @page {
+                margin: 1.5cm 1cm;
+            }
+            
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            
+            .excellent-worksheet {
+                max-width: none;
+                margin: 0;
+                padding: 15px 10px;
+                box-shadow: none;
+                border: none;
+            }
+            
+            .worksheet-header {
+                margin-bottom: 12px;
+                padding-bottom: 8px;
+                page-break-after: avoid;
+            }
+            
+            .worksheet-header h1 {
+                font-size: 1.6em;
+                margin-bottom: 6px;
+            }
+            
+            .exercise {
+                margin-bottom: 12px;
+                padding: 12px;
+                page-break-inside: auto;
+            }
+            
+            .exercise h3 {
+                font-size: 1.1em;
+                margin-bottom: 8px;
+                page-break-after: avoid;
+            }
+            
+            .reading-passage {
+                padding: 10px;
+                margin: 8px 0;
+                page-break-inside: avoid;
+            }
+            
+            .question {
+                margin: 8px 0;
+                padding: 8px;
+                page-break-inside: avoid;
+            }
+            
+            .bonus-activity {
+                padding: 12px;
+                margin-top: 12px;
+            }
+            
+            .student-info, .objective-box {
+                margin-bottom: 12px;
+                padding: 10px;
+            }
+            
+            .vocab-box {
+                padding: 8px;
+                margin: 8px 0;
+                page-break-inside: avoid;
+            }
         }
     </style>
 </head>
@@ -179,36 +248,33 @@
                 <p>On <strong>September 23, 1932</strong>, the Kingdom of Saudi Arabia was officially established, with Arabic as the national language and the Holy Qur'an as its constitution. King Abdulaziz initiated the building of infrastructure and set Saudi Arabia on the road to modernization.</p>
             </div>
 
-            <p style="color: #666; margin: 20px 0;"><strong>Answer the following questions:</strong></p>
+            <p style="color: #666; margin: 12px 0 8px 0;"><strong>Answer the following questions:</strong></p>
 
             <div class="question">
                 <span class="question-number">1</span>
-                When did King Abdulaziz regain Riyadh?<br>
-                <span class="answer-line" style="min-width: 500px;"></span>
+                When did King Abdulaziz regain Riyadh? <span class="answer-line" style="min-width: 300px;"></span>
             </div>
 
             <div class="question">
                 <span class="question-number">2</span>
-                What did King Abdulaziz take in Riyadh?<br>
-                <span class="answer-line" style="min-width: 500px;"></span>
+                What did King Abdulaziz take in Riyadh? <span class="answer-line" style="min-width: 300px;"></span>
             </div>
 
             <div class="question">
                 <span class="question-number">3</span>
-                When was the Kingdom of Saudi Arabia officially established?<br>
-                <span class="answer-line" style="min-width: 500px;"></span>
+                When was the Kingdom of Saudi Arabia officially established? <span class="answer-line" style="min-width: 250px;"></span>
             </div>
 
             <div class="question">
                 <span class="question-number">4</span>
-                What are the two main things that became official in Saudi Arabia? (Hint: language and constitution)<br>
-                <span class="answer-line" style="min-width: 500px;"></span>
+                What are the two main things that became official in Saudi Arabia?<br>
+                <span class="answer-line" style="min-width: 400px;"></span>
             </div>
 
             <div class="question">
                 <span class="question-number">5</span>
                 What does "set Saudi Arabia on the road to modernization" mean?<br>
-                <span class="answer-line" style="min-width: 500px;"></span>
+                <span class="answer-line" style="min-width: 400px;"></span>
             </div>
         </div>
 
@@ -220,7 +286,7 @@
                 <strong>💡 Key Words:</strong> establish, expand, unite, launch, affect, transform, hub, vibrant, thriving, ambitious
             </div>
 
-            <p style="color: #666; margin: 20px 0;"><strong>A. Match the words with their meanings:</strong></p>
+            <p style="color: #666; margin: 12px 0 8px 0;"><strong>A. Match the words with their meanings:</strong></p>
 
             <div class="question">
                 <span class="question-number">1</span>
@@ -252,7 +318,7 @@
                 <br><span style="margin-right: 35px;">(a) lazy   (b) determined to succeed   (c) happy</span>
             </div>
 
-            <p style="color: #666; margin: 30px 0 20px 0;"><strong>B. Complete the sentences with the correct word:</strong></p>
+            <p style="color: #666; margin: 15px 0 8px 0;"><strong>B. Complete the sentences with the correct word:</strong></p>
 
             <div class="question">
                 <span class="question-number">6</span>
@@ -284,32 +350,29 @@
 
             <div class="question">
                 <span class="question-number">1</span>
-                What was Sputnik 1?<br>
-                <span class="answer-line" style="min-width: 500px;"></span>
+                What was Sputnik 1? <span class="answer-line" style="min-width: 350px;"></span>
             </div>
 
             <div class="question">
                 <span class="question-number">2</span>
-                Who was the first person to walk on the moon?<br>
-                <span class="answer-line" style="min-width: 500px;"></span>
+                Who was the first person to walk on the moon? <span class="answer-line" style="min-width: 300px;"></span>
             </div>
 
             <div class="question">
                 <span class="question-number">3</span>
                 What did Neil Armstrong say when he walked on the moon?<br>
-                <span class="answer-line" style="min-width: 500px;"></span>
+                <span class="answer-line" style="min-width: 400px;"></span>
             </div>
 
             <div class="question">
                 <span class="question-number">4</span>
-                Who was Prince Sultan bin Salman Al Saud?<br>
-                <span class="answer-line" style="min-width: 500px;"></span>
+                Who was Prince Sultan bin Salman Al Saud? <span class="answer-line" style="min-width: 300px;"></span>
             </div>
 
             <div class="question">
                 <span class="question-number">5</span>
                 In your opinion, why was the Space Race important?<br>
-                <span class="answer-line" style="min-width: 500px;"></span>
+                <span class="answer-line" style="min-width: 400px;"></span>
             </div>
         </div>
 
@@ -321,7 +384,7 @@
                 <strong>💡 Global Issues:</strong> global warming, pollution, poverty, unemployment, endangered species, terrorism, overpopulation, natural disasters
             </div>
 
-            <p style="color: #666; margin: 20px 0;"><strong>Complete the sentences with words from the box above:</strong></p>
+            <p style="color: #666; margin: 12px 0 8px 0;"><strong>Complete the sentences with words from the box above:</strong></p>
 
             <div class="question">
                 <span class="question-number">1</span>
@@ -353,50 +416,25 @@
         <div class="exercise">
             <h3>Exercise 5: Critical Thinking</h3>
             
-            <p style="color: #666; margin-bottom: 20px;"><strong>Answer these questions with your own opinions:</strong></p>
+            <p style="color: #666; margin-bottom: 12px;"><strong>Answer these questions with your own opinions:</strong></p>
 
             <div class="question">
                 <span class="question-number">1</span>
                 Which global issue do you think is the most serious? Why?<br>
-                <span class="answer-line" style="min-width: 600px;"></span><br>
-                <span class="answer-line" style="min-width: 600px;"></span>
+                <span class="answer-line" style="min-width: 500px;"></span>
             </div>
 
             <div class="question">
                 <span class="question-number">2</span>
                 What can students do to help solve environmental problems?<br>
-                <span class="answer-line" style="min-width: 600px;"></span><br>
-                <span class="answer-line" style="min-width: 600px;"></span>
+                <span class="answer-line" style="min-width: 500px;"></span>
             </div>
 
             <div class="question">
                 <span class="question-number">3</span>
                 Do you think the Space Race was important? Why or why not?<br>
-                <span class="answer-line" style="min-width: 600px;"></span><br>
-                <span class="answer-line" style="min-width: 600px;"></span>
+                <span class="answer-line" style="min-width: 500px;"></span>
             </div>
-        </div>
-
-        <!-- Bonus Activity -->
-        <div class="bonus-activity">
-            <h3>⭐ Bonus Challenge Activity</h3>
-            <p style="margin-bottom: 15px;"><strong>Write a short paragraph (50-60 words) about:</strong></p>
-            <p>"The most important change in Saudi Arabia in the last 20 years"</p>
-            <p style="color: #666; margin-top: 10px;">Use at least 5 vocabulary words from today's lesson.</p>
-            
-            <div style="margin-top: 20px; line-height: 2.5;">
-                <p>___________________________________________________________________</p>
-                <p>___________________________________________________________________</p>
-                <p>___________________________________________________________________</p>
-                <p>___________________________________________________________________</p>
-                <p>___________________________________________________________________</p>
-                <p>___________________________________________________________________</p>
-            </div>
-        </div>
-
-        <div style="text-align: center; margin-top: 40px; padding: 20px; background: #f0f0f0; border-radius: 10px;">
-            <p style="font-size: 1.2em; color: #9c27b0;"><strong>📚 Great job on your reading today!</strong></p>
-            <p style="color: #666;">Tomorrow: Writing & Critical Thinking</p>
         </div>
     </div>
 

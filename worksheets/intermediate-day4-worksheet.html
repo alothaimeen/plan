@@ -14,18 +14,18 @@
 
         body {
             font-family: Arial, Tahoma, sans-serif;
-            line-height: 1.6;
-            padding: 15px;
+            line-height: 1.5;
+            padding: 10px;
             background: white;
         }
 
         .header {
             text-align: center;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
 
         .header h1 {
-            font-size: 28px;
+            font-size: 26px;
             margin-bottom: 5px;
             color: #333;
         }
@@ -38,25 +38,25 @@
         .info-box {
             background: #e8f5e9;
             border-right: 4px solid #4caf50;
-            padding: 10px;
-            margin: 10px 0;
+            padding: 8px;
+            margin: 8px 0;
             border-radius: 5px;
         }
 
         .exercise {
-            margin: 15px 0;
-            padding: 12px;
+            margin: 10px 0;
+            padding: 10px;
             border: 1px solid #ddd;
             border-radius: 5px;
             background: #fafafa;
         }
 
         .exercise-title {
-            font-size: 16px;
+            font-size: 15px;
             font-weight: bold;
             color: #4caf50;
-            margin-bottom: 8px;
-            padding-bottom: 5px;
+            margin-bottom: 6px;
+            padding-bottom: 4px;
             border-bottom: 2px solid #4caf50;
         }
 
@@ -64,14 +64,14 @@
             font-family: 'Andika', sans-serif;
             direction: ltr;
             text-align: left;
-            font-size: 18px;
-            line-height: 1.8;
+            font-size: 17px;
+            line-height: 1.6;
         }
 
         .writing-box {
             border: 2px solid #4caf50;
-            padding: 15px;
-            min-height: 180px;
+            padding: 12px;
+            min-height: 150px;
             margin: 10px 0;
             background: white;
             border-radius: 5px;
@@ -90,8 +90,8 @@
         }
 
         .assistant-box {
-            margin-top: 30px;
-            padding: 15px;
+            margin-top: 20px;
+            padding: 12px;
             border: 2px solid #333;
             border-radius: 8px;
             background: #f9f9f9;
@@ -100,13 +100,13 @@
         .assistant-box h3 {
             text-align: center;
             color: #333;
-            margin-bottom: 15px;
-            font-size: 22px;
+            margin-bottom: 10px;
+            font-size: 20px;
         }
 
         .assistant-instructions {
-            margin: 15px 0;
-            padding: 10px;
+            margin: 10px 0;
+            padding: 8px;
             background: white;
             border-radius: 5px;
         }
@@ -140,7 +140,7 @@
             }
             @page {
                 size: A4;
-                margin: 1cm;
+                margin: 0.8cm;
             }
         }
     </style>
@@ -148,8 +148,15 @@
 <body>
 
 <!-- اسم المجموعة -->
-<div style="text-align:center; font-size:38px; font-weight:bold; color:#4caf50; margin-bottom:8px; margin-top:10px; letter-spacing:2px;">
+<div style="text-align:center; font-size:34px; font-weight:bold; color:#4caf50; margin-bottom:6px; margin-top:8px; letter-spacing:2px;">
     المجموعة المتوسطة
+</div>
+
+<!-- زر الطباعة في الأعلى -->
+<div class="no-print" style="text-align: center; margin: 10px 0;">
+    <button onclick="window.print()" style="background: #333; color: white; padding: 10px 25px; border: none; border-radius: 5px; cursor: pointer; font-size: 15px;">
+        🖨️ طباعة الورقة
+    </button>
 </div>
 
 <!-- العنوان -->
@@ -226,16 +233,16 @@
         <p><strong>1.</strong> I like English. I study it every day.</p>
         <p style="margin-left: 20px; color: #666;">→ I like English, <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> I study it every day.</p>
 
-        <p style="margin-top: 10px;"><strong>2.</strong> I want to play football. It is raining now.</p>
+        <p style="margin-top: 8px;"><strong>2.</strong> I want to play football. It is raining now.</p>
         <p style="margin-left: 20px; color: #666;">→ I want to play football, <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> it is raining now.</p>
 
-        <p style="margin-top: 10px;"><strong>3.</strong> I study hard. I want to get good grades.</p>
+        <p style="margin-top: 8px;"><strong>3.</strong> I study hard. I want to get good grades.</p>
         <p style="margin-left: 20px; color: #666;">→ I study hard <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> I want to get good grades.</p>
 
-        <p style="margin-top: 10px;"><strong>4.</strong> I was tired. I went to bed early.</p>
+        <p style="margin-top: 8px;"><strong>4.</strong> I was tired. I went to bed early.</p>
         <p style="margin-left: 20px; color: #666;">→ I was tired, <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> I went to bed early.</p>
 
-        <p style="margin-top: 10px;"><strong>5.</strong> I like reading. I like writing. I don't like math.</p>
+        <p style="margin-top: 8px;"><strong>5.</strong> I like reading. I like writing. I don't like math.</p>
         <p style="margin-left: 20px; color: #666;">→ I like reading <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> writing, <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> I don't like math.</p>
     </div>
 </div>
@@ -246,19 +253,19 @@
     <p style="margin: 5px 0; font-size: 13px;"><strong>شكّل مجموعة من 4-5 طلاب وناقشوا الأسئلة التالية:</strong></p>
     
     <div class="english-text" style="margin-top: 10px;">
-        <div style="background: #e3f2fd; padding: 15px; border-radius: 5px; margin: 10px 0;">
-            <p style="margin: 8px 0; font-weight: bold;">Question 1: What are the biggest changes in Saudi Arabia?</p>
-            <p style="margin: 8px 0; color: #666; font-size: 15px;">Everyone shares their opinion (1 minute each)</p>
+        <div style="background: #e3f2fd; padding: 10px; border-radius: 5px; margin: 5px 0;">
+            <p style="margin: 5px 0; font-weight: bold;">Question 1: What are the biggest changes in Saudi Arabia?</p>
+            <p style="margin: 5px 0; color: #666; font-size: 14px;">Everyone shares their opinion (1 minute each)</p>
         </div>
 
-        <div style="background: #e8f5e9; padding: 15px; border-radius: 5px; margin: 10px 0;">
-            <p style="margin: 8px 0; font-weight: bold;">Question 2: How can we improve our English?</p>
-            <p style="margin: 8px 0; color: #666; font-size: 15px;">Discuss different ways to learn English better</p>
+        <div style="background: #e8f5e9; padding: 10px; border-radius: 5px; margin: 5px 0;">
+            <p style="margin: 5px 0; font-weight: bold;">Question 2: How can we improve our English?</p>
+            <p style="margin: 5px 0; color: #666; font-size: 14px;">Discuss different ways to learn English better</p>
         </div>
 
-        <div style="background: #fff3cd; padding: 15px; border-radius: 5px; margin: 10px 0;">
-            <p style="margin: 8px 0; font-weight: bold;">Question 3: What do you want to achieve this year?</p>
-            <p style="margin: 8px 0; color: #666; font-size: 15px;">Share your goals and dreams</p>
+        <div style="background: #fff3cd; padding: 10px; border-radius: 5px; margin: 5px 0;">
+            <p style="margin: 5px 0; font-weight: bold;">Question 3: What do you want to achieve this year?</p>
+            <p style="margin: 5px 0; color: #666; font-size: 14px;">Share your goals and dreams</p>
         </div>
     </div>
 
@@ -280,22 +287,22 @@
     <p style="margin: 5px 0; font-size: 13px;"><strong>أكمل الجمل التالية بصدق:</strong></p>
     
     <div style="margin-top: 10px; font-size: 15px;">
-        <p style="margin: 10px 0;">
+        <p style="margin: 8px 0;">
             <strong>1. This week, I learned:</strong><br>
             <span style="border-bottom: 1px solid #333; display: inline-block; width: 90%; min-height: 25px; margin-top: 5px;"></span>
         </p>
 
-        <p style="margin: 10px 0;">
+        <p style="margin: 8px 0;">
             <strong>2. My English improved in:</strong><br>
             <span style="border-bottom: 1px solid #333; display: inline-block; width: 90%; min-height: 25px; margin-top: 5px;"></span>
         </p>
 
-        <p style="margin: 10px 0;">
+        <p style="margin: 8px 0;">
             <strong>3. I still need to work on:</strong><br>
             <span style="border-bottom: 1px solid #333; display: inline-block; width: 90%; min-height: 25px; margin-top: 5px;"></span>
         </p>
 
-        <p style="margin: 10px 0;">
+        <p style="margin: 8px 0;">
             <strong>4. Next week, I will:</strong><br>
             <span style="border-bottom: 1px solid #333; display: inline-block; width: 90%; min-height: 25px; margin-top: 5px;"></span>
         </p>
@@ -309,7 +316,7 @@
 </div>
 
 <!-- عبارة الإعداد -->
-<div style="text-align: center; margin-top: 15px; font-size: 20px; font-weight: bold; color: #333;">
+<div style="text-align: center; margin-top: 10px; font-size: 18px; font-weight: bold; color: #333;">
     إعداد أ. محمد العثيمين - أبي بكر بن العربي الثانوية
 </div>
 
@@ -318,49 +325,16 @@
     <h3>📖 تعليمات المعلم المساعد</h3>
     
     <div class="assistant-instructions">
-        <strong>📋 مهامك في هذا النشاط:</strong>
+        <strong>📋 مهامك:</strong>
         <ol>
-            <li><strong>قبل البدء (3 دقائق):</strong>
-                <ul>
-                    <li>ذكّر الطلاب بأن هذا آخر يوم في الخطة العلاجية</li>
-                    <li>اشرح أدوات الربط الأربعة: and (و)، but (لكن)، because (لأن)، so (لذلك)</li>
-                    <li>اقرأ مثال البداية في التمرين 1</li>
-                    <li>شجعهم على الكتابة بثقة وبدون خوف من الأخطاء</li>
-                </ul>
-            </li>
-            
-            <li><strong>أثناء العمل (15 دقيقة):</strong>
-                <ul>
-                    <li>التمرين 1: أعط 7-8 دقائق للكتابة، مرّ على كل طالب وساعده</li>
-                    <li>عدّ الكلمات لبعض الطلاب للتأكد من الوصول لـ 60 كلمة</li>
-                    <li>التمرين 2: راجع معهم استخدام أدوات الربط</li>
-                    <li>التمرين 3: شكّل مجموعات 4-5 طلاب، راقب النقاش وشجعهم</li>
-                    <li>التمرين 4: أعط 2-3 دقائق للتقييم الذاتي</li>
-                </ul>
-            </li>
-            
-            <li><strong>في النهاية (7 دقائق):</strong>
-                <ul>
-                    <li>اطلب من 2-3 طلاب قراءة موضوعاتهم (التمرين 1)</li>
-                    <li>اطلب من كل مجموعة مشاركة نقطة واحدة من نقاشهم</li>
-                    <li>امدح الجميع على جهودهم طوال الأسبوع</li>
-                    <li>احتفل بالتقدم الذي حققوه 🎉</li>
-                    <li>تسجيل النقاط النهائية</li>
-                </ul>
-            </li>
+            <li><strong>البدء (3 دقائق):</strong> ذكّر بأنه آخر يوم - اشرح أدوات الربط الأربعة - اقرأ مثال البداية - شجعهم على الكتابة بثقة</li>
+            <li><strong>أثناء العمل (15 دقيقة):</strong> ت1: أعط 7-8 دقائق للكتابة وساعدهم - ت2: راجع أدوات الربط - ت3: شكّل مجموعات وراقب النقاش - ت4: أعط 2-3 دقائق للتقييم الذاتي</li>
+            <li><strong>النهاية (7 دقائق):</strong> اطلب من 2-3 طلاب قراءة موضوعاتهم - كل مجموعة تشارك نقطة - امدح الجميع - احتفل بالتقدم 🎉 - سجل النقاط</li>
         </ol>
     </div>
 
     <div class="note">
-        <strong>💡 نصائح مهمة:</strong>
-        <ul>
-            <li>هذا اليوم الأخير - اجعله إيجابياً ومحفزاً</li>
-            <li>في التمرين 1: لا تتوقع كتابة خالية من الأخطاء، المهم أن يكتبوا 60 كلمة</li>
-            <li>شجع الطلاب على استخدام أدوات الربط في كتابتهم</li>
-            <li>في المناقشة الجماعية: حاول إشراك الجميع، حتى الخجولين</li>
-            <li>التقييم الذاتي (التمرين 4) مهم - شجعهم على الصدق</li>
-            <li>اختم بكلمة تشجيعية عن أهمية الاستمرار في التعلم</li>
-        </ul>
+        <strong>💡 نصائح:</strong> اليوم الأخير - اجعله إيجابياً • في ت1: المهم 60 كلمة ولو بأخطاء • شجع استخدام أدوات الربط • أشرك الجميع بالنقاش حتى الخجولين • التقييم الذاتي مهم - شجع الصدق
     </div>
 
     <div class="assistant-instructions">
@@ -374,65 +348,7 @@
         </ul>
     </div>
 
-    <div class="assistant-instructions">
-        <strong>📝 جدول تسجيل النقاط:</strong>
-        <table style="margin-top: 10px;">
-            <tr style="background: #4caf50; color: white;">
-                <td><strong>اسم الطالب</strong></td>
-                <td><strong>ت1</strong></td>
-                <td><strong>ت2</strong></td>
-                <td><strong>ت3</strong></td>
-                <td><strong>ت4</strong></td>
-                <td><strong>مشاركة</strong></td>
-                <td><strong>المجموع</strong></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>/5</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>/5</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>/5</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>/5</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>/5</td>
-            </tr>
-        </table>
-    </div>
+
 
     <div class="assistant-instructions">
         <strong>📖 إجابات التمرين 2 (أدوات الربط):</strong>
