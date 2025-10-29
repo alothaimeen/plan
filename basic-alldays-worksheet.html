@@ -1,0 +1,2054 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورقة عمل - اليوم الأول - المجموعة التأسيسية</title>
+    <style>
+        @media print {
+            @page {
+                size: A4;
+                margin: 1cm;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                background: white;
+            }
+            .worksheet {
+                box-shadow: none;
+                padding: 6px;
+            }
+            .no-print {
+                display: none;
+            }
+            .exercise {
+                margin-bottom: 4px;
+            }
+            .page-break-before {
+                page-break-before: always;
+            }
+        }
+        
+        body {
+            font-family: 'Arial', 'Tahoma', sans-serif;
+            max-width: 21cm;
+            margin: 0 auto;
+            padding: 8mm;
+            background: #f5f5f5;
+            line-height: 1.2;
+        }
+        
+        .worksheet {
+            background: white;
+            padding: 8mm;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        /* خط خاص للحروف - يشبه خط اليد */
+        .letter-box, .exercise strong, .circle-exercise {
+            font-family: 'Comic Sans MS', 'Sassoon Primary', 'KG Primary Penmanship', cursive, sans-serif;
+        }
+        
+        /* النصوص الإنجليزية بمحاذاة اليسار */
+        .letter-box, .practice-letter, .circle-exercise, .matching-word {
+            direction: ltr;
+            text-align: left;
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-bottom: 4px;
+        }
+        
+        .header h1 {
+            color: #000;
+            margin: 1px 0;
+            font-size: 18px;
+        }
+        
+        .header .subtitle {
+            color: #333;
+            font-size: 11px;
+            margin-top: 3px;
+        }
+        
+        .info-box {
+            background: #f0f0f0;
+            padding: 5px;
+            border-radius: 3px;
+            margin-bottom: 4px;
+            border-right: 3px solid #333;
+            font-size: 11px;
+        }
+        
+        .exercise {
+            margin-bottom: 4px;
+            page-break-inside: avoid;
+        }
+        
+        .exercise-title {
+            background: #333;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 3px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+        
+        .letter-box {
+            display: inline-block;
+            width: 28px;
+            height: 32px;
+            border: 1px dashed #333;
+            margin: 1px;
+            text-align: center;
+            line-height: 32px;
+            font-size: 22px;
+            color: #ccc;
+            border-radius: 3px;
+        }
+        
+        .vocab-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2px 0;
+        }
+        
+        .vocab-table td {
+            border: 2px solid #4CAF50;
+            padding: 8px;
+            text-align: center;
+            font-size: 18px;
+        }
+        
+        .vocab-table img {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+        }
+        
+        .circle-exercise {
+            font-size: 22px;
+            letter-spacing: 6px;
+            padding: 6px;
+            text-align: center;
+            background: #f0f0f0;
+            border-radius: 5px;
+            margin: 2px 0;
+            border: 2px solid #333;
+        }
+        
+        .assistant-box {
+            background: #f5f5f5;
+            border: 2px solid #333;
+            border-radius: 5px;
+            padding: 8px;
+            margin-top: 5px;
+            page-break-before: always;
+        }
+        
+        .assistant-box h3 {
+            color: #000;
+            margin-top: 0;
+            font-size: 14px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 3px;
+        }
+        
+        .assistant-instructions {
+            background: white;
+            padding: 6px;
+            border-radius: 3px;
+            margin: 4px 0;
+            border: 1px solid #333;
+        }
+        
+        .assistant-instructions li {
+            margin: 2px 0;
+            line-height: 1.3;
+            font-size: 12px;
+        }
+        
+        .note {
+            background: #f0f0f0;
+            border-right: 4px solid #333;
+            padding: 5px;
+            border-radius: 3px;
+            margin-top: 5px;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+    <div class="no-print" style="text-align: center; margin-top: 8px; color: #666;">
+        <button onclick="window.print()" style="background: #333; color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+            🖨️ طباعة الورقة
+        </button>
+    </div>
+    <div class="worksheet">
+        <!-- Group Name Header -->
+        <div style="text-align:center; font-size:38px; font-weight:bold; color:#1565c0; margin-bottom:8px; margin-top:10px; letter-spacing:2px;">المجموعة التأسيسية</div>
+        <!-- Header -->
+        <div class="header">
+            <h1>ورقة عمل - اليوم الأول 🌟</h1>
+            <div class="subtitle">إعداد أ. محمد العثيمين - أبي بكر بن العربي الثانوية</div>
+        </div>
+
+        <!-- Student Info -->
+        <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 6px; margin-bottom: 4px; padding: 5px; border: 2px solid #333; border-radius: 5px; background: white;">
+            <div style="display: flex; align-items: center;"><strong>الاسم:</strong> <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span></div>
+            <div style="display: flex; align-items: center;"><strong>الفصل:</strong> <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span></div>
+            <div style="display: flex; align-items: center;"><strong>الرقم:</strong> <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span></div>
+            <div style="display: flex; align-items: center;"><strong>المجموعة:</strong> <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span></div>
+        </div>
+
+        <!-- Goal Box -->
+        <div class="info-box">
+            <strong>🎯 هدف اليوم:</strong> تعلم جميع الحروف الإنجليزية (A-Z) + الأرقام (1-20)
+        </div>
+
+        <!-- Exercise 1: Letter Tracing -->
+        <div class="exercise">
+            <div class="exercise-title">التمرين 1️⃣: تتبع الحروف (Tracing)</div>
+            <p style="margin: 2px 0; font-size: 12px;"><strong>اكتب الحروف مرتين في كل مربع:</strong></p>
+            
+            <div style="margin: 4px 0;">
+                <!-- Row 1: A, B -->
+                <div style="margin: 1px 0; display: flex;">
+                    <span style="flex: 1; white-space: nowrap;">
+                        <strong>a</strong>
+                        <strong style="margin: 0 5px;">A</strong>
+                        <span class="letter-box">A</span>
+                        <span class="letter-box">A</span>
+                        <span class="letter-box">a</span>
+                        <span class="letter-box">a</span>
+                    </span>
+                    <span style="flex: 1; white-space: nowrap; margin-right: 5px;">
+                        <strong>b</strong>
+                        <strong style="margin: 0 5px;">B</strong>
+                        <span class="letter-box">B</span>
+                        <span class="letter-box">B</span>
+                        <span class="letter-box">b</span>
+                        <span class="letter-box">b</span>
+                    </span>
+                </div>
+                
+                <!-- Row 2: C, D -->
+                <div style="margin: 1px 0; display: flex;">
+                    <span style="flex: 1; white-space: nowrap;">
+                        <strong>c</strong>
+                        <strong style="margin: 0 5px;">C</strong>
+                        <span class="letter-box">C</span>
+                        <span class="letter-box">C</span>
+                        <span class="letter-box">c</span>
+                        <span class="letter-box">c</span>
+                    </span>
+                    <span style="flex: 1; white-space: nowrap; margin-right: 5px;">
+                        <strong>d</strong>
+                        <strong style="margin: 0 5px;">D</strong>
+                        <span class="letter-box">D</span>
+                        <span class="letter-box">D</span>
+                        <span class="letter-box">d</span>
+                        <span class="letter-box">d</span>
+                    </span>
+                </div>
+                
+                <!-- Row 3: E, F -->
+                <div style="margin: 1px 0; display: flex;">
+                    <span style="flex: 1; white-space: nowrap;">
+                        <strong>e</strong>
+                        <strong style="margin: 0 5px;">E</strong>
+                        <span class="letter-box">E</span>
+                        <span class="letter-box">E</span>
+                        <span class="letter-box">e</span>
+                        <span class="letter-box">e</span>
+                    </span>
+                    <span style="flex: 1; white-space: nowrap; margin-right: 5px;">
+                        <strong>f</strong>
+                        <strong style="margin: 0 5px;">F</strong>
+                        <span class="letter-box">F</span>
+                        <span class="letter-box">F</span>
+                        <span class="letter-box">f</span>
+                        <span class="letter-box">f</span>
+                    </span>
+                </div>
+                
+                <!-- Row 4: G, H -->
+                <div style="margin: 1px 0; display: flex;">
+                    <span style="flex: 1; white-space: nowrap;">
+                        <strong>g</strong>
+                        <strong style="margin: 0 5px;">G</strong>
+                        <span class="letter-box">G</span>
+                        <span class="letter-box">G</span>
+                        <span class="letter-box">g</span>
+                        <span class="letter-box">g</span>
+                    </span>
+                    <span style="flex: 1; white-space: nowrap; margin-right: 5px;">
+                        <strong>h</strong>
+                        <strong style="margin: 0 5px;">H</strong>
+                        <span class="letter-box">H</span>
+                        <span class="letter-box">H</span>
+                        <span class="letter-box">h</span>
+                        <span class="letter-box">h</span>
+                    </span>
+                </div>
+                
+                <!-- Row 5: I, J -->
+                <div style="margin: 1px 0; display: flex;">
+                    <span style="flex: 1; white-space: nowrap;">
+                        <strong>i</strong>
+                        <strong style="margin: 0 5px;">I</strong>
+                        <span class="letter-box">I</span>
+                        <span class="letter-box">I</span>
+                        <span class="letter-box">i</span>
+                        <span class="letter-box">i</span>
+                    </span>
+                    <span style="flex: 1; white-space: nowrap; margin-right: 5px;">
+                        <strong>j</strong>
+                        <strong style="margin: 0 5px;">J</strong>
+                        <span class="letter-box">J</span>
+                        <span class="letter-box">J</span>
+                        <span class="letter-box">j</span>
+                        <span class="letter-box">j</span>
+                    </span>
+                </div>
+                
+                <!-- Row 6: K, L -->
+                <div style="margin: 1px 0; display: flex;">
+                    <span style="flex: 1; white-space: nowrap;">
+                        <strong>k</strong>
+                        <strong style="margin: 0 5px;">K</strong>
+                        <span class="letter-box">K</span>
+                        <span class="letter-box">K</span>
+                        <span class="letter-box">k</span>
+                        <span class="letter-box">k</span>
+                    </span>
+                    <span style="flex: 1; white-space: nowrap; margin-right: 5px;">
+                        <strong>l</strong>
+                        <strong style="margin: 0 5px;">L</strong>
+                        <span class="letter-box">L</span>
+                        <span class="letter-box">L</span>
+                        <span class="letter-box">l</span>
+                        <span class="letter-box">l</span>
+                    </span>
+                </div>
+                
+                <!-- Row 7: M -->
+                <div style="margin: 1px 0;">
+                    <strong>m</strong>
+                    <strong style="margin: 0 5px;">M</strong>
+                    <span class="letter-box">M</span>
+                    <span class="letter-box">M</span>
+                    <span class="letter-box">m</span>
+                    <span class="letter-box">m</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercise 2: Matching -->
+        <div class="exercise">
+            <div class="exercise-title">التمرين 2️⃣: وصّل الحرف بالكلمة المناسبة</div>
+            <p style="margin: 2px 0; font-size: 12px;"><strong>صِل الحرف بالكلمة (الكلمات من وحدة Big Changes):</strong></p>
+            
+            <table style="width: 100%; margin: 8px 0;">
+                <tr>
+                    <td style="width: 50%; padding: 5px; vertical-align: top;">
+                        <div style="border: 2px solid #333; padding: 10px; border-radius: 5px;">
+                            <div style="font-size: 28px; font-weight: bold; margin: 8px 0;">K</div>
+                            <div style="font-size: 28px; font-weight: bold; margin: 8px 0;">A</div>
+                            <div style="font-size: 28px; font-weight: bold; margin: 8px 0;">C</div>
+                            <div style="font-size: 28px; font-weight: bold; margin: 8px 0;">M</div>
+                        </div>
+                    </td>
+                    <td style="width: 50%; padding: 5px; vertical-align: top;">
+                        <div style="border: 2px solid #333; padding: 10px; border-radius: 5px;">
+                            <div style="font-size: 16px; margin: 8px 0;"><strong>Car</strong> (سيارة)</div>
+                            <div style="font-size: 16px; margin: 8px 0;"><strong>King</strong> (ملك)</div>
+                            <div style="font-size: 16px; margin: 8px 0;"><strong>Arab</strong> (عربي)</div>
+                            <div style="font-size: 16px; margin: 8px 0;"><strong>Man</strong> (رجل)</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Exercise 3: Circle the Letter -->
+        <div class="exercise">
+            <div class="exercise-title">التمرين 3️⃣: ضع دائرة على الحرف الصحيح ⭕</div>
+            
+            <div style="margin: 8px 0;">
+                <p style="margin: 1px 0; font-size: 12px;"><strong>الكلمة: King</strong> - ضع دائرة على كل حرف <strong>K</strong>:</p>
+                <div class="circle-exercise">
+                    K  B  K  D  K  P
+                </div>
+            </div>
+
+            <div style="margin: 8px 0;">
+                <p style="margin: 1px 0; font-size: 12px;"><strong>الكلمة: Car</strong> - ضع دائرة على كل حرف <strong>C</strong>:</p>
+                <div class="circle-exercise">
+                    C  A  B  C  D  C
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercise 4: Letter Tracing N-Z -->
+        <div class="exercise">
+            <div class="exercise-title">التمرين 4️⃣: تتبع الحروف (N-Z)</div>
+            <p style="margin: 2px 0; font-size: 12px;"><strong>اكتب الحروف مرتين في كل مربع:</strong></p>
+            
+            <div style="margin: 4px 0;">
+                <!-- Row 1: N, O -->
+                <div style="margin: 1px 0; display: flex;">
+                    <span style="flex: 1; white-space: nowrap;">
+                        <strong>n</strong>
+                        <strong style="margin: 0 5px;">N</strong>
+                        <span class="letter-box">N</span>
+                        <span class="letter-box">N</span>
+                        <span class="letter-box">n</span>
+                        <span class="letter-box">n</span>
+                    </span>
+                    <span style="flex: 1; white-space: nowrap; margin-right: 5px;">
+                        <strong>o</strong>
+                        <strong style="margin: 0 5px;">O</strong>
+                        <span class="letter-box">O</span>
+                        <span class="letter-box">O</span>
+                        <span class="letter-box">o</span>
+                        <span class="letter-box">o</span>
+                    </span>
+                </div>
+                
+                <!-- Row 2: P, Q -->
+                <div style="margin: 1px 0; display: flex;">
+                    <span style="flex: 1; white-space: nowrap;">
+                        <strong>p</strong>
+                        <strong style="margin: 0 5px;">P</strong>
+                        <span class="letter-box">P</span>
+                        <span class="letter-box">P</span>
+                        <span class="letter-box">p</span>
+                        <span class="letter-box">p</span>
+                    </span>
+                    <span style="flex: 1; white-space: nowrap; margin-right: 5px;">
+                        <strong>q</strong>
+                        <strong style="margin: 0 5px;">Q</strong>
+                        <span class="letter-box">Q</span>
+                        <span class="letter-box">Q</span>
+                        <span class="letter-box">q</span>
+                        <span class="letter-box">q</span>
+                    </span>
+                </div>
+                
+                <!-- Row 3: R, S -->
+                <div style="margin: 1px 0; display: flex;">
+                    <span style="flex: 1; white-space: nowrap;">
+                        <strong>r</strong>
+                        <strong style="margin: 0 5px;">R</strong>
+                        <span class="letter-box">R</span>
+                        <span class="letter-box">R</span>
+                        <span class="letter-box">r</span>
+                        <span class="letter-box">r</span>
+                    </span>
+                    <span style="flex: 1; white-space: nowrap; margin-right: 5px;">
+                        <strong>s</strong>
+                        <strong style="margin: 0 5px;">S</strong>
+                        <span class="letter-box">S</span>
+                        <span class="letter-box">S</span>
+                        <span class="letter-box">s</span>
+                        <span class="letter-box">s</span>
+                    </span>
+                </div>
+                
+                <!-- Row 4: T, U -->
+                <div style="margin: 1px 0; display: flex;">
+                    <span style="flex: 1; white-space: nowrap;">
+                        <strong>t</strong>
+                        <strong style="margin: 0 5px;">T</strong>
+                        <span class="letter-box">T</span>
+                        <span class="letter-box">T</span>
+                        <span class="letter-box">t</span>
+                        <span class="letter-box">t</span>
+                    </span>
+                    <span style="flex: 1; white-space: nowrap; margin-right: 5px;">
+                        <strong>u</strong>
+                        <strong style="margin: 0 5px;">U</strong>
+                        <span class="letter-box">U</span>
+                        <span class="letter-box">U</span>
+                        <span class="letter-box">u</span>
+                        <span class="letter-box">u</span>
+                    </span>
+                </div>
+                
+                <!-- Row 5: V, W -->
+                <div style="margin: 1px 0; display: flex;">
+                    <span style="flex: 1; white-space: nowrap;">
+                        <strong>v</strong>
+                        <strong style="margin: 0 5px;">V</strong>
+                        <span class="letter-box">V</span>
+                        <span class="letter-box">V</span>
+                        <span class="letter-box">v</span>
+                        <span class="letter-box">v</span>
+                    </span>
+                    <span style="flex: 1; white-space: nowrap; margin-right: 5px;">
+                        <strong>w</strong>
+                        <strong style="margin: 0 5px;">W</strong>
+                        <span class="letter-box">W</span>
+                        <span class="letter-box">W</span>
+                        <span class="letter-box">w</span>
+                        <span class="letter-box">w</span>
+                    </span>
+                </div>
+                
+                <!-- Row 6: X, Y -->
+                <div style="margin: 1px 0; display: flex;">
+                    <span style="flex: 1; white-space: nowrap;">
+                        <strong>x</strong>
+                        <strong style="margin: 0 5px;">X</strong>
+                        <span class="letter-box">X</span>
+                        <span class="letter-box">X</span>
+                        <span class="letter-box">x</span>
+                        <span class="letter-box">x</span>
+                    </span>
+                    <span style="flex: 1; white-space: nowrap; margin-right: 5px;">
+                        <strong>y</strong>
+                        <strong style="margin: 0 5px;">Y</strong>
+                        <span class="letter-box">Y</span>
+                        <span class="letter-box">Y</span>
+                        <span class="letter-box">y</span>
+                        <span class="letter-box">y</span>
+                    </span>
+                </div>
+                
+                <!-- Row 7: Z -->
+                <div style="margin: 1px 0;">
+                    <strong>z</strong>
+                    <strong style="margin: 0 5px;">Z</strong>
+                    <span class="letter-box">Z</span>
+                    <span class="letter-box">Z</span>
+                    <span class="letter-box">z</span>
+                    <span class="letter-box">z</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercise 5: Matching N-Z -->
+        <div class="exercise">
+            <div class="exercise-title">التمرين 5️⃣: وصّل الحرف بالكلمة المناسبة (N-Z)</div>
+            <p style="margin: 2px 0; font-size: 12px;"><strong>صِل الحرف بالكلمة:</strong></p>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 4px 0;">
+                <div style="border: 2px solid #333; padding: 8px; border-radius: 5px;">
+                    <div style="font-size: 22px; font-weight: bold; margin: 6px 0;">N</div>
+                    <div style="font-size: 22px; font-weight: bold; margin: 6px 0;">O</div>
+                    <div style="font-size: 22px; font-weight: bold; margin: 6px 0;">P</div>
+                    <div style="font-size: 22px; font-weight: bold; margin: 6px 0;">T</div>
+                    <div style="font-size: 22px; font-weight: bold; margin: 6px 0;">W</div>
+                </div>
+                <div style="border: 2px solid #333; padding: 8px; border-radius: 5px;">
+                    <div style="font-size: 14px; margin: 6px 0;"><strong>Orange</strong> (برتقالة)</div>
+                    <div style="font-size: 14px; margin: 6px 0;"><strong>Water</strong> (ماء)</div>
+                    <div style="font-size: 14px; margin: 6px 0;"><strong>Taxi</strong> (تاكسي)</div>
+                    <div style="font-size: 14px; margin: 6px 0;"><strong>New</strong> (جديد)</div>
+                    <div style="font-size: 14px; margin: 6px 0;"><strong>Park</strong> (حديقة)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercise 6: Numbers 1-20 -->
+        <div class="exercise">
+            <div class="exercise-title">التمرين 6️⃣: الأرقام من 1 إلى 20</div>
+            <p style="margin: 2px 0; font-size: 12px;"><strong>اكتب كل رقم مرتين:</strong></p>
+            
+            <div style="margin: 4px 0;">
+                <!-- Numbers 1-5 -->
+                <div style="margin: 2px 0; display: flex; gap: 3px;">
+                    <span style="flex: 1; text-align: center;">
+                        <strong style="font-size: 16px;">1</strong><br>
+                        <span class="letter-box" style="width: 100%;">1</span>
+                        <span class="letter-box" style="width: 100%;">1</span>
+                    </span>
+                    <span style="flex: 1; text-align: center;">
+                        <strong style="font-size: 16px;">2</strong><br>
+                        <span class="letter-box" style="width: 100%;">2</span>
+                        <span class="letter-box" style="width: 100%;">2</span>
+                    </span>
+                    <span style="flex: 1; text-align: center;">
+                        <strong style="font-size: 16px;">3</strong><br>
+                        <span class="letter-box" style="width: 100%;">3</span>
+                        <span class="letter-box" style="width: 100%;">3</span>
+                    </span>
+                    <span style="flex: 1; text-align: center;">
+                        <strong style="font-size: 16px;">4</strong><br>
+                        <span class="letter-box" style="width: 100%;">4</span>
+                        <span class="letter-box" style="width: 100%;">4</span>
+                    </span>
+                    <span style="flex: 1; text-align: center;">
+                        <strong style="font-size: 16px;">5</strong><br>
+                        <span class="letter-box" style="width: 100%;">5</span>
+                        <span class="letter-box" style="width: 100%;">5</span>
+                    </span>
+                </div>
+
+                <!-- Numbers 6-10 -->
+                <div style="margin: 2px 0; display: flex; gap: 3px;">
+                    <span style="flex: 1; text-align: center;">
+                        <strong style="font-size: 16px;">6</strong><br>
+                        <span class="letter-box" style="width: 100%;">6</span>
+                        <span class="letter-box" style="width: 100%;">6</span>
+                    </span>
+                    <span style="flex: 1; text-align: center;">
+                        <strong style="font-size: 16px;">7</strong><br>
+                        <span class="letter-box" style="width: 100%;">7</span>
+                        <span class="letter-box" style="width: 100%;">7</span>
+                    </span>
+                    <span style="flex: 1; text-align: center;">
+                        <strong style="font-size: 16px;">8</strong><br>
+                        <span class="letter-box" style="width: 100%;">8</span>
+                        <span class="letter-box" style="width: 100%;">8</span>
+                    </span>
+                    <span style="flex: 1; text-align: center;">
+                        <strong style="font-size: 16px;">9</strong><br>
+                        <span class="letter-box" style="width: 100%;">9</span>
+                        <span class="letter-box" style="width: 100%;">9</span>
+                    </span>
+                    <span style="flex: 1; text-align: center;">
+                        <strong style="font-size: 16px;">10</strong><br>
+                        <span class="letter-box" style="width: 100%;">10</span>
+                        <span class="letter-box" style="width: 100%;">10</span>
+                    </span>
+                </div>
+
+                <!-- Numbers 11-15 -->
+                <div style="margin: 2px 0; display: flex; gap: 3px;">
+                    <span style="flex: 1; text-align: center;">
+                        <strong style="font-size: 16px;">11</strong><br>
+                        <span class="letter-box" style="width: 100%;">11</span>
+                        <span class="letter-box" style="width: 100%;">11</span>
+                    </span>
+                    <span style="flex: 1; text-align: center;">
+                        <strong style="font-size: 16px;">12</strong><br>
+                        <span class="letter-box" style="width: 100%;">12</span>
+                        <span class="letter-box" style="width: 100%;">12</span>
+                    </span>
+                    <span style="flex: 1; text-align: center;">
+                        <strong style="font-size: 16px;">13</strong><br>
+                        <span class="letter-box" style="width: 100%;">13</span>
+                        <span class="letter-box" style="width: 100%;">13</span>
+                    </span>
+                    <span style="flex: 1; text-align: center;">
+                        <strong style="font-size: 16px;">14</strong><br>
+                        <span class="letter-box" style="width: 100%;">14</span>
+                        <span class="letter-box" style="width: 100%;">14</span>
+                    </span>
+                    <span style="flex: 1; text-align: center;">
+                        <strong style="font-size: 16px;">15</strong><br>
+                        <span class="letter-box" style="width: 100%;">15</span>
+                        <span class="letter-box" style="width: 100%;">15</span>
+                    </span>
+                </div>
+
+                <!-- Numbers 16-20 -->
+                <div style="margin: 2px 0; display: flex; gap: 3px;">
+                    <span style="flex: 1; text-align: center;">
+                        <strong style="font-size: 16px;">16</strong><br>
+                        <span class="letter-box" style="width: 100%;">16</span>
+                        <span class="letter-box" style="width: 100%;">16</span>
+                    </span>
+                    <span style="flex: 1; text-align: center;">
+                        <strong style="font-size: 16px;">17</strong><br>
+                        <span class="letter-box" style="width: 100%;">17</span>
+                        <span class="letter-box" style="width: 100%;">17</span>
+                    </span>
+                    <span style="flex: 1; text-align: center;">
+                        <strong style="font-size: 16px;">18</strong><br>
+                        <span class="letter-box" style="width: 100%;">18</span>
+                        <span class="letter-box" style="width: 100%;">18</span>
+                    </span>
+                    <span style="flex: 1; text-align: center;">
+                        <strong style="font-size: 16px;">19</strong><br>
+                        <span class="letter-box" style="width: 100%;">19</span>
+                        <span class="letter-box" style="width: 100%;">19</span>
+                    </span>
+                    <span style="flex: 1; text-align: center;">
+                        <strong style="font-size: 16px;">20</strong><br>
+                        <span class="letter-box" style="width: 100%;">20</span>
+                        <span class="letter-box" style="width: 100%;">20</span>
+                    </span>
+                </div>
+            </div>
+        </div><!-- Footer -->
+        <div class="note" style="margin-top: 10px;">
+            <strong>⏱️ الزمن المقترح:</strong> 25-30 دقيقة | <strong>📌 ملاحظة:</strong> الأولوية للتمارين 1، 4، 6 - باقي التمارين إضافية إذا بقي وقت
+        </div>
+        <!-- Credit at the end -->
+        <div style="text-align:center; font-size:20px; color:#333; margin-top: 10px; margin-bottom:10px; font-weight:bold;">إعداد أ. محمد العثيمين - أبي بكر بن العربي الثانوية</div>
+    </div>
+
+    <div class="no-print" style="text-align: center; margin-top: 8px; color: #666;">
+        <button onclick="window.print()" style="background: #333; color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+            🖨️ طباعة الورقة
+        </button>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="page-break-before">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورقة عمل - اليوم الثاني - المجموعة التأسيسية</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @media print {
+            @page {
+                size: A4;
+                margin: 1cm;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                background: white;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+            .worksheet {
+                box-shadow: none;
+                padding: 10px;
+            }
+            .no-print {
+                display: none;
+            }
+            .exercise {
+                margin-bottom: 10px;
+            }
+            
+            /* تأكيد طباعة الألوان */
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+            .page-break-before {
+                page-break-before: always;
+            }
+        }
+        
+        body {
+            font-family: 'Arial', 'Tahoma', sans-serif;
+            max-width: 21cm;
+            margin: 0 auto;
+            padding: 15px;
+            background: #f5f5f5;
+        }
+        
+        .worksheet {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        /* خط خاص للحروف - يشبه خط اليد */
+        .letter-box, .exercise strong, .circle-exercise, .word-box {
+            font-family: 'Comic Sans MS', 'Sassoon Primary', 'KG Primary Penmanship', cursive, sans-serif;
+        }
+        
+        /* النصوص الإنجليزية بمحاذاة اليسار */
+        .word-box, .word-image, .picture-word, .matching-word {
+            direction: ltr;
+            text-align: left;
+        }
+        
+        /* نظام الأسطر الأربعة للكتابة */
+        .handwriting-line {
+            position: relative;
+            height: 60px;
+            margin: 15px 0;
+            direction: ltr;
+            text-align: left;
+        }
+        
+        .handwriting-line::before,
+        .handwriting-line::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: #ff0000;
+            left: 0;
+        }
+        
+        .handwriting-line::before {
+            top: 0;
+        }
+        
+        .handwriting-line::after {
+            bottom: 0;
+        }
+        
+        .handwriting-line .middle-lines {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        
+        .handwriting-line .middle-lines::before,
+        .handwriting-line .middle-lines::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background: #000;
+            left: 0;
+        }
+        
+        .handwriting-line .middle-lines::before {
+            top: 20px;
+        }
+        
+        .handwriting-line .middle-lines::after {
+            top: 40px;
+        }
+        
+        .word-practice-item {
+            display: inline-block;
+            position: relative;
+            margin-right: 15px;
+            vertical-align: top;
+        }
+        
+        .word-model-inline {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: #666;
+            position: relative;
+            top: 15px;
+            display: inline-block;
+            margin-right: 5px;
+        }
+        
+        .word-space {
+            display: inline-block;
+            width: 60px;
+            border-bottom: 2px dotted #999;
+            position: relative;
+            top: 15px;
+            margin: 0 5px;
+        }
+        
+        .word-separator {
+            display: inline-block;
+            width: 2px;
+            height: 50px;
+            background: #ccc;
+            position: relative;
+            top: 5px;
+            margin: 0 8px;
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #333;
+            padding-bottom: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .header h1 {
+            color: #000;
+            margin: 5px 0;
+            font-size: 20px;
+        }
+        
+        .header .subtitle {
+            color: #333;
+            font-size: 12px;
+            margin-top: 3px;
+        }
+        
+        .info-box {
+            background: #f0f0f0;
+            padding: 8px;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            border-right: 3px solid #333;
+            font-size: 12px;
+        }
+        
+        .exercise {
+            margin-bottom: 8px;
+            page-break-inside: avoid;
+        }
+        
+        .exercise-title {
+            background: #333;
+            color: white;   
+            padding: 4px 8px;
+            border-radius: 3px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+        
+        /* نظام الخطوط الأربعة للكتابة - 4 كلمات في سطر واحد */
+        .handwriting-practice {
+            margin: 8px 0;
+        }
+        
+        .practice-line {
+            position: relative;
+            height: 45px;
+            width: 100%;
+            margin: 8px 0;
+            background: white;
+            display: flex;
+            align-items: center;
+            page-break-inside: avoid;
+            border-top: 2px solid #ff0000;
+            border-bottom: 2px solid #ff0000;
+        }
+        
+        /* الخط الأسود الأول */
+        .middle-line-1 {
+            position: absolute;
+            top: 13px;
+            left: 0;
+            right: 0;
+            height: 0;
+            border-top: 1px solid #000;
+            z-index: 1;
+            pointer-events: none;
+        }
+        
+        /* الخط الأسود الثاني */
+        .middle-line-2 {
+            position: absolute;
+            top: 30px;
+            left: 0;
+            right: 0;
+            height: 0;
+            border-top: 1px solid #000;
+            z-index: 1;
+            pointer-events: none;
+        }
+        
+        @media print {
+            .practice-line {
+                border-top: 2px solid #ff0000 !important;
+                border-bottom: 2px solid #ff0000 !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+            
+            .middle-line-1,
+            .middle-line-2 {
+                border-top: 1px solid #000 !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+        }
+        
+        .line-content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            padding: 0 5px;
+        }
+        
+        .word-unit {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            min-width: 0;
+        }
+        
+        .word-model {
+            font-family: 'Andika', sans-serif;
+            font-size: 40px;
+            font-weight: bold;
+            color: #000;
+            white-space: nowrap;
+            margin-left: 8px;
+            direction: ltr;
+            position: relative;
+            top: -8px;
+        }
+        
+        .word-arabic {
+            font-size: 11px;
+            color: #666;
+            margin-left: 3px;
+            white-space: nowrap;
+        }
+        
+        .word-practice-space {
+            flex: 1;
+            min-width: 40px;
+            height: 35px;
+        }
+        
+        .word-divider {
+            width: 1px;
+            height: 35px;
+            background: #ccc;
+            margin: 0 3px;
+            border-left: 1px solid #ccc;
+        }
+        
+        @media print {
+            .word-divider {
+                border-left: 1px solid #ccc !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+        }
+        
+        .assistant-box {
+            background: #f5f5f5;
+            border: 2px solid #333;
+            border-radius: 5px;
+            padding: 12px;
+            margin-top: 15px;
+            page-break-before: always;
+        }
+        
+        .assistant-box h3 {
+            color: #000;
+            margin-top: 0;
+            font-size: 16px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        
+        .assistant-instructions {
+            background: white;
+            padding: 10px;
+            border-radius: 3px;
+            margin: 8px 0;
+            border: 1px solid #333;
+        }
+        
+        .assistant-instructions li {
+            margin: 5px 0;
+            line-height: 1.4;
+            font-size: 13px;
+        }
+        
+        .note {
+            background: #f0f0f0;
+            border-right: 4px solid #333;
+            padding: 8px;
+            border-radius: 3px;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+        
+        .fill-blank {
+            border-bottom: 2px solid #333;
+            display: inline-block;
+            min-width: 80px;
+            margin: 0 3px;
+            text-align: center;
+        }
+        
+        @media print {
+            .fill-blank {
+                border-bottom: 2px solid #333 !important;
+            }
+        }
+    </style>
+</head>
+<body class="page-break-before">
+    <div class="no-print" style="text-align: center; margin-top: 8px; color: #666;">
+        <button onclick="window.print()" style="background: #333; color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+            🖨️ طباعة الورقة
+        </button>
+    </div>
+    <div class="worksheet">
+        <!-- Group Name Header -->
+        <div style="text-align:center; font-size:38px; font-weight:bold; color:#1565c0; margin-bottom:8px; margin-top:10px; letter-spacing:2px;">المجموعة التأسيسية</div>
+        <!-- Header -->
+        <div class="header">
+            <h1>ورقة عمل - اليوم الثاني 🌟</h1>
+            <div class="subtitle">إعداد أ. محمد العثيمين - أبي بكر بن العربي الثانوية</div>
+        </div>
+
+        <!-- Student Info -->
+        <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 10px; margin-bottom: 10px; padding: 8px; border: 2px solid #333; border-radius: 5px; background: #f9f9f9;">
+            <div style="display: flex; align-items: center;"><strong>الاسم:</strong> <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span></div>
+            <div style="display: flex; align-items: center;"><strong>الفصل:</strong> <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span></div>
+            <div style="display: flex; align-items: center;"><strong>الرقم:</strong> <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span></div>
+            <div style="display: flex; align-items: center;"><strong>المجموعة:</strong> <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span></div>
+        </div>
+
+        <!-- Goal Box -->
+        <div class="info-box">
+            <strong>🎯 هدف اليوم:</strong> تعلم 20 كلمة أساسية من الوحدة مع ربطها بالحروف والأرقام
+        </div>
+
+        <!-- Exercise 1: Word Practice with 4-Line System -->
+        <div class="exercise">
+            <div class="exercise-title">التمرين 1️⃣: التدريب على كتابة الكلمات الأساسية</div>
+            <p style="margin: 5px 0; font-size: 12px;"><strong>اكتب كل كلمة مرة واحدة في الفراغ المخصص:</strong></p>
+            
+            <div class="handwriting-practice">
+                <!-- Line 1: I, am, boy -->
+                <div class="practice-line">
+                    <div class="middle-line-1"></div>
+                    <div class="middle-line-2"></div>
+                    <div class="line-content">
+                        <div class="word-unit">
+                            <span class="word-arabic">أنا</span>
+                            <span class="word-model">I</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                        <div class="word-divider"></div>
+                        <div class="word-unit">
+                            <span class="word-arabic">يكون</span>
+                            <span class="word-model">am</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                        <div class="word-divider"></div>
+                        <div class="word-unit">
+                            <span class="word-arabic">ولد</span>
+                            <span class="word-model">boy</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Line 2: girl, man, big -->
+                <div class="practice-line">
+                    <div class="middle-line-1"></div>
+                    <div class="middle-line-2"></div>
+                    <div class="line-content">
+                        <div class="word-unit">
+                            <span class="word-arabic">بنت</span>
+                            <span class="word-model">girl</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                        <div class="word-divider"></div>
+                        <div class="word-unit">
+                            <span class="word-arabic">رجل</span>
+                            <span class="word-model">man</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                        <div class="word-divider"></div>
+                        <div class="word-unit">
+                            <span class="word-arabic">كبير</span>
+                            <span class="word-model">big</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Line 3: new, old, car -->
+                <div class="practice-line">
+                    <div class="middle-line-1"></div>
+                    <div class="middle-line-2"></div>
+                    <div class="line-content">
+                        <div class="word-unit">
+                            <span class="word-arabic">جديد</span>
+                            <span class="word-model">new</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                        <div class="word-divider"></div>
+                        <div class="word-unit">
+                            <span class="word-arabic">قديم</span>
+                            <span class="word-model">old</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                        <div class="word-divider"></div>
+                        <div class="word-unit">
+                            <span class="word-arabic">سيارة</span>
+                            <span class="word-model">car</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Line 4: sky, book, pen -->
+                <div class="practice-line">
+                    <div class="middle-line-1"></div>
+                    <div class="middle-line-2"></div>
+                    <div class="line-content">
+                        <div class="word-unit">
+                            <span class="word-arabic">سماء</span>
+                            <span class="word-model">sky</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                        <div class="word-divider"></div>
+                        <div class="word-unit">
+                            <span class="word-arabic">كتاب</span>
+                            <span class="word-model">book</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                        <div class="word-divider"></div>
+                        <div class="word-unit">
+                            <span class="word-arabic">قلم</span>
+                            <span class="word-model">pen</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Line 5: cat, dog, red -->
+                <div class="practice-line">
+                    <div class="middle-line-1"></div>
+                    <div class="middle-line-2"></div>
+                    <div class="line-content">
+                        <div class="word-unit">
+                            <span class="word-arabic">قطة</span>
+                            <span class="word-model">cat</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                        <div class="word-divider"></div>
+                        <div class="word-unit">
+                            <span class="word-arabic">كلب</span>
+                            <span class="word-model">dog</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                        <div class="word-divider"></div>
+                        <div class="word-unit">
+                            <span class="word-arabic">أحمر</span>
+                            <span class="word-model">red</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Line 6: blue, sun, moon -->
+                <div class="practice-line">
+                    <div class="middle-line-1"></div>
+                    <div class="middle-line-2"></div>
+                    <div class="line-content">
+                        <div class="word-unit">
+                            <span class="word-arabic">أزرق</span>
+                            <span class="word-model">blue</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                        <div class="word-divider"></div>
+                        <div class="word-unit">
+                            <span class="word-arabic">شمس</span>
+                            <span class="word-model">sun</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                        <div class="word-divider"></div>
+                        <div class="word-unit">
+                            <span class="word-arabic">قمر</span>
+                            <span class="word-model">moon</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Line 7: star, house -->
+                <div class="practice-line">
+                    <div class="middle-line-1"></div>
+                    <div class="middle-line-2"></div>
+                    <div class="line-content">
+                        <div class="word-unit">
+                            <span class="word-arabic">نجمة</span>
+                            <span class="word-model">star</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                        <div class="word-divider"></div>
+                        <div class="word-unit">
+                            <span class="word-arabic">منزل</span>
+                            <span class="word-model">house</span>
+                            <span class="word-practice-space"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Exercise 2: Matching -->
+        <div class="exercise">
+            <div class="exercise-title">التمرين 2️⃣: صل الكلمة بمعناها</div>
+            <p style="margin: 5px 0; font-size: 12px;"><strong>اربط الكلمة الإنجليزية بمعناها العربي:</strong></p>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; direction: ltr; text-align: left;">
+                <div>
+                    <div style="margin: 3px 0;">1. I <span style="border-bottom: 1px dotted #333; width: 60px; display: inline-block;"></span></div>
+                    <div style="margin: 3px 0;">2. boy <span style="border-bottom: 1px dotted #333; width: 60px; display: inline-block;"></span></div>
+                    <div style="margin: 3px 0;">3. big <span style="border-bottom: 1px dotted #333; width: 60px; display: inline-block;"></span></div>
+                    <div style="margin: 3px 0;">4. car <span style="border-bottom: 1px dotted #333; width: 60px; display: inline-block;"></span></div>
+                    <div style="margin: 3px 0;">5. cat <span style="border-bottom: 1px dotted #333; width: 60px; display: inline-block;"></span></div>
+                </div>
+                <div style="text-align: right;">
+                    <div style="margin: 3px 0;">(أ) كبير</div>
+                    <div style="margin: 3px 0;">(ب) ولد</div>
+                    <div style="margin: 3px 0;">(ج) قطة</div>
+                    <div style="margin: 3px 0;">(د) سيارة</div>
+                    <div style="margin: 3px 0;">(هـ) أنا</div>
+                </div>
+            </div>
+        </div><!-- Footer -->
+        <div class="note" style="margin-top: 10px;">
+            <strong>⏱️ الزمن المقترح:</strong> 20-25 دقيقة | <strong>📌 ملاحظة:</strong> الأولوية للتمرينين 1 و2 - التمارين 3 و4 إضافية إذا بقي وقت
+        </div>
+        <!-- Credit at the end -->
+        <div style="text-align:center; font-size:20px; color:#333; margin-top:40px; margin-bottom:10px; font-weight:bold;">إعداد أ. محمد العثيمين - أبي بكر بن العربي الثانوية</div>
+    </div>
+
+    <div class="no-print" style="text-align: center; margin-top: 20px; color: #666;">
+        <button onclick="window.print()" style="background: #333; color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+            🖨️ طباعة الورقة
+        </button>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="page-break-before">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورقة عمل - اليوم الثالث - المجموعة التأسيسية</title>
+    <style>
+        @media print {
+            @page {
+                size: A4;
+                margin: 1cm;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                background: white;
+            }
+            .worksheet {
+                box-shadow: none;
+                padding: 10px;
+            }
+            .no-print {
+                display: none;
+            }
+            .exercise {
+                margin-bottom: 10px;
+            }
+            .page-break-before {
+                page-break-before: always;
+            }
+        }
+        
+        body {
+            font-family: 'Arial', 'Tahoma', sans-serif;
+            max-width: 21cm;
+            margin: 0 auto;
+            padding: 15px;
+            background: #f5f5f5;
+        }
+        
+        .worksheet {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        /* خط خاص للحروف - يشبه خط اليد */
+        .letter-box, .exercise strong, .sentence-box {
+            font-family: 'Comic Sans MS', 'Sassoon Primary', 'KG Primary Penmanship', cursive, sans-serif;
+        }
+        
+        /* النصوص الإنجليزية بمحاذاة اليسار */
+        .sentence-box, .sentence-example, .word-bank-item {
+            direction: ltr;
+            text-align: left;
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #333;
+            padding-bottom: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .header h1 {
+            color: #000;
+            margin: 5px 0;
+            font-size: 20px;
+        }
+        
+        .header .subtitle {
+            color: #333;
+            font-size: 12px;
+            margin-top: 3px;
+        }
+        
+        .info-box {
+            background: #f0f0f0;
+            padding: 8px;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            border-right: 3px solid #333;
+            font-size: 12px;
+        }
+        
+        .exercise {
+            margin-bottom: 8px;
+            page-break-inside: avoid;
+        }
+        
+        .exercise-title {
+            background: #333;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 3px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+        
+        .sentence-box {
+            border: 2px solid #333;
+            padding: 6px;
+            margin: 5px 0;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+        
+        .sentence-model {
+            font-size: 16px;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 3px;
+            text-align: center;
+        }
+        
+        .sentence-arabic {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 3px;
+            text-align: center;
+        }
+        
+        .sentence-write-line {
+            border-bottom: 2px dotted #333;
+            height: 22px;
+            margin: 2px 0;
+        }
+        
+        .fill-blank {
+            border-bottom: 2px solid #333;
+            display: inline-block;
+            min-width: 100px;
+            margin: 0 3px;
+            text-align: center;
+        }
+        
+        .word-bank {
+            background: #f0f0f0;
+            padding: 6px;
+            border-radius: 5px;
+            margin: 5px 0;
+            border: 2px solid #333;
+        }
+        
+        .word-bank-item {
+            display: inline-block;
+            background: white;
+            border: 1px solid #333;
+            padding: 3px 8px;
+            margin: 2px;
+            border-radius: 3px;
+            font-weight: bold;
+            font-size: 13px;
+        }
+        
+        .assistant-box {
+            background: #f5f5f5;
+            border: 2px solid #333;
+            border-radius: 5px;
+            padding: 12px;
+            margin-top: 15px;
+            page-break-before: always;
+        }
+        
+        .assistant-box h3 {
+            color: #000;
+            margin-top: 0;
+            font-size: 16px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        
+        .assistant-instructions {
+            background: white;
+            padding: 10px;
+            border-radius: 3px;
+            margin: 8px 0;
+            border: 1px solid #333;
+        }
+        
+        .assistant-instructions li {
+            margin: 5px 0;
+            line-height: 1.4;
+            font-size: 13px;
+        }
+        
+        .note {
+            background: #f0f0f0;
+            border-right: 4px solid #333;
+            padding: 8px;
+            border-radius: 3px;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body class="page-break-before">
+    <div class="no-print" style="text-align: center; margin-top: 8px; color: #666;">
+        <button onclick="window.print()" style="background: #333; color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+            🖨️ طباعة الورقة
+        </button>
+    </div>
+    <div class="worksheet">
+        <!-- Group Name Header -->
+        <div style="text-align:center; font-size:38px; font-weight:bold; color:#1565c0; margin-bottom:8px; margin-top:10px; letter-spacing:2px;">المجموعة التأسيسية</div>
+        <!-- Header -->
+        <div class="header">
+            <h1>ورقة عمل - اليوم الثالث 🌟</h1>
+            <div class="subtitle">إعداد أ. محمد العثيمين - أبي بكر بن العربي الثانوية</div>
+        </div>
+
+        <!-- Student Info -->
+        <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 10px; margin-bottom: 10px; padding: 8px; border: 2px solid #333; border-radius: 5px; background: #f9f9f9;">
+            <div style="display: flex; align-items: center;"><strong>الاسم:</strong> <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span></div>
+            <div style="display: flex; align-items: center;"><strong>الفصل:</strong> <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span></div>
+            <div style="display: flex; align-items: center;"><strong>الرقم:</strong> <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span></div>
+            <div style="display: flex; align-items: center;"><strong>المجموعة:</strong> <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span></div>
+        </div>
+
+        <!-- Goal Box -->
+        <div class="info-box">
+            <strong>🎯 هدف اليوم:</strong> تعلم تكوين جمل بسيطة باستخدام "I am" و "I have"
+        </div>
+
+        <!-- Exercise 1: I am Sentences -->
+        <div class="exercise">
+            <div class="exercise-title">التمرين 1️⃣: جمل "I am" (أنا...)</div>
+            <p style="margin: 5px 0; font-size: 13px;"><strong>اقرأ الجملة ثم اكتبها مرتين:</strong></p>
+            
+            <!-- Sentence 1 -->
+            <div class="sentence-box">
+                <div class="sentence-model">I am a boy.</div>
+                <div class="sentence-arabic">(أنا ولد)</div>
+                <div class="sentence-write-line"></div>
+            </div>
+            
+            <!-- Sentence 2 -->
+            <div class="sentence-box">
+                <div class="sentence-model">I am a student.</div>
+                <div class="sentence-arabic">(أنا طالب)</div>
+                <div class="sentence-write-line"></div>
+            </div>
+            
+            <!-- Sentence 3 -->
+            <div class="sentence-box">
+                <div class="sentence-model">I am big.</div>
+                <div class="sentence-arabic">(أنا كبير)</div>
+                <div class="sentence-write-line"></div>
+            </div>
+            
+            <!-- Sentence 4 -->
+            <div class="sentence-box">
+                <div class="sentence-model">I am new.</div>
+                <div class="sentence-arabic">(أنا جديد)</div>
+                <div class="sentence-write-line"></div>
+            </div>
+        </div>
+
+        <!-- Exercise 2: I have Sentences -->
+        <div class="exercise">
+            <div class="exercise-title">التمرين 2️⃣: جمل "I have" (عندي...)</div>
+            <p style="margin: 5px 0; font-size: 13px;"><strong>اقرأ الجملة ثم اكتبها مرتين:</strong></p>
+            
+            <!-- Sentence 1 -->
+            <div class="sentence-box">
+                <div class="sentence-model">I have a book.</div>
+                <div class="sentence-arabic">(أنا عندي كتاب)</div>
+                <div class="sentence-write-line"></div>
+            </div>
+            
+            <!-- Sentence 2 -->
+            <div class="sentence-box">
+                <div class="sentence-model">I have a pen.</div>
+                <div class="sentence-arabic">(أنا عندي قلم)</div>
+                <div class="sentence-write-line"></div>
+            </div>
+            
+            <!-- Sentence 3 -->
+            <div class="sentence-box">
+                <div class="sentence-model">I have a cat.</div>
+                <div class="sentence-arabic">(أنا عندي قطة)</div>
+                <div class="sentence-write-line"></div>
+            </div>
+            
+            <!-- Sentence 4 -->
+            <div class="sentence-box">
+                <div class="sentence-model">I have a car.</div>
+                <div class="sentence-arabic">(أنا عندي سيارة)</div>
+                <div class="sentence-write-line"></div>
+            </div>
+        </div>
+
+        <!-- Exercise 3: Complete the Sentence -->
+        <div class="exercise">
+            <div class="exercise-title">التمرين 3️⃣: أكمل الجملة</div>
+            <p style="margin: 5px 0; font-size: 13px;"><strong>اختر الكلمة المناسبة وأكمل الجملة:</strong></p>
+            
+            <div class="word-bank">
+                <strong>بنك الكلمات:</strong>
+                <span class="word-bank-item">boy</span>
+                <span class="word-bank-item">book</span>
+                <span class="word-bank-item">big</span>
+                <span class="word-bank-item">cat</span>
+                <span class="word-bank-item">new</span>
+            </div>
+            
+            <div style="margin: 10px 0; padding: 10px; border: 2px solid #333; border-radius: 5px; direction: ltr; text-align: left;">
+                <p style="margin: 8px 0; font-size: 15px;">1. I am a <span class="fill-blank">___________</span></p>
+                <p style="margin: 8px 0; font-size: 15px;">2. I have a <span class="fill-blank">___________</span></p>
+                <p style="margin: 8px 0; font-size: 15px;">3. I am <span class="fill-blank">___________</span></p>
+                <p style="margin: 8px 0; font-size: 15px;">4. I have a <span class="fill-blank">___________</span></p>
+                <p style="margin: 8px 0; font-size: 15px;">5. The car is <span class="fill-blank">___________</span></p>
+            </div>
+        </div>
+
+        <!-- Exercise 4: Write Your Own Sentence -->
+        <div class="exercise">
+            <div class="exercise-title">التمرين 4️⃣: اكتب جملتك الخاصة</div>
+            <p style="margin: 5px 0; font-size: 13px;"><strong>اكتب جملة واحدة عن نفسك باستخدام "I am" أو "I have":</strong></p>
+            
+            <div style="margin: 10px 0; padding: 15px; border: 2px dashed #333; border-radius: 5px; background: #f9f9f9;">
+                <div style="border-bottom: 2px solid #333; height: 40px; margin: 10px 0;"></div>
+                <div style="border-bottom: 2px solid #333; height: 40px; margin: 10px 0;"></div>
+            </div>
+            
+            <div style="margin: 10px 0; padding: 8px; background: #f0f0f0; border-radius: 3px; font-size: 12px;">
+                <strong>أمثلة:</strong> I am a boy. / I have a book. / I am big.
+            </div>
+        </div><!-- Footer -->
+        <div class="note" style="margin-top: 10px;">
+            <strong>⏱️ الزمن المقترح:</strong> 20-25 دقيقة | <strong>📌 ملاحظة:</strong> الأولوية للتمرينين 1 و2 - التمارين 3 و4 إضافية إذا بقي وقت
+        </div>
+            <!-- Credit at the end -->
+            <div style="text-align:center; font-size:20px; color:#333; margin-top:40px; margin-bottom:10px; font-weight:bold;">إعداد أ. محمد العثيمين - أبي بكر بن العربي الثانوية</div>
+    </div>
+
+    <div class="no-print" style="text-align: center; margin-top: 20px; color: #666;">
+        <button onclick="window.print()" style="background: #333; color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+            🖨️ طباعة الورقة
+        </button>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="page-break-before">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورقة عمل - اليوم الرابع - المجموعة التأسيسية</title>
+    <style>
+        @media print {
+            @page {
+                size: A4;
+                margin: 1cm;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                background: white;
+            }
+            .worksheet {
+                box-shadow: none;
+                padding: 8px;
+            }
+            .no-print {
+                display: none;
+            }
+            .exercise {
+                margin-bottom: 6px;
+            }
+            .page-break-before {
+                page-break-before: always;
+            }
+        }
+        
+        body {
+            font-family: 'Arial', 'Tahoma', sans-serif;
+            max-width: 21cm;
+            margin: 0 auto;
+            padding: 10px;
+            background: #f5f5f5;
+            line-height: 1.2;
+        }
+        
+        .worksheet {
+            background: white;
+            padding: 12px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        /* خط خاص للجمل - يشبه خط اليد */
+        .sentence-box, .word-bank-item, .fill-blank {
+            font-family: 'Comic Sans MS', 'Sassoon Primary', 'KG Primary Penmanship', cursive, sans-serif;
+        }
+        
+        /* النصوص الإنجليزية بمحاذاة اليسار */
+        .sentence-box, .sentence-example, .word-bank, .practice-area {
+            direction: ltr;
+            text-align: left;
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #333;
+            padding-bottom: 6px;
+            margin-bottom: 6px;
+        }
+        
+        .header h1 {
+            color: #000;
+            margin: 3px 0;
+            font-size: 18px;
+        }
+        
+        .header .subtitle {
+            color: #333;
+            font-size: 11px;
+            margin-top: 2px;
+        }
+        
+        .info-box {
+            background: #f0f0f0;
+            padding: 6px;
+            border-radius: 3px;
+            margin-bottom: 6px;
+            border-right: 3px solid #333;
+            font-size: 11px;
+        }
+        
+        .exercise {
+            margin-bottom: 6px;
+            page-break-inside: avoid;
+        }
+        
+        .exercise-title {
+            background: #333;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 3px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+        
+        .sentence-box {
+            border: 2px solid #333;
+            padding: 5px;
+            margin: 4px 0;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+        
+        .sentence-model {
+            font-size: 15px;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 2px;
+        }
+        
+        .sentence-arabic {
+            font-size: 11px;
+            color: #666;
+            direction: rtl;
+            text-align: right;
+            margin-bottom: 3px;
+        }
+        
+        .sentence-write-line {
+            border-bottom: 2px dotted #333;
+            height: 20px;
+            margin: 2px 0;
+        }
+        
+        .fill-blank {
+            border-bottom: 2px solid #333;
+            display: inline-block;
+            min-width: 80px;
+            height: 22px;
+            margin: 0 3px;
+            text-align: center;
+            vertical-align: bottom;
+        }
+        
+        .word-bank {
+            background: #f0f0f0;
+            padding: 5px;
+            border-radius: 5px;
+            margin: 4px 0;
+            border: 2px solid #333;
+        }
+        
+        .word-bank-item {
+            display: inline-block;
+            background: white;
+            border: 1px solid #333;
+            padding: 2px 6px;
+            margin: 2px;
+            border-radius: 3px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        
+        .matching-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin: 4px 0;
+        }
+        
+        .matching-column {
+            border: 2px solid #333;
+            padding: 6px;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+        
+        .matching-item {
+            font-size: 14px;
+            font-weight: bold;
+            margin: 5px 0;
+            padding: 3px;
+            background: white;
+            border-radius: 3px;
+        }
+        
+        .assistant-box {
+            background: #f5f5f5;
+            border: 2px solid #333;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 10px;
+            page-break-before: always;
+        }
+        
+        .assistant-box h3 {
+            color: #000;
+            margin-top: 0;
+            font-size: 15px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 4px;
+        }
+        
+        .assistant-instructions {
+            background: white;
+            padding: 8px;
+            border-radius: 3px;
+            margin: 6px 0;
+            border: 1px solid #333;
+        }
+        
+        .assistant-instructions li {
+            margin: 3px 0;
+            line-height: 1.3;
+            font-size: 12px;
+        }
+        
+        .note {
+            background: #f0f0f0;
+            border-right: 4px solid #333;
+            padding: 6px;
+            border-radius: 3px;
+            margin-top: 6px;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body class="page-break-before">
+    <div class="no-print" style="text-align: center; margin-top: 8px; color: #666;">
+        <button onclick="window.print()" style="background: #333; color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+            🖨️ طباعة الورقة
+        </button>
+    </div>
+    <div class="worksheet">
+        <!-- Group Name Header -->
+        <div style="text-align:center; font-size:36px; font-weight:bold; color:#1565c0; margin-bottom:6px; margin-top:8px; letter-spacing:2px;">المجموعة التأسيسية</div>
+        
+        <!-- Header -->
+        <div class="header">
+            <h1>ورقة عمل - اليوم الرابع 🌟</h1>
+            <div class="subtitle">إعداد أ. محمد العثيمين - أبي بكر بن العربي الثانوية</div>
+        </div>
+
+        <!-- Student Info -->
+        <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 6px; margin-bottom: 6px; padding: 5px; border: 2px solid #333; border-radius: 5px; background: white;">
+            <div style="display: flex; align-items: center;"><strong>الاسم:</strong> <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span></div>
+            <div style="display: flex; align-items: center;"><strong>الفصل:</strong> <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span></div>
+            <div style="display: flex; align-items: center;"><strong>الرقم:</strong> <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span></div>
+            <div style="display: flex; align-items: center;"><strong>المجموعة:</strong> <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span></div>
+        </div>
+
+        <!-- Goal Box -->
+        <div class="info-box">
+            <strong>🎯 هدف اليوم:</strong> مراجعة شاملة للحروف والأرقام والكلمات والجمل البسيطة - اختبار نهائي لما تعلمناه
+        </div>
+
+        <!-- Exercise 1: Write the Missing Letters (A-Z) -->
+        <div class="exercise">
+            <div class="exercise-title">التمرين 1️⃣: أكمل الحروف الناقصة (A-Z)</div>
+            <p style="margin: 3px 0; font-size: 12px;"><strong>اكتب الحروف الناقصة:</strong></p>
+            
+            <div style="border: 2px solid #333; padding: 6px; border-radius: 5px; background: #f9f9f9; direction: ltr; text-align: left;">
+                <div style="margin: 4px 0; font-size: 16px; font-weight: bold; line-height: 2;">
+                    A - <span style="display:inline-block; border-bottom:2px solid #000; min-width:50px; height:24px; margin:0 5px;"></span> - C - <span style="display:inline-block; border-bottom:2px solid #000; min-width:50px; height:24px; margin:0 5px;"></span> - E - F - <span style="display:inline-block; border-bottom:2px solid #000; min-width:50px; height:24px; margin:0 5px;"></span> - H - <span style="display:inline-block; border-bottom:2px solid #000; min-width:50px; height:24px; margin:0 5px;"></span> - J - K - <span style="display:inline-block; border-bottom:2px solid #000; min-width:50px; height:24px; margin:0 5px;"></span> - M
+                </div>
+                <div style="margin: 4px 0; font-size: 16px; font-weight: bold; line-height: 2;">
+                    N - <span style="display:inline-block; border-bottom:2px solid #000; min-width:50px; height:24px; margin:0 5px;"></span> - P - Q - <span style="display:inline-block; border-bottom:2px solid #000; min-width:50px; height:24px; margin:0 5px;"></span> - S - T - <span style="display:inline-block; border-bottom:2px solid #000; min-width:50px; height:24px; margin:0 5px;"></span> - V - W - <span style="display:inline-block; border-bottom:2px solid #000; min-width:50px; height:24px; margin:0 5px;"></span> - Y - <span style="display:inline-block; border-bottom:2px solid #000; min-width:50px; height:24px; margin:0 5px;"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercise 2: Write the Missing Numbers (1-20) -->
+        <div class="exercise">
+            <div class="exercise-title">التمرين 2️⃣: أكمل الأرقام الناقصة (1-20)</div>
+            <p style="margin: 3px 0; font-size: 12px;"><strong>اكتب الأرقام الناقصة:</strong></p>
+            
+            <div style="border: 2px solid #333; padding: 6px; border-radius: 5px; background: #f9f9f9; direction: ltr; text-align: left;">
+                <div style="margin: 4px 0; font-size: 16px; font-weight: bold; line-height: 2;">
+                    1 - 2 - <span style="display:inline-block; border-bottom:2px solid #000; min-width:50px; height:24px; margin:0 5px;"></span> - 4 - <span style="display:inline-block; border-bottom:2px solid #000; min-width:50px; height:24px; margin:0 5px;"></span> - 6 - <span style="display:inline-block; border-bottom:2px solid #000; min-width:50px; height:24px; margin:0 5px;"></span> - 8 - 9 - <span style="display:inline-block; border-bottom:2px solid #000; min-width:50px; height:24px; margin:0 5px;"></span> - 11 - <span style="display:inline-block; border-bottom:2px solid #000; min-width:50px; height:24px; margin:0 5px;"></span> - 13
+                </div>
+                <div style="margin: 4px 0; font-size: 16px; font-weight: bold; line-height: 2;">
+                    14 - <span style="display:inline-block; border-bottom:2px solid #000; min-width:50px; height:24px; margin:0 5px;"></span> - 16 - 17 - <span style="display:inline-block; border-bottom:2px solid #000; min-width:50px; height:24px; margin:0 5px;"></span> - 19 - <span style="display:inline-block; border-bottom:2px solid #000; min-width:50px; height:24px; margin:0 5px;"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercise 3: Match Words with Pictures -->
+        <div class="exercise">
+            <div class="exercise-title">التمرين 3️⃣: وصّل الكلمة بالمعنى</div>
+            <p style="margin: 3px 0; font-size: 12px;"><strong>صِل كل كلمة بمعناها بالعربي:</strong></p>
+            
+            <div class="matching-grid">
+                <div class="matching-column">
+                    <div class="matching-item" style="direction: ltr; text-align: left;">1. cat</div>
+                    <div class="matching-item" style="direction: ltr; text-align: left;">2. book</div>
+                    <div class="matching-item" style="direction: ltr; text-align: left;">3. pen</div>
+                    <div class="matching-item" style="direction: ltr; text-align: left;">4. car</div>
+                    <div class="matching-item" style="direction: ltr; text-align: left;">5. big</div>
+                    <div class="matching-item" style="direction: ltr; text-align: left;">6. new</div>
+                </div>
+                <div class="matching-column">
+                    <div class="matching-item">• كتاب</div>
+                    <div class="matching-item">• جديد</div>
+                    <div class="matching-item">• قلم</div>
+                    <div class="matching-item">• كبير</div>
+                    <div class="matching-item">• قطة</div>
+                    <div class="matching-item">• سيارة</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercise 4: Complete the Sentences -->
+        <div class="exercise">
+            <div class="exercise-title">التمرين 4️⃣: أكمل الجمل</div>
+            <p style="margin: 3px 0; font-size: 12px;"><strong>اختر الكلمة المناسبة من البنك وأكمل الجملة:</strong></p>
+            
+            <div class="word-bank">
+                <strong style="font-size: 11px;">بنك الكلمات:</strong>
+                <span class="word-bank-item">am</span>
+                <span class="word-bank-item">have</span>
+                <span class="word-bank-item">boy</span>
+                <span class="word-bank-item">book</span>
+                <span class="word-bank-item">big</span>
+                <span class="word-bank-item">cat</span>
+            </div>
+            
+            <div style="border: 2px solid #333; padding: 8px; border-radius: 5px; background: #f9f9f9; direction: ltr; text-align: left;">
+                <div style="margin: 6px 0; font-size: 15px; line-height: 2;">1. I <span style="display:inline-block; border-bottom:2px solid #000; min-width:100px; height:24px; margin:0 5px;"></span> a boy.</div>
+                <div style="margin: 6px 0; font-size: 15px; line-height: 2;">2. I <span style="display:inline-block; border-bottom:2px solid #000; min-width:100px; height:24px; margin:0 5px;"></span> a book.</div>
+                <div style="margin: 6px 0; font-size: 15px; line-height: 2;">3. The car is <span style="display:inline-block; border-bottom:2px solid #000; min-width:100px; height:24px; margin:0 5px;"></span></div>
+                <div style="margin: 6px 0; font-size: 15px; line-height: 2;">4. I have a <span style="display:inline-block; border-bottom:2px solid #000; min-width:100px; height:24px; margin:0 5px;"></span></div>
+                <div style="margin: 6px 0; font-size: 15px; line-height: 2;">5. I am a <span style="display:inline-block; border-bottom:2px solid #000; min-width:100px; height:24px; margin:0 5px;"></span></div>
+            </div>
+        </div>
+
+        <!-- Exercise 5: Write Sentences -->
+        <div class="exercise">
+            <div class="exercise-title">التمرين 5️⃣: اكتب الجمل</div>
+            <p style="margin: 3px 0; font-size: 12px;"><strong>اكتب كل جملة مرة واحدة:</strong></p>
+            
+            <!-- Sentence 1 -->
+            <div class="sentence-box">
+                <div class="sentence-model">I am a student.</div>
+                <div class="sentence-arabic">(أنا طالب)</div>
+                <div class="sentence-write-line"></div>
+            </div>
+            
+            <!-- Sentence 2 -->
+            <div class="sentence-box">
+                <div class="sentence-model">I have a pen.</div>
+                <div class="sentence-arabic">(عندي قلم)</div>
+                <div class="sentence-write-line"></div>
+            </div>
+            
+            <!-- Sentence 3 -->
+            <div class="sentence-box">
+                <div class="sentence-model">The cat is big.</div>
+                <div class="sentence-arabic">(القطة كبيرة)</div>
+                <div class="sentence-write-line"></div>
+            </div>
+            
+            <!-- Sentence 4 -->
+            <div class="sentence-box">
+                <div class="sentence-model">I have a new book.</div>
+                <div class="sentence-arabic">(عندي كتاب جديد)</div>
+                <div class="sentence-write-line"></div>
+            </div>
+        </div>
+
+        <!-- Exercise 6: Write Your Own Sentence -->
+        <div class="exercise">
+            <div class="exercise-title">التمرين 6️⃣: اكتب جملتك الخاصة ✨</div>
+            <p style="margin: 3px 0; font-size: 12px;"><strong>اكتب جملتين عن نفسك (استخدم "I am" و "I have"):</strong></p>
+            
+            <div style="border: 2px dashed #333; padding: 8px; border-radius: 5px; background: #f9f9f9; direction: ltr; text-align: left;">
+                <div style="margin: 4px 0;">
+                    <strong style="font-size: 11px; color: #666;">Sentence 1:</strong>
+                    <div class="sentence-write-line"></div>
+                </div>
+                <div style="margin: 4px 0;">
+                    <strong style="font-size: 11px; color: #666;">Sentence 2:</strong>
+                    <div class="sentence-write-line"></div>
+                </div>
+            </div>
+            
+            <div style="margin: 4px 0; padding: 5px; background: #f0f0f0; border-radius: 3px; font-size: 11px; direction: rtl; text-align: right;">
+                <strong>💡 تذكّر:</strong> ابدأ الجملة بحرف كبير (Capital) وانتهِ بنقطة (.)
+            </div>
+        </div><!-- Footer -->
+        <div class="note" style="margin-top: 8px;">
+            <strong>⏱️ الزمن المقترح:</strong> 25 دقيقة | <strong>📌 ملاحظة:</strong> هذا آخر يوم - ركّز على المراجعة والتشجيع
+        </div>
+        
+        <!-- Credit at the end -->
+        <div style="text-align:center; font-size:18px; color:#333; margin-top:12px; margin-bottom:8px; font-weight:bold;">إعداد أ. محمد العثيمين - أبي بكر بن العربي الثانوية</div>
+    </div>
+
+    <div class="no-print" style="text-align: center; margin-top: 15px; color: #666;">
+        <button onclick="window.print()" style="background: #333; color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+            🖨️ طباعة الورقة
+        </button>
+    </div>
+</body>
+</html>

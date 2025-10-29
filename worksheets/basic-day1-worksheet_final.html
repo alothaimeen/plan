@@ -1,460 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ورقة عمل - اليوم الأول - المجموعة التأسيسية</title>
-    <style>
-        @media print {
-            @page {
-                size: A4;
-                margin: 1cm;
-            }
-            body {
-                margin: 0;
-                padding: 0;
-                background: white;
-            }
-            .worksheet {
-                box-shadow: none;
-                padding: 6px;
-            }
-            .no-print {
-                display: none;
-            }
-            .exercise {
-                margin-bottom: 4px;
-            }
-        }
-        
-        body {
-            font-family: 'Arial', 'Tahoma', sans-serif;
-            max-width: 21cm;
-            margin: 0 auto;
-            padding: 6px;
-            background: #f5f5f5;
-            line-height: 1.2;
-        }
-        
-        .worksheet {
-            background: white;
-            padding: 6px;
-            border-radius: 5px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        /* خط خاص للحروف - يشبه خط اليد */
-        .letter-box, .exercise strong, .circle-exercise {
-            font-family: 'Comic Sans MS', 'Sassoon Primary', 'KG Primary Penmanship', cursive, sans-serif;
-        }
-        
-        /* النصوص الإنجليزية بمحاذاة اليسار */
-        .letter-box, .practice-letter, .circle-exercise, .matching-word {
-            direction: ltr;
-            text-align: left;
-        }
-        
-        .header {
-            text-align: center;
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
-            margin-bottom: 4px;
-        }
-        
-        .header h1 {
-            color: #000;
-            margin: 1px 0;
-            font-size: 18px;
-        }
-        
-        .header .subtitle {
-            color: #333;
-            font-size: 11px;
-            margin-top: 3px;
-        }
-        
-        .info-box {
-            background: #f0f0f0;
-            padding: 5px;
-            border-radius: 3px;
-            margin-bottom: 4px;
-            border-right: 3px solid #333;
-            font-size: 11px;
-        }
-        
-        .exercise {
-            margin-bottom: 4px;
-            page-break-inside: avoid;
-        }
-        
-        .exercise-title {
-            background: #333;
-            color: white;
-            padding: 4px 8px;
-            border-radius: 3px;
-            font-size: 14px;
-            font-weight: bold;
-            margin-bottom: 4px;
-        }
-        
-        .letter-box {
-            display: inline-block;
-            width: 28px;
-            height: 32px;
-            border: 1px dashed #333;
-            margin: 1px;
-            text-align: center;
-            line-height: 32px;
-            font-size: 22px;
-            color: #ccc;
-            border-radius: 3px;
-        }
-        
-        .vocab-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 5px 0;
-        }
-        
-        .vocab-table td {
-            border: 2px solid #4CAF50;
-            padding: 6px;
-            text-align: center;
-            font-size: 18px;
-        }
-        
-        .vocab-table img {
-            width: 50px;
-            height: 50px;
-            object-fit: contain;
-        }
-        
-        .circle-exercise {
-            font-size: 22px;
-            letter-spacing: 6px;
-            padding: 6px;
-            text-align: center;
-            background: #f0f0f0;
-            border-radius: 5px;
-            margin: 1px 0;
-            border: 2px solid #333;
-        }
-        
-        .assistant-box {
-            background: #f5f5f5;
-            border: 2px solid #333;
-            border-radius: 5px;
-            padding: 8px;
-            margin-top: 5px;
-            page-break-before: always;
-            margin-top: 5px;
-        }
-        
-        .assistant-box h3 {
-            color: #000;
-            margin-top: 0;
-            font-size: 16px;
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
-        }
-        
-        .assistant-instructions {
-            background: white;
-            padding: 6px;
-            border-radius: 3px;
-            margin: 5px 0;
-            border: 1px solid #333;
-        }
-        
-        .assistant-instructions li {
-            margin: 1px 0;
-            line-height: 1.4;
-            font-size: 11px;
-        }
-        
-        .note {
-            background: #f0f0f0;
-            border-right: 4px solid #333;
-            padding: 5px;
-            border-radius: 3px;
-            margin-top: 10px;
-            font-size: 11px;
-        }
-    </style>
-</head>
-<body>
-    <div class="worksheet">
-        <!-- Group Name Header -->
-        <div style="text-align:center; font-size:38px; font-weight:bold; color:#1565c0; margin-bottom:8px; margin-top:10px; letter-spacing:2px;">المجموعة التأسيسية</div>
-        <!-- Header -->
-        <div class="header">
-            <h1>ورقة عمل - اليوم الأول 🌟</h1>
-            <div class="subtitle">إعداد أ. محمد العثيمين - أبي بكر بن العربي الثانوية</div>
-        </div>
-
-        <!-- Student Info -->
-        <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 10px; margin-bottom: 4px; padding: 5px; border: 2px solid #333; border-radius: 5px; background: #f9f9f9;">
-            <div style="display: flex; align-items: center;"><strong>الاسم:</strong> <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span></div>
-            <div style="display: flex; align-items: center;"><strong>الفصل:</strong> <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span></div>
-            <div style="display: flex; align-items: center;"><strong>الرقم:</strong> <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span></div>
-            <div style="display: flex; align-items: center;"><strong>المجموعة:</strong> <span style="border-bottom: 1px solid #333; flex: 1; margin-right: 5px;"></span></div>
-        </div>
-
-        <!-- Goal Box -->
-        <div class="info-box">
-            <strong>🎯 هدف اليوم:</strong> تعلم الحروف الإنجليزية (A-M) مع ربطها بكلمات من الوحدة
-        </div>
-
-        <!-- Exercise 1: Letter Tracing -->
-        <div class="exercise">
-            <div class="exercise-title">التمرين 1️⃣: تتبع الحروف (Tracing)</div>
-            <p style="margin: 1px 0; font-size: 11px;"><strong>اكتب الحروف مرتين في كل مربع:</strong></p>
-            
-            <div style="margin: 4px 0;">
-                <!-- Row 1: A, B -->
-                <div style="margin: 1px 0; display: flex;">
-                    <span style="flex: 1; white-space: nowrap;">
-                        <strong>a</strong>
-                        <strong style="margin: 0 5px;">A</strong>
-                        <span class="letter-box">A</span>
-                        <span class="letter-box">A</span>
-                        <span class="letter-box">a</span>
-                        <span class="letter-box">a</span>
-                    </span>
-                    <span style="flex: 1; white-space: nowrap; margin-right: 5px;">
-                        <strong>b</strong>
-                        <strong style="margin: 0 5px;">B</strong>
-                        <span class="letter-box">B</span>
-                        <span class="letter-box">B</span>
-                        <span class="letter-box">b</span>
-                        <span class="letter-box">b</span>
-                    </span>
-                </div>
-                
-                <!-- Row 2: C, D -->
-                <div style="margin: 1px 0; display: flex;">
-                    <span style="flex: 1; white-space: nowrap;">
-                        <strong>c</strong>
-                        <strong style="margin: 0 5px;">C</strong>
-                        <span class="letter-box">C</span>
-                        <span class="letter-box">C</span>
-                        <span class="letter-box">c</span>
-                        <span class="letter-box">c</span>
-                    </span>
-                    <span style="flex: 1; white-space: nowrap; margin-right: 5px;">
-                        <strong>d</strong>
-                        <strong style="margin: 0 5px;">D</strong>
-                        <span class="letter-box">D</span>
-                        <span class="letter-box">D</span>
-                        <span class="letter-box">d</span>
-                        <span class="letter-box">d</span>
-                    </span>
-                </div>
-                
-                <!-- Row 3: E, F -->
-                <div style="margin: 1px 0; display: flex;">
-                    <span style="flex: 1; white-space: nowrap;">
-                        <strong>e</strong>
-                        <strong style="margin: 0 5px;">E</strong>
-                        <span class="letter-box">E</span>
-                        <span class="letter-box">E</span>
-                        <span class="letter-box">e</span>
-                        <span class="letter-box">e</span>
-                    </span>
-                    <span style="flex: 1; white-space: nowrap; margin-right: 5px;">
-                        <strong>f</strong>
-                        <strong style="margin: 0 5px;">F</strong>
-                        <span class="letter-box">F</span>
-                        <span class="letter-box">F</span>
-                        <span class="letter-box">f</span>
-                        <span class="letter-box">f</span>
-                    </span>
-                </div>
-                
-                <!-- Row 4: G, H -->
-                <div style="margin: 1px 0; display: flex;">
-                    <span style="flex: 1; white-space: nowrap;">
-                        <strong>g</strong>
-                        <strong style="margin: 0 5px;">G</strong>
-                        <span class="letter-box">G</span>
-                        <span class="letter-box">G</span>
-                        <span class="letter-box">g</span>
-                        <span class="letter-box">g</span>
-                    </span>
-                    <span style="flex: 1; white-space: nowrap; margin-right: 5px;">
-                        <strong>h</strong>
-                        <strong style="margin: 0 5px;">H</strong>
-                        <span class="letter-box">H</span>
-                        <span class="letter-box">H</span>
-                        <span class="letter-box">h</span>
-                        <span class="letter-box">h</span>
-                    </span>
-                </div>
-                
-                <!-- Row 5: I, J -->
-                <div style="margin: 1px 0; display: flex;">
-                    <span style="flex: 1; white-space: nowrap;">
-                        <strong>i</strong>
-                        <strong style="margin: 0 5px;">I</strong>
-                        <span class="letter-box">I</span>
-                        <span class="letter-box">I</span>
-                        <span class="letter-box">i</span>
-                        <span class="letter-box">i</span>
-                    </span>
-                    <span style="flex: 1; white-space: nowrap; margin-right: 5px;">
-                        <strong>j</strong>
-                        <strong style="margin: 0 5px;">J</strong>
-                        <span class="letter-box">J</span>
-                        <span class="letter-box">J</span>
-                        <span class="letter-box">j</span>
-                        <span class="letter-box">j</span>
-                    </span>
-                </div>
-                
-                <!-- Row 6: K, L -->
-                <div style="margin: 1px 0; display: flex;">
-                    <span style="flex: 1; white-space: nowrap;">
-                        <strong>k</strong>
-                        <strong style="margin: 0 5px;">K</strong>
-                        <span class="letter-box">K</span>
-                        <span class="letter-box">K</span>
-                        <span class="letter-box">k</span>
-                        <span class="letter-box">k</span>
-                    </span>
-                    <span style="flex: 1; white-space: nowrap; margin-right: 5px;">
-                        <strong>l</strong>
-                        <strong style="margin: 0 5px;">L</strong>
-                        <span class="letter-box">L</span>
-                        <span class="letter-box">L</span>
-                        <span class="letter-box">l</span>
-                        <span class="letter-box">l</span>
-                    </span>
-                </div>
-                
-                <!-- Row 7: M -->
-                <div style="margin: 1px 0;">
-                    <strong>m</strong>
-                    <strong style="margin: 0 5px;">M</strong>
-                    <span class="letter-box">M</span>
-                    <span class="letter-box">M</span>
-                    <span class="letter-box">m</span>
-                    <span class="letter-box">m</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- Exercise 2: Matching -->
-        <div class="exercise">
-            <div class="exercise-title">التمرين 2️⃣: وصّل الحرف بالكلمة المناسبة</div>
-            <p style="margin: 1px 0; font-size: 11px;"><strong>صِل الحرف بالكلمة (الكلمات من وحدة Big Changes):</strong></p>
-            
-            <table style="width: 100%; margin: 5px 0;">
-                <tr>
-                    <td style="width: 50%; padding: 5px; vertical-align: top;">
-                        <div style="border: 2px solid #333; padding: 6px; border-radius: 5px;">
-                            <div style="font-size: 28px; font-weight: bold; margin: 5px 0;">K</div>
-                            <div style="font-size: 28px; font-weight: bold; margin: 5px 0;">A</div>
-                            <div style="font-size: 28px; font-weight: bold; margin: 5px 0;">C</div>
-                            <div style="font-size: 28px; font-weight: bold; margin: 5px 0;">M</div>
-                        </div>
-                    </td>
-                    <td style="width: 50%; padding: 5px; vertical-align: top;">
-                        <div style="border: 2px solid #333; padding: 6px; border-radius: 5px;">
-                            <div style="font-size: 16px; margin: 5px 0;"><strong>Car</strong> (سيارة)</div>
-                            <div style="font-size: 16px; margin: 5px 0;"><strong>King</strong> (ملك)</div>
-                            <div style="font-size: 16px; margin: 5px 0;"><strong>Arab</strong> (عربي)</div>
-                            <div style="font-size: 16px; margin: 5px 0;"><strong>Man</strong> (رجل)</div>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-        </div>
-
-        <!-- Exercise 3: Circle the Letter -->
-        <div class="exercise">
-            <div class="exercise-title">التمرين 3️⃣: ضع دائرة على الحرف الصحيح ⭕</div>
-            
-            <div style="margin: 5px 0;">
-                <p style="margin: 1px 0; font-size: 11px;"><strong>الكلمة: King</strong> - ضع دائرة على كل حرف <strong>K</strong>:</p>
-                <div class="circle-exercise">
-                    K  B  K  D  K  P
-                </div>
-            </div>
-
-            <div style="margin: 5px 0;">
-                <p style="margin: 1px 0; font-size: 11px;"><strong>الكلمة: Car</strong> - ضع دائرة على كل حرف <strong>C</strong>:</p>
-                <div class="circle-exercise">
-                    C  A  B  C  D  C
-                </div>
-            </div>
-        </div>
-
-        <!-- Assistant Instructions -->
-        <div class="assistant-box">
-            <h3>تعليمات المعلم المساعد</h3>
-            
-            <div class="assistant-instructions">
-                <strong>📋 مهامك في هذا النشاط:</strong>
-                <ol>
-                    <li><strong>قبل البدء (3 دقائق):</strong>
-                        <ul>
-                            <li>اشرح الهدف: "سنتعلم اليوم الحروف من A إلى M من وحدة Big Changes"</li>
-                            <li>وضّح للمجموعة كيفية حل التمرين 3 (ضع دائرة على الحرف K في السطر الأول، وعلى C في السطر الثاني)</li>
-                        </ul>
-                    </li>
-                    
-                    <li><strong>أثناء العمل (15 دقيقة):</strong>
-                        <ul>
-                            <li>امر على كل طالب واطلب منه نطق الحروف بصوت عالٍ</li>
-                            <li>صحح الأخطاء بلطف: "جيد، لكن حاول مرة أخرى هكذا..."</li>
-                            <li>ساعد من يجد صعوبة بإمساك يده وكتابة الحرف معه</li>
-                            <li>احتفل بالإنجازات الصغيرة: "ممتاز! حرف K واضح جداً!"</li>
-                        </ul>
-                    </li>
-                    
-                    <li><strong>في النهاية (5 دقائق):</strong>
-                        <ul>
-                            <li>اطلب من المجموعة قراءة الحروف معاً بصوت عالٍ</li>
-                            <li>تأكد أن الجميع أكملوا التمرين 1 و2 على الأقل</li>
-                            <li>سجّل النقاط في الكشف</li>
-                        </ul>
-                    </li>
-                </ol>
-            </div>
-
-            <div class="note">
-                <strong>💡 نصائح مهمة:</strong>
-                <ul style="margin: 1px 0; padding-right: 20px;">
-                    <li>إذا لم يفهم أحد، استخدم الإشارات أو الأمثلة البصرية</li>
-                    <li>شجّع الطلاب على مساعدة بعضهم</li>
-                    <li>إذا احتجت مساعدة، ارفع يدك للمعلم</li>
-                </ul>
-            </div>
-
-            <div class="assistant-instructions" style="margin-top: 5px;">
-                <strong>✅ معايير منح النقاط (كل طالب يمكن أن يحصل على 5 نقاط):</strong>
-                <ul>
-                    <li>✔️ أكمل التمرين 1 = نقطة</li>
-                    <li>✔️ أكمل التمرين 2 = نقطة</li>
-                    <li>✔️ أكمل التمرين 3 = نقطة</li>
-                    <li>✔️ نطق الحروف بصوت عالٍ = نقطة</li>
-                    <li>✔️ ساعد زميله أو شارك بنشاط = نقطة</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Footer -->
-        <div class="note" style="margin-top: 10px;">
-            <strong>⏱️ الزمن المقترح:</strong> 20-25 دقيقة | <strong>📌 ملاحظة:</strong> الأولوية للتمرينين 1 و2 - التمرين 3 إضافي إذا بقي وقت
-        </div>
-        <!-- Credit at the end -->
-        <div style="text-align:center; font-size:20px; color:#333; margin-top:40px; margin-bottom:10px; font-weight:bold;">إعداد أ. محمد العثيمين - أبي بكر بن العربي الثانوية</div>
-    </div>
-
-    <div class="no-print" style="text-align: center; margin-top: 10px; color: #666;">
-        <button onclick="window.print()" style="background: #333; color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
-            🖨️ طباعة الورقة
-        </button>
-    </div>
-</body>
-</html>

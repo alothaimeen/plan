@@ -194,6 +194,11 @@
     </style>
 </head>
 <body>
+    <div class="no-print" style="text-align: center; margin-top: 8px; color: #666;">
+        <button onclick="window.print()" style="background: #333; color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+            🖨️ طباعة الورقة
+        </button>
+    </div>
     <div class="worksheet">
         <!-- Group Name Header -->
         <div style="text-align:center; font-size:38px; font-weight:bold; color:#1565c0; margin-bottom:8px; margin-top:10px; letter-spacing:2px;">المجموعة التأسيسية</div>
@@ -226,14 +231,12 @@
                 <div class="sentence-model">I am a boy.</div>
                 <div class="sentence-arabic">(أنا ولد)</div>
                 <div class="sentence-write-line"></div>
-                <div class="sentence-write-line"></div>
             </div>
             
             <!-- Sentence 2 -->
             <div class="sentence-box">
                 <div class="sentence-model">I am a student.</div>
                 <div class="sentence-arabic">(أنا طالب)</div>
-                <div class="sentence-write-line"></div>
                 <div class="sentence-write-line"></div>
             </div>
             
@@ -242,14 +245,12 @@
                 <div class="sentence-model">I am big.</div>
                 <div class="sentence-arabic">(أنا كبير)</div>
                 <div class="sentence-write-line"></div>
-                <div class="sentence-write-line"></div>
             </div>
             
             <!-- Sentence 4 -->
             <div class="sentence-box">
                 <div class="sentence-model">I am new.</div>
                 <div class="sentence-arabic">(أنا جديد)</div>
-                <div class="sentence-write-line"></div>
                 <div class="sentence-write-line"></div>
             </div>
         </div>
@@ -264,14 +265,12 @@
                 <div class="sentence-model">I have a book.</div>
                 <div class="sentence-arabic">(أنا عندي كتاب)</div>
                 <div class="sentence-write-line"></div>
-                <div class="sentence-write-line"></div>
             </div>
             
             <!-- Sentence 2 -->
             <div class="sentence-box">
                 <div class="sentence-model">I have a pen.</div>
                 <div class="sentence-arabic">(أنا عندي قلم)</div>
-                <div class="sentence-write-line"></div>
                 <div class="sentence-write-line"></div>
             </div>
             
@@ -280,14 +279,12 @@
                 <div class="sentence-model">I have a cat.</div>
                 <div class="sentence-arabic">(أنا عندي قطة)</div>
                 <div class="sentence-write-line"></div>
-                <div class="sentence-write-line"></div>
             </div>
             
             <!-- Sentence 4 -->
             <div class="sentence-box">
                 <div class="sentence-model">I have a car.</div>
                 <div class="sentence-arabic">(أنا عندي سيارة)</div>
-                <div class="sentence-write-line"></div>
                 <div class="sentence-write-line"></div>
             </div>
         </div>
@@ -328,74 +325,7 @@
             <div style="margin: 10px 0; padding: 8px; background: #f0f0f0; border-radius: 3px; font-size: 12px;">
                 <strong>أمثلة:</strong> I am a boy. / I have a book. / I am big.
             </div>
-        </div>
-
-        <!-- Assistant Instructions -->
-        <div class="assistant-box">
-            <h3>تعليمات المعلم المساعد</h3>
-            
-            <div class="assistant-instructions">
-                <strong>📋 مهامك في هذا النشاط:</strong>
-                <ol>
-                    <li><strong>قبل البدء (3 دقائق):</strong>
-                        <ul>
-                            <li>اشرح الهدف: "اليوم سنتعلم كيف نكوّن جمل بسيطة - I am = أنا، I have = عندي"</li>
-                            <li>اقرأ الجمل الأربعة الأولى (I am) بصوت عالٍ - خليهم يكررون معك</li>
-                            <li>اشرح الفرق: "I am نستخدمها للصفات (big, new) أو المهنة (boy, girl)"</li>
-                            <li>اشرح: "I have نستخدمها للأشياء التي نملكها (book, pen, car)"</li>
-                            <li>وضّح التمرين 4: "اكتبوا جملة واحدة عن أنفسكم"</li>
-                        </ul>
-                    </li>
-                    
-                    <li><strong>أثناء العمل (15 دقيقة):</strong>
-                        <ul>
-                            <li>مرّ على كل طالب كل 3 دقائق - اطلب منه قراءة جملة واحدة بصوت عالٍ</li>
-                            <li>صحح النطق بلطف: "ممتاز! بس انتبه - I am وليس I is"</li>
-                            <li>ساعد من يجد صعوبة: أمسك يده واكتب أول جملتين معه</li>
-                            <li>في التمرين 3: اشرح كيفية اختيار الكلمة المناسبة من بنك الكلمات</li>
-                            <li>في التمرين 4: ساعدهم في اختيار جملة بسيطة عن أنفسهم</li>
-                            <li>تأكد من وضع النقطة (.) في نهاية كل جملة</li>
-                            <li>احتفل بالإنجازات: "رائع! كتبت 4 جمل صحيحة!"</li>
-                        </ul>
-                    </li>
-                    
-                    <li><strong>في النهاية (5 دقائق):</strong>
-                        <ul>
-                            <li>اقرأ معهم جميع الجمل (8 جمل) بصوت جماعي</li>
-                            <li>اطلب من 3 طلاب قراءة جملهم الخاصة من التمرين 4</li>
-                            <li>تأكد أن الجميع أكملوا التمرينين 1 و2 على الأقل</li>
-                            <li>سجّل النقاط في الكشف</li>
-                            <li>امدحهم: "أحسنتم! الآن تعرفون كيف تكونون جمل إنجليزية!"</li>
-                        </ul>
-                    </li>
-                </ol>
-            </div>
-
-            <div class="note">
-                <strong>💡 نصائح مهمة:</strong>
-                <ul style="margin: 5px 0; padding-right: 20px;">
-                    <li>ركز على النطق الصحيح لـ "I am" و "I have"</li>
-                    <li>استخدم الإشارات: أشر لنفسك عند قول "I"</li>
-                    <li>شجّع الطلاب على قراءة جملهم بصوت عالٍ</li>
-                    <li>إذا احتجت مساعدة، ارفع يدك للمعلم</li>
-                    <li>الأولوية للتمرينين 1 و2 - التمارين 3 و4 إذا بقي وقت</li>
-                    <li>تأكد من كتابة النقطة (.) في نهاية كل جملة</li>
-                </ul>
-            </div>
-
-            <div class="assistant-instructions" style="margin-top: 15px;">
-                <strong>✅ معايير منح النقاط (كل طالب يمكن أن يحصل على 5 نقاط):</strong>
-                <ul>
-                    <li>✔️ أكمل التمرين 1 (4 جمل I am) - نصفها على الأقل = نقطة</li>
-                    <li>✔️ أكمل التمرين 2 (4 جمل I have) - نصفها على الأقل = نقطة</li>
-                    <li>✔️ أكمل التمرين 3 (إكمال الجمل) - 3 جمل صح على الأقل = نقطة</li>
-                    <li>✔️ قرأ 3 جمل بصوت عالٍ بشكل صحيح = نقطة</li>
-                    <li>✔️ كتب جملة خاصة في التمرين 4 أو ساعد زميله = نقطة</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Footer -->
+        </div><!-- Footer -->
         <div class="note" style="margin-top: 10px;">
             <strong>⏱️ الزمن المقترح:</strong> 20-25 دقيقة | <strong>📌 ملاحظة:</strong> الأولوية للتمرينين 1 و2 - التمارين 3 و4 إضافية إذا بقي وقت
         </div>

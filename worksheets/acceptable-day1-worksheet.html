@@ -234,6 +234,11 @@
     </style>
 </head>
 <body>
+    <div class="no-print" style="text-align: center; margin-top: 8px; color: #666;">
+        <button onclick="window.print()" style="background: #ffc107; color: #000; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; font-weight: bold;">
+            🖨️ طباعة الورقة
+        </button>
+    </div>
     <div class="worksheet">
         <!-- Group Name Header -->
         <div style="text-align:center; font-size:38px; font-weight:bold; color:#ffc107; margin-bottom:8px; margin-top:10px; letter-spacing:2px;">المجموعة المقبولة</div>
@@ -316,13 +321,11 @@
                 <div class="sentence-model">The man walks.</div>
                 <div class="sentence-parts">(الرجل يمشي)</div>
                 <div class="sentence-write-line"></div>
-                <div class="sentence-write-line"></div>
             </div>
             
             <div class="sentence-box">
                 <div class="sentence-model">The car stops.</div>
                 <div class="sentence-parts">(السيارة تتوقف)</div>
-                <div class="sentence-write-line"></div>
                 <div class="sentence-write-line"></div>
             </div>
             
@@ -330,13 +333,11 @@
                 <div class="sentence-model">She reads.</div>
                 <div class="sentence-parts">(هي تقرأ)</div>
                 <div class="sentence-write-line"></div>
-                <div class="sentence-write-line"></div>
             </div>
             
             <div class="sentence-box">
                 <div class="sentence-model">He writes.</div>
                 <div class="sentence-parts">(هو يكتب)</div>
-                <div class="sentence-write-line"></div>
                 <div class="sentence-write-line"></div>
             </div>
         </div>
@@ -390,68 +391,6 @@
                 <p style="margin: 8px 0; font-size: 15px;">3. The girl _______________.</p>
                 <p style="margin: 8px 0; font-size: 15px;">4. The dog _______________.</p>
                 <p style="margin: 8px 0; font-size: 15px;">5. The man _______________.</p>
-            </div>
-        </div>
-
-        <!-- Assistant Instructions -->
-        <div class="assistant-box">
-            <h3>تعليمات المعلم المساعد</h3>
-            
-            <div class="assistant-instructions">
-                <strong>📋 مهامك في هذا النشاط:</strong>
-                <ol>
-                    <li><strong>قبل البدء (3 دقائق):</strong>
-                        <ul>
-                            <li>اشرح الهدف: "اليوم سنتعلم تكوين جمل من جزئين: الفاعل (من؟) والفعل (يفعل ماذا؟)"</li>
-                            <li>اشرح القاعدة باستخدام المربع الأزرق: "The boy = الفاعل، runs = الفعل"</li>
-                            <li>اقرأ الجمل الأربعة في التمرين 1 بصوت عالٍ - خليهم يكررون معك</li>
-                            <li>وضّح الألوان: الوردي = الفاعل، الأزرق = الفعل</li>
-                        </ul>
-                    </li>
-                    
-                    <li><strong>أثناء العمل (15 دقيقة):</strong>
-                        <ul>
-                            <li>مرّ على كل طالب كل 3 دقائق - اطلب منه قراءة جملة واحدة</li>
-                            <li>صحح النطق: "ممتاز! لاحظ أن الفعل ينتهي بـ s مع he/she/it"</li>
-                            <li>ساعد في تحديد الفاعل والفعل: "من الذي يفعل الشيء؟ هذا الفاعل"</li>
-                            <li>في التمرين 3: اشرح المنطق "The bird يطير، إذن bird يناسب flies"</li>
-                            <li>في التمرين 4: ساعدهم في فهم الجملة قبل اختيار الفعل</li>
-                            <li>احتفل بالإنجازات: "رائع! كوّنت 5 جمل صحيحة!"</li>
-                        </ul>
-                    </li>
-                    
-                    <li><strong>في النهاية (5 دقائق):</strong>
-                        <ul>
-                            <li>راجع الجمل الرئيسية: اقرأ 4 جمل بصوت جماعي</li>
-                            <li>اطلب من 3 طلاب قراءة جملة واحدة وتحديد الفاعل والفعل</li>
-                            <li>تأكد أن الجميع أكملوا التمرينين 1 و2 على الأقل</li>
-                            <li>سجّل النقاط في الكشف</li>
-                            <li>امدحهم: "أحسنتم! اليوم الجاي رح نضيف المفعول به للجمل!"</li>
-                        </ul>
-                    </li>
-                </ol>
-            </div>
-
-            <div class="note">
-                <strong>💡 نصائح مهمة:</strong>
-                <ul style="margin: 5px 0; padding-right: 20px;">
-                    <li>ركز على مفهوم الفاعل والفعل - استخدم أمثلة حية من الفصل</li>
-                    <li>وضّح أن الفعل ينتهي بـ s مع الفاعل المفرد (he, she, it)</li>
-                    <li>استخدم الإشارات: أشر للشخص (الفاعل) ثم حرّك يدك (الفعل)</li>
-                    <li>شجّع الطلاب على تكوين جمل شفوية قبل الكتابة</li>
-                    <li>إذا احتجت مساعدة، ارفع يدك للمعلم</li>
-                </ul>
-            </div>
-
-            <div class="assistant-instructions" style="margin-top: 15px;">
-                <strong>✅ معايير منح النقاط (كل طالب يمكن أن يحصل على 5 نقاط):</strong>
-                <ul>
-                    <li>✔️ قرأ جمل التمرين 1 بصوت عالٍ = نقطة</li>
-                    <li>✔️ أكمل التمرين 2 (4 جمل) - نصفها على الأقل = نقطة</li>
-                    <li>✔️ أكمل التمرين 3 (التوصيل) - 3 توصيلات صح = نقطة</li>
-                    <li>✔️ أكمل التمرين 4 (إكمال الجمل) - 3 جمل صح = نقطة</li>
-                    <li>✔️ فهم الفرق بين الفاعل والفعل أو ساعد زميله = نقطة</li>
-                </ul>
             </div>
         </div>
 

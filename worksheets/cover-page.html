@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>غلاف الخطة العلاجية</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', 'Tahoma', sans-serif;
+            background: white;
+            direction: rtl;
+        }
+
+        /* تنسيق الصفحة للطباعة */
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        .cover-page {
+            width: 210mm;
+            height: 297mm;
+            margin: 0 auto;
+            padding: 25mm 25mm 20mm 25mm;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* الزخارف الخلفية */
+        .cover-page::before {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            top: -200px;
+            right: -200px;
+        }
+
+        .cover-page::after {
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            bottom: -150px;
+            left: -150px;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            width: 100%;
+        }
+
+        /* القسم العلوي */
+        .top-section {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .school-name {
+            font-size: 34px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+            letter-spacing: 2px;
+            line-height: 1.3;
+        }
+
+        .ministry-name {
+            font-size: 18px;
+            opacity: 0.95;
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+
+        .education-dept {
+            font-size: 16px;
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+
+        /* القسم الأوسط - العنوان */
+        .middle-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px 0;
+        }
+
+        .main-title {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+            line-height: 1.4;
+            padding: 0 20px;
+        }
+
+        .subtitle {
+            font-size: 24px;
+            margin-bottom: 20px;
+            opacity: 0.95;
+            font-weight: 500;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .level-badges {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.25);
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-size: 15px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        /* القسم السفلي */
+        .bottom-section {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(20px);
+            padding: 30px 40px;
+            border-radius: 30px;
+            border: 2px solid rgba(255, 255, 255, 0.25);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .qr-section {
+            padding: 0;
+            margin-bottom: 25px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .qr-code {
+            width: 140px;
+            height: 140px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            border: 3px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .qr-label {
+            margin-top: 15px;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .qr-link {
+            margin-top: 8px;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 12px;
+            word-break: break-all;
+            direction: ltr;
+            opacity: 0.85;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        .teacher-info {
+            margin-top: 0;
+            padding-top: 5px;
+        }
+
+        .teacher-name {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+            color: white;
+        }
+
+        .teacher-title {
+            font-size: 18px;
+            opacity: 0.95;
+            color: rgba(255, 255, 255, 0.95);
+        }
+
+        .semester-info {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 10px 28px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 25px;
+            display: inline-block;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            border: 2px solid rgba(255, 255, 255, 0.25);
+            color: white;
+        }
+
+        .divider {
+            width: 80%;
+            height: 2px;
+            background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.3), transparent);
+            margin: 20px auto;
+        }
+
+        /* تنسيق الطباعة */
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            .cover-page {
+                width: 210mm;
+                height: 297mm;
+                page-break-after: always;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }
+
+            /* إخفاء أي عناصر تفاعلية */
+            @page {
+                margin: 0;
+            }
+
+            /* فرض طباعة الخلفيات والألوان */
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }
+        }
+
+        /* للشاشات الصغيرة - للمعاينة فقط */
+        @media screen and (max-width: 800px) {
+            .cover-page {
+                width: 100vw;
+                height: 100vh;
+                padding: 30px 20px;
+            }
+
+            .main-title {
+                font-size: 32px;
+            }
+
+            .school-name {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cover-page">
+        <div class="content">
+            <!-- القسم العلوي - اسم المدرسة -->
+            <div class="top-section">
+                <div class="ministry-name">وزارة التعليم</div>
+                <div class="school-name">مدرسة أبي بكر بن العربي الثانوية</div>
+            </div>
+
+            <!-- القسم الأوسط - العنوان الرئيسي -->
+            <div class="middle-section">
+                <div class="main-title">
+                    الخطة العلاجية الشاملة<br>
+                    للغة الإنجليزية
+                </div>
+                <div class="subtitle">
+                    برنامج تدريبي مكثف - 4 أيام
+                </div>
+                <div class="level-badges">
+                    <span class="badge">🔴 المجموعة التأسيسية</span>
+                    <span class="badge">🟡 المجموعة المقبولة</span>
+                    <span class="badge">🟢 المجموعة المتوسطة</span>
+                    <span class="badge">🟣 المجموعة الممتازة</span>
+                </div>
+            </div>
+
+            <!-- القسم السفلي - المعلومات والـ QR -->
+            <div class="bottom-section">
+                <div class="qr-section">
+                    <img src="plan_qr.png" alt="QR Code" class="qr-code">
+                    <div class="qr-label">امسح للوصول للموقع الإلكتروني</div>
+                    <div class="qr-link">https://alothaimeen.github.io/plan/index.html</div>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <div class="teacher-info">
+                    <div class="teacher-name">الأستاذ محمد العثيمين</div>
+                    <div class="teacher-title">معلم اللغة الإنجليزية</div>
+                </div>
+
+                <div class="semester-info">
+                    الفصل الدراسي الأول - 1447هـ / 2025م
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // طباعة تلقائية عند فتح الصفحة (اختياري)
+        // window.onload = function() {
+        //     window.print();
+        // };
+    </script>
+</body>
+</html>

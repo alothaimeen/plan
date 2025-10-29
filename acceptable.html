@@ -10,6 +10,31 @@
         :root {
             --card-color: #ffc107;
         }
+        
+        /* ترتيب الأيام في صف واحد متجاوب */
+        .container {
+            max-width: 1400px;
+        }
+        
+        .day-card {
+            display: inline-block;
+            width: calc(24% - 15px);
+            margin: 7px;
+            vertical-align: top;
+            box-sizing: border-box;
+        }
+        
+        @media (max-width: 1200px) {
+            .day-card {
+                width: calc(50% - 20px);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .day-card {
+                width: calc(100% - 20px);
+            }
+        }
     </style>
 </head>
 <body>
@@ -23,7 +48,6 @@
         <header class="header">
             <div class="card-icon" style="font-size: 4rem;">🟡</div>
             <h1>المجموعة المقبولة</h1>
-            <p class="school-name">10 - 17 درجة | بناء الجمل وفهم النصوص</p>
         </header>
 
         <!-- بطاقات الأيام الأربعة -->
